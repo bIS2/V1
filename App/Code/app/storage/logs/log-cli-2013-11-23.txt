@@ -1,0 +1,49 @@
+[2013-11-23 18:41:30] log.ERROR: 500 - There are no commands defined in the "bd" namespace. @ /
+exception 'InvalidArgumentException' with message 'There are no commands defined in the "bd" namespace.' in C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php:523
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(561): Symfony\Component\Console\Application->findNamespace('bd')
+#1 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('bd:seed')
+#2 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\W\Web\Pb\code\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#4 {main} [] []
+[2013-11-23 18:41:40] log.ERROR: 500 - Class 'Libarian' not found @ /
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Libarian' not found' in C:\W\Web\Pb\code\laravel\app\database\seeds\SetLibtoUserLibrarian.php:9
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 18:42:06] log.ERROR: 500 - library_id @ /
+exception 'Illuminate\Database\Eloquent\MassAssignmentException' with message 'library_id' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:310
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1083): Illuminate\Database\Eloquent\Model->fill(Array)
+#1 C:\W\Web\Pb\code\laravel\app\database\seeds\SetLibtoUserLibrarian.php(10): Illuminate\Database\Eloquent\Model->update(Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(53): SetLibtoUserLibrarian->run()
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\SeedCommand->fire()
+#4 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\W\Web\Pb\code\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#10 {main} [] []
+[2013-11-23 18:42:08] log.ERROR: 500 - library_id @ /
+exception 'Illuminate\Database\Eloquent\MassAssignmentException' with message 'library_id' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:310
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1083): Illuminate\Database\Eloquent\Model->fill(Array)
+#1 C:\W\Web\Pb\code\laravel\app\database\seeds\SetLibtoUserLibrarian.php(10): Illuminate\Database\Eloquent\Model->update(Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(53): SetLibtoUserLibrarian->run()
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\SeedCommand->fire()
+#4 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\W\Web\Pb\code\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#10 {main} [] []
+[2013-11-23 18:44:13] log.ERROR: 500 - There are no commands defined in the "bd" namespace. @ /
+exception 'InvalidArgumentException' with message 'There are no commands defined in the "bd" namespace.' in C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php:523
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(561): Symfony\Component\Console\Application->findNamespace('bd')
+#1 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('bd:seed')
+#2 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\W\Web\Pb\code\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#4 {main} [] []

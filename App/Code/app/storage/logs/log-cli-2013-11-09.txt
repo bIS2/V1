@@ -1,0 +1,40 @@
+[2013-11-09 00:15:01] log.ERROR: 500 - Command "controller" is not defined.
+
+Did you mean one of these?
+    controller:make
+    confide:controller
+    generate:controller @ /
+exception 'InvalidArgumentException' with message 'Command "controller" is not defined.
+
+Did you mean one of these?
+    controller:make
+    confide:controller
+    generate:controller' in C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php:617
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('controller')
+#1 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\W\Web\Pb\code\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#3 {main} [] []
+[2013-11-09 00:15:08] log.ERROR: 500 - Not enough arguments. @ /
+exception 'RuntimeException' with message 'Not enough arguments.' in C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Input\Input.php:76
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(239): Symfony\Component\Console\Input\Input->validate()
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Routing\Console\MakeControllerCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\W\Web\Pb\code\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#6 {main} [] []
+[2013-11-09 00:24:31] log.ERROR: 500 - Command "clearcomplied" is not defined.
+
+Did you mean this?
+    clear-compiled @ /
+exception 'InvalidArgumentException' with message 'Command "clearcomplied" is not defined.
+
+Did you mean this?
+    clear-compiled' in C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php:617
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('clearcomplied')
+#1 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\W\Web\Pb\code\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#3 {main} [] []

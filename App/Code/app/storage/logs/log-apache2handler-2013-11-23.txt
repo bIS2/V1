@@ -1,0 +1,1348 @@
+[2013-11-23 03:48:01] log.ERROR: 500 - Unknown action [HoldingssetsController@putTrash]. @ /sets
+exception 'InvalidArgumentException' with message 'Unknown action [HoldingssetsController@putTrash].' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\UrlGenerator.php:263
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Support\helpers.php(15): Illuminate\Routing\UrlGenerator->action('HoldingssetsCon...', Array, true)
+#1 C:\W\Web\Pb\code\laravel\app\storage\views\fbd25923b6f1afeea8283d19d3715005(233): action('HoldingssetsCon...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\W\Web\Pb\cod...')
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\W\Web\Pb\cod...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\W\Web\Pb\cod...', Array)
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#7 C:\W\Web\Pb\code\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Robbo\Presenter\View\View))
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Robbo\Presenter\View\View))
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Robbo\Presenter\View\View), Object(Illuminate\Http\Request))
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Robbo\Presenter\View\View))
+#11 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#13 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#20 {main} [] []
+[2013-11-23 04:13:16] log.ERROR: 500 - Can't use function return value in write context @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Can't use function return value in write context' in C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869:176
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 04:13:40] log.ERROR: 500 - Can't use function return value in write context @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Can't use function return value in write context' in C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869:175
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 04:14:00] log.ERROR: 500 - Can't use function return value in write context @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Can't use function return value in write context' in C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869:175
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 04:14:21] log.ERROR: 500 - Can't use function return value in write context @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Can't use function return value in write context' in C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869:175
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 04:15:01] log.ERROR: 500 - Can't use function return value in write context @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Can't use function return value in write context' in C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869:175
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 04:15:08] log.ERROR: 500 - Can't use function return value in write context @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Can't use function return value in write context' in C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869:175
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 04:15:23] log.ERROR: 500 - syntax error, unexpected '}' @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '}'' in C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869:175
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 04:15:28] log.ERROR: 500 - syntax error, unexpected ')' @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ')'' in C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869:188
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 04:17:29] log.ERROR: 500 - Undefined variable: params @ /sets
+exception 'ErrorException' with message 'Undefined variable: params' in C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869:179
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869(179): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'C:\W\Web\Pb\cod...', 179, Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\W\Web\Pb\cod...')
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\W\Web\Pb\cod...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\W\Web\Pb\cod...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#5 C:\W\Web\Pb\code\laravel\app\storage\views\fbd25923b6f1afeea8283d19d3715005(3): Illuminate\View\View->render()
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\W\Web\Pb\cod...')
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\W\Web\Pb\cod...', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\W\Web\Pb\cod...', Array)
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#11 C:\W\Web\Pb\code\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Robbo\Presenter\View\View))
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Robbo\Presenter\View\View))
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Robbo\Presenter\View\View), Object(Illuminate\Http\Request))
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Robbo\Presenter\View\View))
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main} [] []
+[2013-11-23 04:17:52] log.ERROR: 500 - Undefined variable: params @ /sets
+exception 'ErrorException' with message 'Undefined variable: params' in C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869:180
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869(180): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'C:\W\Web\Pb\cod...', 180, Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\W\Web\Pb\cod...')
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\W\Web\Pb\cod...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\W\Web\Pb\cod...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#5 C:\W\Web\Pb\code\laravel\app\storage\views\fbd25923b6f1afeea8283d19d3715005(3): Illuminate\View\View->render()
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\W\Web\Pb\cod...')
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\W\Web\Pb\cod...', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\W\Web\Pb\cod...', Array)
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#11 C:\W\Web\Pb\code\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Robbo\Presenter\View\View))
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Robbo\Presenter\View\View))
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Robbo\Presenter\View\View), Object(Illuminate\Http\Request))
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Robbo\Presenter\View\View))
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main} [] []
+[2013-11-23 04:19:51] log.ERROR: 500 - syntax error, unexpected '?>' @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '?>'' in C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869:195
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 04:20:02] log.ERROR: 500 - syntax error, unexpected ';' @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ';'' in C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869:195
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 04:20:30] log.ERROR: 500 - syntax error, unexpected ';' @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ';'' in C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869:195
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 04:20:50] log.ERROR: 500 - syntax error, unexpected 'echo' (T_ECHO) @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'echo' (T_ECHO)' in C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869:195
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 04:21:11] log.ERROR: 500 - syntax error, unexpected '{' @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '{'' in C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869:195
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 04:21:50] log.ERROR: 500 - syntax error, unexpected 'else' (T_ELSE) @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'else' (T_ELSE)' in C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869:195
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 04:45:07] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-23 04:45:08] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-23 05:22:24] log.ERROR: 500 - View [holdings/slide] not found. @ /holdings
+exception 'InvalidArgumentException' with message 'View [holdings/slide] not found.' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\FileViewFinder.php:135
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\FileViewFinder.php(76): Illuminate\View\FileViewFinder->findInPaths('holdings/slide', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\robclancy\presenter\src\Robbo\Presenter\View\Environment.php(46): Illuminate\View\FileViewFinder->find('holdings/slide')
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(209): Robbo\Presenter\View\Environment->make('holdings/slide', Array)
+#3 C:\W\Web\Pb\code\laravel\app\controllers\HoldingsController.php(46): Illuminate\Support\Facades\Facade::__callStatic('make', Array)
+#4 C:\W\Web\Pb\code\laravel\app\controllers\HoldingsController.php(46): Illuminate\Support\Facades\View::make('holdings/slide', Array)
+#5 [internal function]: HoldingsController->Index()
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#10 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#16 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#17 {main} [] []
+[2013-11-23 05:22:31] log.ERROR: 500 - View [holdings/print] not found. @ /holdings
+exception 'InvalidArgumentException' with message 'View [holdings/print] not found.' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\FileViewFinder.php:135
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\FileViewFinder.php(76): Illuminate\View\FileViewFinder->findInPaths('holdings/print', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\robclancy\presenter\src\Robbo\Presenter\View\Environment.php(46): Illuminate\View\FileViewFinder->find('holdings/print')
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(209): Robbo\Presenter\View\Environment->make('holdings/print', Array)
+#3 C:\W\Web\Pb\code\laravel\app\controllers\HoldingsController.php(46): Illuminate\Support\Facades\Facade::__callStatic('make', Array)
+#4 C:\W\Web\Pb\code\laravel\app\controllers\HoldingsController.php(46): Illuminate\Support\Facades\View::make('holdings/print', Array)
+#5 [internal function]: HoldingsController->Index()
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#10 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#16 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#17 {main} [] []
+[2013-11-23 05:51:24] log.ERROR: 500 - Use of undefined constant holdingssets - assumed 'holdingssets' @ /sets
+exception 'ErrorException' with message 'Use of undefined constant holdingssets - assumed 'holdingssets'' in C:\W\Web\Pb\code\laravel\app\storage\views\fbd25923b6f1afeea8283d19d3715005:231
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\app\storage\views\fbd25923b6f1afeea8283d19d3715005(231): Illuminate\Exception\Handler->handleError(8, 'Use of undefine...', 'C:\W\Web\Pb\cod...', 231, Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\W\Web\Pb\cod...')
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\W\Web\Pb\cod...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\W\Web\Pb\cod...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#6 C:\W\Web\Pb\code\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Robbo\Presenter\View\View))
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Robbo\Presenter\View\View))
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Robbo\Presenter\View\View), Object(Illuminate\Http\Request))
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Robbo\Presenter\View\View))
+#10 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-11-23 05:52:14] log.ERROR: 500 - Use of undefined constant holdingssets - assumed 'holdingssets' @ /sets
+exception 'ErrorException' with message 'Use of undefined constant holdingssets - assumed 'holdingssets'' in C:\W\Web\Pb\code\laravel\app\storage\views\fbd25923b6f1afeea8283d19d3715005:232
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\app\storage\views\fbd25923b6f1afeea8283d19d3715005(232): Illuminate\Exception\Handler->handleError(8, 'Use of undefine...', 'C:\W\Web\Pb\cod...', 232, Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\W\Web\Pb\cod...')
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\W\Web\Pb\cod...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\W\Web\Pb\cod...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#6 C:\W\Web\Pb\code\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Robbo\Presenter\View\View))
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Robbo\Presenter\View\View))
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Robbo\Presenter\View\View), Object(Illuminate\Http\Request))
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Robbo\Presenter\View\View))
+#10 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-11-23 14:45:35] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-23 14:45:35] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-23 15:29:53] log.ERROR: 500 - Call to undefined method Illuminate\Database\Eloquent\Collection::whereRaw() @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined method Illuminate\Database\Eloquent\Collection::whereRaw()' in C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php:58
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 15:31:39] log.ERROR: 500 - Call to a member function whereIn() on a non-object @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function whereIn() on a non-object' in C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php:62
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 15:32:44] log.ERROR: 500 - SQLSTATE[42703]: Undefined column: 7 ERROR:  column "holdinsset_id" does not exist
+LINE 1: select "holdinsset_id" from "holdings" where LOWER(f245a) LI...
+               ^ (SQL: select "holdinsset_id" from "holdings" where LOWER(f245a) LIKE '%deutschunterricht%') (Bindings: array (
+)) @ /sets
+exception 'PDOException' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  column "holdinsset_id" does not exist
+LINE 1: select "holdinsset_id" from "holdings" where LOWER(f245a) LI...
+               ^' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:274
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'select "holdins...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select "holdins...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select "holdins...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1136): Illuminate\Database\Query\Builder->get(Array)
+#7 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(62): Illuminate\Database\Query\Builder->lists('holdinsset_id')
+#8 [internal function]: HoldingssetsController->Index()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#11 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#13 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#20 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  column "holdinsset_id" does not exist
+LINE 1: select "holdinsset_id" from "holdings" where LOWER(f245a) LI...
+               ^ (SQL: select "holdinsset_id" from "holdings" where LOWER(f245a) LIKE '%deutschunterricht%') (Bindings: array (
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select "holdins...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select "holdins...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select "holdins...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1136): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(62): Illuminate\Database\Query\Builder->lists('holdinsset_id')
+#7 [internal function]: HoldingssetsController->Index()
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#10 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-11-23 15:32:59] log.ERROR: 500 - SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "in" (SQL: select count(*) as aggregate from "holdingssets" where "id" = ?) (Bindings: array (
+  0 => 'in',
+)) @ /sets
+exception 'PDOException' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "in"' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:274
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'select count(*)...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select count(*)...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1369): Illuminate\Database\Query\Builder->get(Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1311): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1281): Illuminate\Database\Query\Builder->count()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(257): Illuminate\Database\Query\Builder->getPaginationCount()
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(228): Illuminate\Database\Eloquent\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 20, Array)
+#11 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(67): Illuminate\Database\Eloquent\Builder->paginate(20)
+#12 [internal function]: HoldingssetsController->Index()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "in" (SQL: select count(*) as aggregate from "holdingssets" where "id" = ?) (Bindings: array (
+  0 => 'in',
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select count(*)...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select count(*)...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1369): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1311): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1281): Illuminate\Database\Query\Builder->count()
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(257): Illuminate\Database\Query\Builder->getPaginationCount()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(228): Illuminate\Database\Eloquent\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 20, Array)
+#10 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(67): Illuminate\Database\Eloquent\Builder->paginate(20)
+#11 [internal function]: HoldingssetsController->Index()
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2013-11-23 15:56:28] log.ERROR: 500 - SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ...t count(*) as aggregate from "holdingssets" where "id" in ()
+                                                                      ^ (SQL: select count(*) as aggregate from "holdingssets" where "id" in ()) (Bindings: array (
+)) @ /sets
+exception 'PDOException' with message 'SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ...t count(*) as aggregate from "holdingssets" where "id" in ()
+                                                                      ^' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:274
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'select count(*)...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select count(*)...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1369): Illuminate\Database\Query\Builder->get(Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1311): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1281): Illuminate\Database\Query\Builder->count()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(257): Illuminate\Database\Query\Builder->getPaginationCount()
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(228): Illuminate\Database\Eloquent\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 20, Array)
+#11 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(67): Illuminate\Database\Eloquent\Builder->paginate(20)
+#12 [internal function]: HoldingssetsController->Index()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ...t count(*) as aggregate from "holdingssets" where "id" in ()
+                                                                      ^ (SQL: select count(*) as aggregate from "holdingssets" where "id" in ()) (Bindings: array (
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select count(*)...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select count(*)...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1369): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1311): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1281): Illuminate\Database\Query\Builder->count()
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(257): Illuminate\Database\Query\Builder->getPaginationCount()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(228): Illuminate\Database\Eloquent\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 20, Array)
+#10 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(67): Illuminate\Database\Eloquent\Builder->paginate(20)
+#11 [internal function]: HoldingssetsController->Index()
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2013-11-23 15:57:44] log.ERROR: 500 - SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ...t count(*) as aggregate from "holdingssets" where "id" in ()
+                                                                      ^ (SQL: select count(*) as aggregate from "holdingssets" where "id" in ()) (Bindings: array (
+)) @ /sets
+exception 'PDOException' with message 'SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ...t count(*) as aggregate from "holdingssets" where "id" in ()
+                                                                      ^' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:274
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'select count(*)...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select count(*)...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1369): Illuminate\Database\Query\Builder->get(Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1311): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1281): Illuminate\Database\Query\Builder->count()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(257): Illuminate\Database\Query\Builder->getPaginationCount()
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(228): Illuminate\Database\Eloquent\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 20, Array)
+#11 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(67): Illuminate\Database\Eloquent\Builder->paginate(20)
+#12 [internal function]: HoldingssetsController->Index()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ...t count(*) as aggregate from "holdingssets" where "id" in ()
+                                                                      ^ (SQL: select count(*) as aggregate from "holdingssets" where "id" in ()) (Bindings: array (
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select count(*)...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select count(*)...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1369): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1311): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1281): Illuminate\Database\Query\Builder->count()
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(257): Illuminate\Database\Query\Builder->getPaginationCount()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(228): Illuminate\Database\Eloquent\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 20, Array)
+#10 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(67): Illuminate\Database\Eloquent\Builder->paginate(20)
+#11 [internal function]: HoldingssetsController->Index()
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2013-11-23 15:57:49] log.ERROR: 500 - SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ...t count(*) as aggregate from "holdingssets" where "id" in ()
+                                                                      ^ (SQL: select count(*) as aggregate from "holdingssets" where "id" in ()) (Bindings: array (
+)) @ /sets
+exception 'PDOException' with message 'SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ...t count(*) as aggregate from "holdingssets" where "id" in ()
+                                                                      ^' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:274
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'select count(*)...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select count(*)...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1369): Illuminate\Database\Query\Builder->get(Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1311): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1281): Illuminate\Database\Query\Builder->count()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(257): Illuminate\Database\Query\Builder->getPaginationCount()
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(228): Illuminate\Database\Eloquent\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 20, Array)
+#11 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(67): Illuminate\Database\Eloquent\Builder->paginate(20)
+#12 [internal function]: HoldingssetsController->Index()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ...t count(*) as aggregate from "holdingssets" where "id" in ()
+                                                                      ^ (SQL: select count(*) as aggregate from "holdingssets" where "id" in ()) (Bindings: array (
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select count(*)...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select count(*)...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1369): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1311): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1281): Illuminate\Database\Query\Builder->count()
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(257): Illuminate\Database\Query\Builder->getPaginationCount()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(228): Illuminate\Database\Eloquent\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 20, Array)
+#10 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(67): Illuminate\Database\Eloquent\Builder->paginate(20)
+#11 [internal function]: HoldingssetsController->Index()
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2013-11-23 15:58:12] log.ERROR: 500 - SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ...t count(*) as aggregate from "holdingssets" where "id" in ()
+                                                                      ^ (SQL: select count(*) as aggregate from "holdingssets" where "id" in ()) (Bindings: array (
+)) @ /sets
+exception 'PDOException' with message 'SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ...t count(*) as aggregate from "holdingssets" where "id" in ()
+                                                                      ^' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:274
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'select count(*)...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select count(*)...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1369): Illuminate\Database\Query\Builder->get(Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1311): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1281): Illuminate\Database\Query\Builder->count()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(257): Illuminate\Database\Query\Builder->getPaginationCount()
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(228): Illuminate\Database\Eloquent\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 20, Array)
+#11 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(67): Illuminate\Database\Eloquent\Builder->paginate(20)
+#12 [internal function]: HoldingssetsController->Index()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ...t count(*) as aggregate from "holdingssets" where "id" in ()
+                                                                      ^ (SQL: select count(*) as aggregate from "holdingssets" where "id" in ()) (Bindings: array (
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select count(*)...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select count(*)...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1369): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1311): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1281): Illuminate\Database\Query\Builder->count()
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(257): Illuminate\Database\Query\Builder->getPaginationCount()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(228): Illuminate\Database\Eloquent\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 20, Array)
+#10 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(67): Illuminate\Database\Eloquent\Builder->paginate(20)
+#11 [internal function]: HoldingssetsController->Index()
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2013-11-23 15:58:27] log.ERROR: 500 - SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ...t count(*) as aggregate from "holdingssets" where "id" in ()
+                                                                      ^ (SQL: select count(*) as aggregate from "holdingssets" where "id" in ()) (Bindings: array (
+)) @ /sets
+exception 'PDOException' with message 'SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ...t count(*) as aggregate from "holdingssets" where "id" in ()
+                                                                      ^' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:274
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'select count(*)...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select count(*)...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1369): Illuminate\Database\Query\Builder->get(Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1311): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1281): Illuminate\Database\Query\Builder->count()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(257): Illuminate\Database\Query\Builder->getPaginationCount()
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(228): Illuminate\Database\Eloquent\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 20, Array)
+#11 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(67): Illuminate\Database\Eloquent\Builder->paginate(20)
+#12 [internal function]: HoldingssetsController->Index()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ...t count(*) as aggregate from "holdingssets" where "id" in ()
+                                                                      ^ (SQL: select count(*) as aggregate from "holdingssets" where "id" in ()) (Bindings: array (
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select count(*)...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select count(*)...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1369): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1311): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1281): Illuminate\Database\Query\Builder->count()
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(257): Illuminate\Database\Query\Builder->getPaginationCount()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(228): Illuminate\Database\Eloquent\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 20, Array)
+#10 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(67): Illuminate\Database\Eloquent\Builder->paginate(20)
+#11 [internal function]: HoldingssetsController->Index()
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2013-11-23 15:59:01] log.ERROR: 500 - SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ...t count(*) as aggregate from "holdingssets" where "id" in ()
+                                                                      ^ (SQL: select count(*) as aggregate from "holdingssets" where "id" in ()) (Bindings: array (
+)) @ /sets
+exception 'PDOException' with message 'SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ...t count(*) as aggregate from "holdingssets" where "id" in ()
+                                                                      ^' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:274
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'select count(*)...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select count(*)...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1369): Illuminate\Database\Query\Builder->get(Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1311): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1281): Illuminate\Database\Query\Builder->count()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(257): Illuminate\Database\Query\Builder->getPaginationCount()
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(228): Illuminate\Database\Eloquent\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 20, Array)
+#11 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(68): Illuminate\Database\Eloquent\Builder->paginate(20)
+#12 [internal function]: HoldingssetsController->Index()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ...t count(*) as aggregate from "holdingssets" where "id" in ()
+                                                                      ^ (SQL: select count(*) as aggregate from "holdingssets" where "id" in ()) (Bindings: array (
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select count(*)...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select count(*)...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1369): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1311): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1281): Illuminate\Database\Query\Builder->count()
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(257): Illuminate\Database\Query\Builder->getPaginationCount()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(228): Illuminate\Database\Eloquent\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 20, Array)
+#10 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(68): Illuminate\Database\Eloquent\Builder->paginate(20)
+#11 [internal function]: HoldingssetsController->Index()
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2013-11-23 16:01:03] log.ERROR: 500 - SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ...t count(*) as aggregate from "holdingssets" where "id" in ()
+                                                                      ^ (SQL: select count(*) as aggregate from "holdingssets" where "id" in ()) (Bindings: array (
+)) @ /sets
+exception 'PDOException' with message 'SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ...t count(*) as aggregate from "holdingssets" where "id" in ()
+                                                                      ^' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:274
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'select count(*)...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select count(*)...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1369): Illuminate\Database\Query\Builder->get(Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1311): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1281): Illuminate\Database\Query\Builder->count()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(257): Illuminate\Database\Query\Builder->getPaginationCount()
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(228): Illuminate\Database\Eloquent\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 20, Array)
+#11 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(67): Illuminate\Database\Eloquent\Builder->paginate(20)
+#12 [internal function]: HoldingssetsController->Index()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ...t count(*) as aggregate from "holdingssets" where "id" in ()
+                                                                      ^ (SQL: select count(*) as aggregate from "holdingssets" where "id" in ()) (Bindings: array (
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select count(*)...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select count(*)...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1369): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1311): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1281): Illuminate\Database\Query\Builder->count()
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(257): Illuminate\Database\Query\Builder->getPaginationCount()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(228): Illuminate\Database\Eloquent\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 20, Array)
+#10 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(67): Illuminate\Database\Eloquent\Builder->paginate(20)
+#11 [internal function]: HoldingssetsController->Index()
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2013-11-23 16:01:12] log.ERROR: 500 - SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ...t count(*) as aggregate from "holdingssets" where "id" in ()
+                                                                      ^ (SQL: select count(*) as aggregate from "holdingssets" where "id" in ()) (Bindings: array (
+)) @ /sets
+exception 'PDOException' with message 'SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ...t count(*) as aggregate from "holdingssets" where "id" in ()
+                                                                      ^' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:274
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'select count(*)...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select count(*)...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1369): Illuminate\Database\Query\Builder->get(Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1311): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1281): Illuminate\Database\Query\Builder->count()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(257): Illuminate\Database\Query\Builder->getPaginationCount()
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(228): Illuminate\Database\Eloquent\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 20, Array)
+#11 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(67): Illuminate\Database\Eloquent\Builder->paginate(20)
+#12 [internal function]: HoldingssetsController->Index()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ...t count(*) as aggregate from "holdingssets" where "id" in ()
+                                                                      ^ (SQL: select count(*) as aggregate from "holdingssets" where "id" in ()) (Bindings: array (
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select count(*)...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select count(*)...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1369): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1311): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1281): Illuminate\Database\Query\Builder->count()
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(257): Illuminate\Database\Query\Builder->getPaginationCount()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(228): Illuminate\Database\Eloquent\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 20, Array)
+#10 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(67): Illuminate\Database\Eloquent\Builder->paginate(20)
+#11 [internal function]: HoldingssetsController->Index()
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2013-11-23 16:07:31] log.ERROR: 500 - Undefined variable: id_group @ /sets
+exception 'ErrorException' with message 'Undefined variable: id_group' in C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869:93
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869(93): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'C:\W\Web\Pb\cod...', 93, Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\W\Web\Pb\cod...')
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\W\Web\Pb\cod...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\W\Web\Pb\cod...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#5 C:\W\Web\Pb\code\laravel\app\storage\views\fbd25923b6f1afeea8283d19d3715005(3): Illuminate\View\View->render()
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\W\Web\Pb\cod...')
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\W\Web\Pb\cod...', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\W\Web\Pb\cod...', Array)
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#11 C:\W\Web\Pb\code\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Robbo\Presenter\View\View))
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Robbo\Presenter\View\View))
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Robbo\Presenter\View\View), Object(Illuminate\Http\Request))
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Robbo\Presenter\View\View))
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main} [] []
+[2013-11-23 16:20:41] log.ERROR: 500 - syntax error, unexpected '?>' @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '?>'' in C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869:86
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 16:22:27] log.ERROR: 500 - SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "pending" (SQL: select * from "groups" where "id" = ? limit 1) (Bindings: array (
+  0 => 'pending',
+)) @ /sets
+exception 'PDOException' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "pending"' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:274
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'select * from "...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from "...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select * from "...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(441): Illuminate\Database\Query\Builder->get(Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(132): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(108): Illuminate\Database\Eloquent\Builder->get(Array)
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(69): Illuminate\Database\Eloquent\Builder->first(Array)
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(484): Illuminate\Database\Eloquent\Builder->find('pending', Array)
+#11 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(27): Illuminate\Database\Eloquent\Model::find('pending')
+#12 [internal function]: HoldingssetsController->Index()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "pending" (SQL: select * from "groups" where "id" = ? limit 1) (Bindings: array (
+  0 => 'pending',
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from "...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from "...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select * from "...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(441): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(132): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(108): Illuminate\Database\Eloquent\Builder->get(Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(69): Illuminate\Database\Eloquent\Builder->first(Array)
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(484): Illuminate\Database\Eloquent\Builder->find('pending', Array)
+#10 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(27): Illuminate\Database\Eloquent\Model::find('pending')
+#11 [internal function]: HoldingssetsController->Index()
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2013-11-23 16:26:11] log.ERROR: 500 - syntax error, unexpected ';' @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ';'' in C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869:52
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 16:26:19] log.ERROR: 500 - Array to string conversion @ /sets
+exception 'ErrorException' with message 'Array to string conversion' in C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869:52
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869(52): Illuminate\Exception\Handler->handleError(8, 'Array to string...', 'C:\W\Web\Pb\cod...', 52, Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\W\Web\Pb\cod...')
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\W\Web\Pb\cod...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\W\Web\Pb\cod...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#5 C:\W\Web\Pb\code\laravel\app\storage\views\fbd25923b6f1afeea8283d19d3715005(3): Illuminate\View\View->render()
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\W\Web\Pb\cod...')
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\W\Web\Pb\cod...', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\W\Web\Pb\cod...', Array)
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#11 C:\W\Web\Pb\code\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Robbo\Presenter\View\View))
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Robbo\Presenter\View\View))
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Robbo\Presenter\View\View), Object(Illuminate\Http\Request))
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Robbo\Presenter\View\View))
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main} [] []
+[2013-11-23 16:26:25] log.ERROR: 500 - Array to string conversion @ /sets
+exception 'ErrorException' with message 'Array to string conversion' in C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869:52
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869(52): Illuminate\Exception\Handler->handleError(8, 'Array to string...', 'C:\W\Web\Pb\cod...', 52, Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\W\Web\Pb\cod...')
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\W\Web\Pb\cod...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\W\Web\Pb\cod...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#5 C:\W\Web\Pb\code\laravel\app\storage\views\fbd25923b6f1afeea8283d19d3715005(3): Illuminate\View\View->render()
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\W\Web\Pb\cod...')
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\W\Web\Pb\cod...', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\W\Web\Pb\cod...', Array)
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#11 C:\W\Web\Pb\code\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Robbo\Presenter\View\View))
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Robbo\Presenter\View\View))
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Robbo\Presenter\View\View), Object(Illuminate\Http\Request))
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Robbo\Presenter\View\View))
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main} [] []
+[2013-11-23 16:30:41] log.ERROR: 500 - Call to undefined function appends() @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined function appends()' in C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869:52
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 16:30:57] log.ERROR: 500 - Call to a member function appends() on a non-object @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function appends() on a non-object' in C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869:52
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 16:31:02] log.ERROR: 500 - Call to a member function appends() on a non-object @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function appends() on a non-object' in C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869:52
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 17:13:52] log.ERROR: 404 - Exception @ /f852bformat=%25s+LIKE+%27%25%25%25s%25%25%27&f852b=&f852hformat=%25s+LIKE+%27%25%25%25s%25%25%27&f852h=&f245aformat=%25s+LIKE+%27%25%25%25s%25%25%27&f245a=der&f362aformat=%25s+LIKE+%27%25%25%25s%25%25%27&f362a=&f866aformat=%25s+LIKE+%27%25%25%25s%25%25%27&f866a=&f866zformat=%25s+LIKE+%27%25%25%25s%25%25%27&f866z=&page=2
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-23 17:13:52] log.ERROR: 404 - Exception @ /f852bformat=%25s+LIKE+%27%25%25%25s%25%25%27&f852b=&f852hformat=%25s+LIKE+%27%25%25%25s%25%25%27&f852h=&f245aformat=%25s+LIKE+%27%25%25%25s%25%25%27&f245a=der&f362aformat=%25s+LIKE+%27%25%25%25s%25%25%27&f362a=&f866aformat=%25s+LIKE+%27%25%25%25s%25%25%27&f866a=&f866zformat=%25s+LIKE+%27%25%25%25s%25%25%27&f866z=&page=3
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-23 17:24:41] log.ERROR: 500 - syntax error, unexpected ')', expecting ',' or ';' @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ')', expecting ',' or ';'' in C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869:172
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 17:25:07] log.ERROR: 500 - syntax error, unexpected ')', expecting ',' or ';' @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ')', expecting ',' or ';'' in C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869:172
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 17:30:08] log.ERROR: 404 - Exception @ /sets5%25%27&f866a=&f866zformat=%25s+LIKE+%27%25%25%25s%25%25%27&f866z=
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-23 19:06:21] log.ERROR: 500 - Undefined property: Illuminate\Database\Eloquent\Relations\BelongsTo::$code @ /sets
+exception 'ErrorException' with message 'Undefined property: Illuminate\Database\Eloquent\Relations\BelongsTo::$code' in C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php:65
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(65): Illuminate\Exception\Handler->handleError(8, 'Undefined prope...', 'C:\W\Web\Pb\cod...', 65, Array)
+#1 [internal function]: HoldingssetsController->Index()
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-11-23 19:06:30] log.ERROR: 500 - Undefined property: Illuminate\Database\Eloquent\Relations\BelongsTo::$code @ /sets
+exception 'ErrorException' with message 'Undefined property: Illuminate\Database\Eloquent\Relations\BelongsTo::$code' in C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php:65
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(65): Illuminate\Exception\Handler->handleError(8, 'Undefined prope...', 'C:\W\Web\Pb\cod...', 65, Array)
+#1 [internal function]: HoldingssetsController->Index()
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-11-23 19:06:50] log.ERROR: 500 - Undefined property: Illuminate\Database\Eloquent\Relations\BelongsTo::$code @ /sets
+exception 'ErrorException' with message 'Undefined property: Illuminate\Database\Eloquent\Relations\BelongsTo::$code' in C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php:65
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(65): Illuminate\Exception\Handler->handleError(8, 'Undefined prope...', 'C:\W\Web\Pb\cod...', 65, Array)
+#1 [internal function]: HoldingssetsController->Index()
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-11-23 19:07:03] log.ERROR: 500 - Undefined property: Illuminate\Database\Eloquent\Relations\BelongsTo::$code @ /sets
+exception 'ErrorException' with message 'Undefined property: Illuminate\Database\Eloquent\Relations\BelongsTo::$code' in C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php:65
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(65): Illuminate\Exception\Handler->handleError(8, 'Undefined prope...', 'C:\W\Web\Pb\cod...', 65, Array)
+#1 [internal function]: HoldingssetsController->Index()
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-11-23 19:07:28] log.ERROR: 500 - Trying to get property of non-object @ /sets
+exception 'ErrorException' with message 'Trying to get property of non-object' in C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php:65
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(65): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'C:\W\Web\Pb\cod...', 65, Array)
+#1 [internal function]: HoldingssetsController->Index()
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-11-23 19:08:32] log.ERROR: 500 - Undefined property: Illuminate\Database\Eloquent\Relations\BelongsTo::$code @ /sets
+exception 'ErrorException' with message 'Undefined property: Illuminate\Database\Eloquent\Relations\BelongsTo::$code' in C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php:65
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(65): Illuminate\Exception\Handler->handleError(8, 'Undefined prope...', 'C:\W\Web\Pb\cod...', 65, Array)
+#1 [internal function]: HoldingssetsController->Index()
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-11-23 19:10:03] log.ERROR: 500 - Undefined property: Illuminate\Database\Eloquent\Relations\BelongsTo::$id @ /sets
+exception 'ErrorException' with message 'Undefined property: Illuminate\Database\Eloquent\Relations\BelongsTo::$id' in C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php:65
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(65): Illuminate\Exception\Handler->handleError(8, 'Undefined prope...', 'C:\W\Web\Pb\cod...', 65, Array)
+#1 [internal function]: HoldingssetsController->Index()
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-11-23 19:17:02] log.ERROR: 500 - syntax error, unexpected '$holdings' (T_VARIABLE) @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '$holdings' (T_VARIABLE)' in C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php:65
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 19:18:44] log.ERROR: 500 - Call to undefined method Illuminate\Database\Query\Builder::orWhereIsOwner() @ /sets
+exception 'BadMethodCallException' with message 'Call to undefined method Illuminate\Database\Query\Builder::orWhereIsOwner()' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:1658
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(68): Illuminate\Database\Query\Builder->__call('orWhereIsOwner', Array)
+#1 C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php(68): Illuminate\Database\Query\Builder->orWhereIsOwner('t')
+#2 [internal function]: HoldingssetsController->Index()
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#5 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-11-23 19:28:56] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-23 19:28:56] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-23 19:33:58] log.ERROR: 500 - syntax error, unexpected end of file @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected end of file' in C:\W\Web\Pb\code\laravel\app\storage\views\8aeec741d13b6c1362918cb0fb640fbc:271
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 19:33:58] log.ERROR: 500 - syntax error, unexpected end of file @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected end of file' in C:\W\Web\Pb\code\laravel\app\storage\views\8aeec741d13b6c1362918cb0fb640fbc:271
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 19:34:02] log.ERROR: 500 - syntax error, unexpected end of file @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected end of file' in C:\W\Web\Pb\code\laravel\app\storage\views\8aeec741d13b6c1362918cb0fb640fbc:271
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 19:34:05] log.ERROR: 500 - syntax error, unexpected end of file @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected end of file' in C:\W\Web\Pb\code\laravel\app\storage\views\8aeec741d13b6c1362918cb0fb640fbc:271
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 19:34:14] log.ERROR: 500 - syntax error, unexpected end of file @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected end of file' in C:\W\Web\Pb\code\laravel\app\storage\views\8aeec741d13b6c1362918cb0fb640fbc:271
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 19:34:14] log.ERROR: 500 - syntax error, unexpected end of file @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected end of file' in C:\W\Web\Pb\code\laravel\app\storage\views\8aeec741d13b6c1362918cb0fb640fbc:271
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 19:34:17] log.ERROR: 500 - syntax error, unexpected end of file @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected end of file' in C:\W\Web\Pb\code\laravel\app\storage\views\8aeec741d13b6c1362918cb0fb640fbc:271
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-23 19:37:40] log.ERROR: 500 - Undefined variable: is_filter @ /sets
+exception 'ErrorException' with message 'Undefined variable: is_filter' in C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869:71
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\app\storage\views\a8d5656fb4c9fdc230a235731e720869(71): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'C:\W\Web\Pb\cod...', 71, Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\W\Web\Pb\cod...')
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\W\Web\Pb\cod...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\W\Web\Pb\cod...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#5 C:\W\Web\Pb\code\laravel\app\storage\views\fbd25923b6f1afeea8283d19d3715005(3): Illuminate\View\View->render()
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\W\Web\Pb\cod...')
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\W\Web\Pb\cod...', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\W\Web\Pb\cod...', Array)
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#11 C:\W\Web\Pb\code\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Robbo\Presenter\View\View))
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Robbo\Presenter\View\View))
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Robbo\Presenter\View\View), Object(Illuminate\Http\Request))
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Robbo\Presenter\View\View))
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main} [] []
+[2013-11-23 20:31:19] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-23 20:31:20] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []

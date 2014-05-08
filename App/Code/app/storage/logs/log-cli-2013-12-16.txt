@@ -1,0 +1,69 @@
+[2013-12-16 17:03:52] log.ERROR: 500 - There are no commands defined in the "scaffold" namespace. @ /
+exception 'InvalidArgumentException' with message 'There are no commands defined in the "scaffold" namespace.' in C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php:523
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(561): Symfony\Component\Console\Application->findNamespace('scaffold')
+#1 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('scaffold:genera...')
+#2 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\W\Web\Pb\code\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#4 {main} [] []
+[2013-12-16 17:04:01] log.ERROR: 500 - There are no commands defined in the "make" namespace. @ /
+exception 'InvalidArgumentException' with message 'There are no commands defined in the "make" namespace.' in C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php:523
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(561): Symfony\Component\Console\Application->findNamespace('make')
+#1 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('make:scaffodls')
+#2 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\W\Web\Pb\code\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#4 {main} [] []
+[2013-12-16 17:04:08] log.ERROR: 500 - Command "generate" is not defined.
+
+Did you mean one of these?
+    key:generate
+    generate:view
+    generate:form
+    generate:test
+    generate:seed
+    generate:model
+    generate:pivot
+    generate:resource
+    generate:scaffold
+    generate:migration
+    generate:controller @ /
+exception 'InvalidArgumentException' with message 'Command "generate" is not defined.
+
+Did you mean one of these?
+    key:generate
+    generate:view
+    generate:form
+    generate:test
+    generate:seed
+    generate:model
+    generate:pivot
+    generate:resource
+    generate:scaffold
+    generate:migration
+    generate:controller' in C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php:617
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('generate')
+#1 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\W\Web\Pb\code\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#3 {main} [] []
+[2013-12-16 17:04:18] log.ERROR: 500 - Not enough arguments. @ /
+exception 'RuntimeException' with message 'Not enough arguments.' in C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Input\Input.php:76
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(239): Symfony\Component\Console\Input\Input->validate()
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Way\Generators\Commands\ScaffoldGeneratorCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\W\Web\Pb\code\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#6 {main} [] []
+[2013-12-16 17:06:14] log.ERROR: 500 - Not enough arguments. @ /
+exception 'RuntimeException' with message 'Not enough arguments.' in C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Input\Input.php:76
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(239): Symfony\Component\Console\Input\Input->validate()
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Way\Generators\Commands\ScaffoldGeneratorCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\W\Web\Pb\code\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#6 {main} [] []

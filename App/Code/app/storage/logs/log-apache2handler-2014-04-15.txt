@@ -1,0 +1,1508 @@
+[2014-04-15 00:41:23] log.ERROR: 500 - Database [] not configured. @ /user/login
+exception 'InvalidArgumentException' with message 'Database [] not configured.' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php:184
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(108): Illuminate\Database\DatabaseManager->getConfig(NULL)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(64): Illuminate\Database\DatabaseManager->makeConnection(NULL)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2472): Illuminate\Database\DatabaseManager->connection(NULL)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2438): Illuminate\Database\Eloquent\Model::resolveConnection(NULL)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1527): Illuminate\Database\Eloquent\Model->getConnection()
+#5 C:\W\Web\Pb\code\laravel\vendor\laravelbook\ardent\src\LaravelBook\Ardent\Ardent.php(830): Illuminate\Database\Eloquent\Model->newBaseQueryBuilder()
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2651): LaravelBook\Ardent\Ardent->newQuery()
+#7 C:\W\Web\Pb\code\laravel\vendor\laravelbook\ardent\src\LaravelBook\Ardent\Ardent.php(345): Illuminate\Database\Eloquent\Model->__call('where', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\zizaco\confide\src\Zizaco\Confide\ConfideEloquentRepository.php(112): LaravelBook\Ardent\Ardent->__call('where', Array)
+#9 C:\W\Web\Pb\code\laravel\vendor\zizaco\confide\src\Zizaco\Confide\ConfideEloquentRepository.php(112): User->where('email', 'librarian')
+#10 C:\W\Web\Pb\code\laravel\vendor\zizaco\confide\src\Zizaco\Confide\Confide.php(101): Zizaco\Confide\ConfideEloquentRepository->getUserByIdentity(Array, Array)
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(209): Zizaco\Confide\Confide->logAttempt(Array, true)
+#12 C:\W\Web\Pb\code\laravel\app\controllers\user\UserController.php(187): Illuminate\Support\Facades\Facade::__callStatic('logAttempt', Array)
+#13 C:\W\Web\Pb\code\laravel\app\controllers\user\UserController.php(187): Zizaco\Confide\ConfideFacade::logAttempt(Array, true)
+#14 [internal function]: UserController->postLogin()
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postLogin', Array)
+#17 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postLogin', Array)
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postLogin', Array)
+#19 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#24 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#25 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#26 {main} [] []
+[2014-04-15 00:47:21] log.ERROR: 500 - Call to undefined method Illuminate\Http\Request::uri() @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined method Illuminate\Http\Request::uri()' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php:203
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-04-15 00:51:17] log.ERROR: 500 - Database [] not configured. @ /user/login
+exception 'InvalidArgumentException' with message 'Database [] not configured.' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php:184
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(108): Illuminate\Database\DatabaseManager->getConfig(NULL)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(64): Illuminate\Database\DatabaseManager->makeConnection(NULL)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2472): Illuminate\Database\DatabaseManager->connection(NULL)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2438): Illuminate\Database\Eloquent\Model::resolveConnection(NULL)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1527): Illuminate\Database\Eloquent\Model->getConnection()
+#5 C:\W\Web\Pb\code\laravel\vendor\laravelbook\ardent\src\LaravelBook\Ardent\Ardent.php(830): Illuminate\Database\Eloquent\Model->newBaseQueryBuilder()
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2651): LaravelBook\Ardent\Ardent->newQuery()
+#7 C:\W\Web\Pb\code\laravel\vendor\laravelbook\ardent\src\LaravelBook\Ardent\Ardent.php(345): Illuminate\Database\Eloquent\Model->__call('where', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\zizaco\confide\src\Zizaco\Confide\ConfideEloquentRepository.php(112): LaravelBook\Ardent\Ardent->__call('where', Array)
+#9 C:\W\Web\Pb\code\laravel\vendor\zizaco\confide\src\Zizaco\Confide\ConfideEloquentRepository.php(112): User->where('email', 'librarian')
+#10 C:\W\Web\Pb\code\laravel\vendor\zizaco\confide\src\Zizaco\Confide\Confide.php(101): Zizaco\Confide\ConfideEloquentRepository->getUserByIdentity(Array, Array)
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(209): Zizaco\Confide\Confide->logAttempt(Array, true)
+#12 C:\W\Web\Pb\code\laravel\app\controllers\user\UserController.php(187): Illuminate\Support\Facades\Facade::__callStatic('logAttempt', Array)
+#13 C:\W\Web\Pb\code\laravel\app\controllers\user\UserController.php(187): Zizaco\Confide\ConfideFacade::logAttempt(Array, true)
+#14 [internal function]: UserController->postLogin()
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postLogin', Array)
+#17 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postLogin', Array)
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postLogin', Array)
+#19 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#24 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#25 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#26 {main} [] []
+[2014-04-15 00:53:07] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-04-15 00:53:12] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-04-15 00:53:37] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-04-15 00:53:42] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-04-15 00:54:22] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-04-15 00:56:39] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-04-15 01:03:36] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-04-15 01:07:37] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-04-15 01:10:52] log.ERROR: 404 - Exception @ /assets/compiled/public/assets/js/jquery-1.10.2.min.map
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-04-15 01:11:20] log.ERROR: 404 - Exception @ /assets/compiled/public/assets/js/jquery-1.10.2.min.map
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-04-15 01:11:21] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-04-15 01:11:48] log.ERROR: 404 - Exception @ /assets/compiled/public/assets/js/jquery-1.10.2.min.map
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-04-15 01:11:48] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-04-15 01:12:00] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-04-15 01:17:37] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-04-15 02:38:03] log.ERROR: 500 - SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "" (SQL: insert into "notes" ("tag_id", "content", "user_id", "holding_id", "updated_at", "created_at") values (?, ?, ?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => '',
+  1 => 'qwe',
+  2 => 34,
+  3 => 62376,
+  4 => '2014-04-15 02:38:03',
+  5 => '2014-04-15 02:38:03',
+)) @ /notes
+exception 'PDOException' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: ""' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:274
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'insert into "no...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('insert into "no...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "no...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1444): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "no...', Array, 'id')
+#5 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOneOrMany.php(163): Illuminate\Database\Eloquent\Model->save()
+#12 C:\W\Web\Pb\code\laravel\app\controllers\NotesController.php(63): Illuminate\Database\Eloquent\Relations\HasOneOrMany->save(Object(Note))
+#13 [internal function]: NotesController->store()
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#18 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#24 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#25 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "" (SQL: insert into "notes" ("tag_id", "content", "user_id", "holding_id", "updated_at", "created_at") values (?, ?, ?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => '',
+  1 => 'qwe',
+  2 => 34,
+  3 => 62376,
+  4 => '2014-04-15 02:38:03',
+  5 => '2014-04-15 02:38:03',
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "no...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('insert into "no...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "no...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1444): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "no...', Array, 'id')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOneOrMany.php(163): Illuminate\Database\Eloquent\Model->save()
+#11 C:\W\Web\Pb\code\laravel\app\controllers\NotesController.php(63): Illuminate\Database\Eloquent\Relations\HasOneOrMany->save(Object(Note))
+#12 [internal function]: NotesController->store()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main} [] []
+[2014-04-15 02:38:06] log.ERROR: 500 - SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "" (SQL: insert into "notes" ("tag_id", "content", "user_id", "holding_id", "updated_at", "created_at") values (?, ?, ?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => '',
+  1 => 'qwe',
+  2 => 34,
+  3 => 62376,
+  4 => '2014-04-15 02:38:06',
+  5 => '2014-04-15 02:38:06',
+)) @ /notes
+exception 'PDOException' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: ""' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:274
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'insert into "no...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('insert into "no...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "no...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1444): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "no...', Array, 'id')
+#5 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOneOrMany.php(163): Illuminate\Database\Eloquent\Model->save()
+#12 C:\W\Web\Pb\code\laravel\app\controllers\NotesController.php(63): Illuminate\Database\Eloquent\Relations\HasOneOrMany->save(Object(Note))
+#13 [internal function]: NotesController->store()
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#18 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#24 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#25 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "" (SQL: insert into "notes" ("tag_id", "content", "user_id", "holding_id", "updated_at", "created_at") values (?, ?, ?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => '',
+  1 => 'qwe',
+  2 => 34,
+  3 => 62376,
+  4 => '2014-04-15 02:38:06',
+  5 => '2014-04-15 02:38:06',
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "no...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('insert into "no...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "no...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1444): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "no...', Array, 'id')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOneOrMany.php(163): Illuminate\Database\Eloquent\Model->save()
+#11 C:\W\Web\Pb\code\laravel\app\controllers\NotesController.php(63): Illuminate\Database\Eloquent\Relations\HasOneOrMany->save(Object(Note))
+#12 [internal function]: NotesController->store()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main} [] []
+[2014-04-15 02:38:07] log.ERROR: 500 - SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "" (SQL: insert into "notes" ("tag_id", "content", "user_id", "holding_id", "updated_at", "created_at") values (?, ?, ?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => '',
+  1 => 'qwe',
+  2 => 34,
+  3 => 62376,
+  4 => '2014-04-15 02:38:07',
+  5 => '2014-04-15 02:38:07',
+)) @ /notes
+exception 'PDOException' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: ""' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:274
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'insert into "no...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('insert into "no...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "no...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1444): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "no...', Array, 'id')
+#5 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOneOrMany.php(163): Illuminate\Database\Eloquent\Model->save()
+#12 C:\W\Web\Pb\code\laravel\app\controllers\NotesController.php(63): Illuminate\Database\Eloquent\Relations\HasOneOrMany->save(Object(Note))
+#13 [internal function]: NotesController->store()
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#18 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#24 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#25 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "" (SQL: insert into "notes" ("tag_id", "content", "user_id", "holding_id", "updated_at", "created_at") values (?, ?, ?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => '',
+  1 => 'qwe',
+  2 => 34,
+  3 => 62376,
+  4 => '2014-04-15 02:38:07',
+  5 => '2014-04-15 02:38:07',
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "no...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('insert into "no...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "no...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1444): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "no...', Array, 'id')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOneOrMany.php(163): Illuminate\Database\Eloquent\Model->save()
+#11 C:\W\Web\Pb\code\laravel\app\controllers\NotesController.php(63): Illuminate\Database\Eloquent\Relations\HasOneOrMany->save(Object(Note))
+#12 [internal function]: NotesController->store()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main} [] []
+[2014-04-15 02:38:16] log.ERROR: 500 - SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "" (SQL: insert into "notes" ("tag_id", "content", "user_id", "holding_id", "updated_at", "created_at") values (?, ?, ?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => '',
+  1 => 'qwe',
+  2 => 34,
+  3 => 62376,
+  4 => '2014-04-15 02:38:16',
+  5 => '2014-04-15 02:38:16',
+)) @ /notes
+exception 'PDOException' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: ""' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:274
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'insert into "no...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('insert into "no...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "no...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1444): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "no...', Array, 'id')
+#5 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOneOrMany.php(163): Illuminate\Database\Eloquent\Model->save()
+#12 C:\W\Web\Pb\code\laravel\app\controllers\NotesController.php(63): Illuminate\Database\Eloquent\Relations\HasOneOrMany->save(Object(Note))
+#13 [internal function]: NotesController->store()
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#18 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#24 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#25 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "" (SQL: insert into "notes" ("tag_id", "content", "user_id", "holding_id", "updated_at", "created_at") values (?, ?, ?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => '',
+  1 => 'qwe',
+  2 => 34,
+  3 => 62376,
+  4 => '2014-04-15 02:38:16',
+  5 => '2014-04-15 02:38:16',
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "no...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('insert into "no...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "no...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1444): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "no...', Array, 'id')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOneOrMany.php(163): Illuminate\Database\Eloquent\Model->save()
+#11 C:\W\Web\Pb\code\laravel\app\controllers\NotesController.php(63): Illuminate\Database\Eloquent\Relations\HasOneOrMany->save(Object(Note))
+#12 [internal function]: NotesController->store()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main} [] []
+[2014-04-15 02:38:21] log.ERROR: 500 - SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "" (SQL: insert into "notes" ("tag_id", "content", "user_id", "holding_id", "updated_at", "created_at") values (?, ?, ?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => '',
+  1 => 'qwe',
+  2 => 34,
+  3 => 62376,
+  4 => '2014-04-15 02:38:21',
+  5 => '2014-04-15 02:38:21',
+)) @ /notes
+exception 'PDOException' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: ""' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:274
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'insert into "no...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('insert into "no...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "no...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1444): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "no...', Array, 'id')
+#5 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOneOrMany.php(163): Illuminate\Database\Eloquent\Model->save()
+#12 C:\W\Web\Pb\code\laravel\app\controllers\NotesController.php(63): Illuminate\Database\Eloquent\Relations\HasOneOrMany->save(Object(Note))
+#13 [internal function]: NotesController->store()
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#18 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#24 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#25 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "" (SQL: insert into "notes" ("tag_id", "content", "user_id", "holding_id", "updated_at", "created_at") values (?, ?, ?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => '',
+  1 => 'qwe',
+  2 => 34,
+  3 => 62376,
+  4 => '2014-04-15 02:38:21',
+  5 => '2014-04-15 02:38:21',
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "no...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('insert into "no...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "no...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1444): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "no...', Array, 'id')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOneOrMany.php(163): Illuminate\Database\Eloquent\Model->save()
+#11 C:\W\Web\Pb\code\laravel\app\controllers\NotesController.php(63): Illuminate\Database\Eloquent\Relations\HasOneOrMany->save(Object(Note))
+#12 [internal function]: NotesController->store()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main} [] []
+[2014-04-15 02:40:15] log.ERROR: 500 - syntax error, unexpected '$holding' (T_VARIABLE), expecting '(' @ /notes
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '$holding' (T_VARIABLE), expecting '('' in C:\W\Web\Pb\code\laravel\app\controllers\NotesController.php:56
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-04-15 02:40:33] log.ERROR: 500 - SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "" (SQL: insert into "notes" ("tag_id", "content", "user_id", "holding_id", "updated_at", "created_at") values (?, ?, ?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => '',
+  1 => 'qwe',
+  2 => 34,
+  3 => 62376,
+  4 => '2014-04-15 02:40:33',
+  5 => '2014-04-15 02:40:33',
+)) @ /notes
+exception 'PDOException' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: ""' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:274
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'insert into "no...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('insert into "no...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "no...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1444): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "no...', Array, 'id')
+#5 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOneOrMany.php(163): Illuminate\Database\Eloquent\Model->save()
+#12 C:\W\Web\Pb\code\laravel\app\controllers\NotesController.php(63): Illuminate\Database\Eloquent\Relations\HasOneOrMany->save(Object(Note))
+#13 [internal function]: NotesController->store()
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#18 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#24 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#25 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "" (SQL: insert into "notes" ("tag_id", "content", "user_id", "holding_id", "updated_at", "created_at") values (?, ?, ?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => '',
+  1 => 'qwe',
+  2 => 34,
+  3 => 62376,
+  4 => '2014-04-15 02:40:33',
+  5 => '2014-04-15 02:40:33',
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "no...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('insert into "no...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "no...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1444): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "no...', Array, 'id')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOneOrMany.php(163): Illuminate\Database\Eloquent\Model->save()
+#11 C:\W\Web\Pb\code\laravel\app\controllers\NotesController.php(63): Illuminate\Database\Eloquent\Relations\HasOneOrMany->save(Object(Note))
+#12 [internal function]: NotesController->store()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main} [] []
+[2014-04-15 02:56:40] log.ERROR: 500 - SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "" (SQL: insert into "notes" ("tag_id", "content", "user_id", "holding_id", "updated_at", "created_at") values (?, ?, ?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => '',
+  1 => 'qwerty',
+  2 => 34,
+  3 => 59598,
+  4 => '2014-04-15 02:56:40',
+  5 => '2014-04-15 02:56:40',
+)) @ /notes
+exception 'PDOException' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: ""' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:274
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'insert into "no...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('insert into "no...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "no...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1444): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "no...', Array, 'id')
+#5 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOneOrMany.php(163): Illuminate\Database\Eloquent\Model->save()
+#12 C:\W\Web\Pb\code\laravel\app\controllers\NotesController.php(63): Illuminate\Database\Eloquent\Relations\HasOneOrMany->save(Object(Note))
+#13 [internal function]: NotesController->store()
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#18 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#24 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#25 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "" (SQL: insert into "notes" ("tag_id", "content", "user_id", "holding_id", "updated_at", "created_at") values (?, ?, ?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => '',
+  1 => 'qwerty',
+  2 => 34,
+  3 => 59598,
+  4 => '2014-04-15 02:56:40',
+  5 => '2014-04-15 02:56:40',
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "no...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('insert into "no...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "no...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1444): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "no...', Array, 'id')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOneOrMany.php(163): Illuminate\Database\Eloquent\Model->save()
+#11 C:\W\Web\Pb\code\laravel\app\controllers\NotesController.php(63): Illuminate\Database\Eloquent\Relations\HasOneOrMany->save(Object(Note))
+#12 [internal function]: NotesController->store()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main} [] []
+[2014-04-15 02:56:43] log.ERROR: 500 - SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "" (SQL: insert into "notes" ("tag_id", "content", "user_id", "holding_id", "updated_at", "created_at") values (?, ?, ?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => '',
+  1 => 'qwerty',
+  2 => 34,
+  3 => 59598,
+  4 => '2014-04-15 02:56:43',
+  5 => '2014-04-15 02:56:43',
+)) @ /notes
+exception 'PDOException' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: ""' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:274
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'insert into "no...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('insert into "no...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "no...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1444): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "no...', Array, 'id')
+#5 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOneOrMany.php(163): Illuminate\Database\Eloquent\Model->save()
+#12 C:\W\Web\Pb\code\laravel\app\controllers\NotesController.php(63): Illuminate\Database\Eloquent\Relations\HasOneOrMany->save(Object(Note))
+#13 [internal function]: NotesController->store()
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#18 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#24 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#25 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "" (SQL: insert into "notes" ("tag_id", "content", "user_id", "holding_id", "updated_at", "created_at") values (?, ?, ?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => '',
+  1 => 'qwerty',
+  2 => 34,
+  3 => 59598,
+  4 => '2014-04-15 02:56:43',
+  5 => '2014-04-15 02:56:43',
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "no...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('insert into "no...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "no...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1444): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "no...', Array, 'id')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOneOrMany.php(163): Illuminate\Database\Eloquent\Model->save()
+#11 C:\W\Web\Pb\code\laravel\app\controllers\NotesController.php(63): Illuminate\Database\Eloquent\Relations\HasOneOrMany->save(Object(Note))
+#12 [internal function]: NotesController->store()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main} [] []
+[2014-04-15 02:56:44] log.ERROR: 500 - SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "" (SQL: insert into "notes" ("tag_id", "content", "user_id", "holding_id", "updated_at", "created_at") values (?, ?, ?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => '',
+  1 => 'qwerty',
+  2 => 34,
+  3 => 59598,
+  4 => '2014-04-15 02:56:44',
+  5 => '2014-04-15 02:56:44',
+)) @ /notes
+exception 'PDOException' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: ""' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:274
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'insert into "no...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('insert into "no...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "no...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1444): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "no...', Array, 'id')
+#5 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOneOrMany.php(163): Illuminate\Database\Eloquent\Model->save()
+#12 C:\W\Web\Pb\code\laravel\app\controllers\NotesController.php(63): Illuminate\Database\Eloquent\Relations\HasOneOrMany->save(Object(Note))
+#13 [internal function]: NotesController->store()
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#18 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#24 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#25 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "" (SQL: insert into "notes" ("tag_id", "content", "user_id", "holding_id", "updated_at", "created_at") values (?, ?, ?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => '',
+  1 => 'qwerty',
+  2 => 34,
+  3 => 59598,
+  4 => '2014-04-15 02:56:44',
+  5 => '2014-04-15 02:56:44',
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "no...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('insert into "no...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "no...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1444): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "no...', Array, 'id')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOneOrMany.php(163): Illuminate\Database\Eloquent\Model->save()
+#11 C:\W\Web\Pb\code\laravel\app\controllers\NotesController.php(63): Illuminate\Database\Eloquent\Relations\HasOneOrMany->save(Object(Note))
+#12 [internal function]: NotesController->store()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main} [] []
+[2014-04-15 02:56:59] log.ERROR: 500 - SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "" (SQL: insert into "notes" ("tag_id", "content", "user_id", "holding_id", "updated_at", "created_at") values (?, ?, ?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => '',
+  1 => 'qwerty',
+  2 => 34,
+  3 => 59598,
+  4 => '2014-04-15 02:56:59',
+  5 => '2014-04-15 02:56:59',
+)) @ /notes
+exception 'PDOException' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: ""' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:274
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'insert into "no...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('insert into "no...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "no...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1444): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "no...', Array, 'id')
+#5 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOneOrMany.php(163): Illuminate\Database\Eloquent\Model->save()
+#12 C:\W\Web\Pb\code\laravel\app\controllers\NotesController.php(63): Illuminate\Database\Eloquent\Relations\HasOneOrMany->save(Object(Note))
+#13 [internal function]: NotesController->store()
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#18 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#24 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#25 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "" (SQL: insert into "notes" ("tag_id", "content", "user_id", "holding_id", "updated_at", "created_at") values (?, ?, ?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => '',
+  1 => 'qwerty',
+  2 => 34,
+  3 => 59598,
+  4 => '2014-04-15 02:56:59',
+  5 => '2014-04-15 02:56:59',
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "no...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('insert into "no...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "no...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1444): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "no...', Array, 'id')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOneOrMany.php(163): Illuminate\Database\Eloquent\Model->save()
+#11 C:\W\Web\Pb\code\laravel\app\controllers\NotesController.php(63): Illuminate\Database\Eloquent\Relations\HasOneOrMany->save(Object(Note))
+#12 [internal function]: NotesController->store()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main} [] []
+[2014-04-15 02:58:02] log.ERROR: 500 - SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "" (SQL: insert into "notes" ("tag_id", "content", "user_id", "holding_id", "updated_at", "created_at") values (?, ?, ?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => '',
+  1 => 'tytyty',
+  2 => 34,
+  3 => 59598,
+  4 => '2014-04-15 02:58:02',
+  5 => '2014-04-15 02:58:02',
+)) @ /notes
+exception 'PDOException' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: ""' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:274
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'insert into "no...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('insert into "no...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "no...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1444): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "no...', Array, 'id')
+#5 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOneOrMany.php(163): Illuminate\Database\Eloquent\Model->save()
+#12 C:\W\Web\Pb\code\laravel\app\controllers\NotesController.php(63): Illuminate\Database\Eloquent\Relations\HasOneOrMany->save(Object(Note))
+#13 [internal function]: NotesController->store()
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#18 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#24 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#25 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "" (SQL: insert into "notes" ("tag_id", "content", "user_id", "holding_id", "updated_at", "created_at") values (?, ?, ?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => '',
+  1 => 'tytyty',
+  2 => 34,
+  3 => 59598,
+  4 => '2014-04-15 02:58:02',
+  5 => '2014-04-15 02:58:02',
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "no...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('insert into "no...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "no...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1444): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "no...', Array, 'id')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOneOrMany.php(163): Illuminate\Database\Eloquent\Model->save()
+#11 C:\W\Web\Pb\code\laravel\app\controllers\NotesController.php(63): Illuminate\Database\Eloquent\Relations\HasOneOrMany->save(Object(Note))
+#12 [internal function]: NotesController->store()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main} [] []
+[2014-04-15 02:58:25] log.ERROR: 404 - Exception @ /assets/img/clear.png
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-04-15 03:15:46] log.ERROR: 404 - Exception @ /ghgfhf
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-04-15 03:48:23] log.ERROR: 404 - Exception @ /assets/img/clear.png
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-04-15 03:49:03] log.ERROR: 500 - SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "{"id":30236,"holdingsset_id":9885,"library_id":6,"sys2":"BSUB000068371","g":1,"f022a":"","f245a":"Jaarverslag","f245b":"","f245c":"Katholieke Universiteit Nijmegen","f260a":"Nijmegen\u00acUtrecht","score":"69","flag":"=","f260b":"Dekker och Van de Vegt","f310a":"","f710a":"Katholieke universiteit (Nijmegen)","f780t":"Jaarboek der Rooms Katholieke Universiteit te Nijmegen","f785t":"","f852b":"A100","hol_nrm":"        19671968         19701971  ;        19722019                   ;        1974             1982      ;                                   ","probability":"","f008x":"1968","f008y":"    ","f362a":"","f866a":"1967\/68-1970\/71 ; 1972\/73 ; 1974-1982; [Bezug eingestellt.]","f866z":"","f852h":"AT Nij 1","i":" ","is_owner":true,"ptrn":"        19671968|        19701971 |        19722019|        1974    |        1982     ","ocrr_ptrn":"111111","aux_ptrn":"","j_ptrn":"00000","weight":"0","ocrr_nr":0,"is_aux":false,"pot_owner":false,"hbib":"UBB","f246a":"","f300a":"","f300b":"","f300c":"4\\'","f500a":"Ab 1980 aufgeteilt in die Teile:\u00ac- Algemeen\u00ac- A-faculteiten\u00ac- Faculteit der geneeskunde en tandheelkunde\u00ac- Faculteit der wiskunde en natuurwetenschappen\u00acVerlag wechselnd","f505a":"","f770t":"","f772t":"","f852a":"","f852j":"","f866c":"","f866h":"","exists_online":false,"is_current":false,"has_incomplete_vols":false,"size":"0","force_owner":false,"force_aux":false,"f866aupdated":"1967\/68-1970\/71 ; 1972\/73 ; 1974-1982; [Bezug eingestellt.]","f866aupdatedby":0,"delivered":false,"received":false,"f_tit":"Jaarverslag\u00acJaarboek der Rooms Katholieke Universiteit te Nijmegen","f260c":"","f710b":"","f245a_e":"jaarverslag","f245b_e":"","f245c_e":"katholieke universiteit nijmegen","f_tit_e":"jaarverslag\u00acjaarboek der rooms katholieke universiteit te nijmegen","f260a_e":"nijmegen\u00acutrecht","f260b_e":"dekker och van de vegt","f310a_e":"","f362a_e":"","f710a_e":"katholieke universiteit (nijmegen)","f780t_e":"jaarboek der rooms katholieke universiteit te nijmegen","f785t_e":"","state":"blank","is_pref":false,"force_blue":false,"f245p":"","f245n":"","f852h_e":"","years":"0","f072a":""}" (SQL: delete from "confirms" where "holdingsset_id" = ?) (Bindings: array (
+  0 => 
+  Holding::__set_state(array(
+     'guarded' => 
+    array (
+    ),
+     'timestamps' => false,
+     'connection' => NULL,
+     'table' => NULL,
+     'primaryKey' => 'id',
+     'perPage' => 15,
+     'incrementing' => true,
+     'attributes' => 
+    array (
+      'id' => 30236,
+      'holdingsset_id' => 9885,
+      'library_id' => 6,
+      'sys2' => 'BSUB000068371',
+      'g' => 1,
+      'f022a' => '',
+      'f245a' => 'Jaarverslag',
+      'f245b' => '',
+      'f245c' => 'Katholieke Universiteit Nijmegen',
+      'f260a' => 'Nijmegen¬Utrecht',
+      'score' => '69',
+      'flag' => '=',
+      'f260b' => 'Dekker och Van de Vegt',
+      'f310a' => '',
+      'f710a' => 'Katholieke universiteit (Nijmegen)',
+      'f780t' => 'Jaarboek der Rooms Katholieke Universiteit te Nijmegen',
+      'f785t' => '',
+      'f852b' => 'A100',
+      'hol_nrm' => '        19671968         19701971  ;        19722019                   ;        1974             1982      ;                                   ',
+      'probability' => '',
+      'f008x' => '1968',
+      'f008y' => '    ',
+      'f362a' => '',
+      'f866a' => '1967/68-1970/71 ; 1972/73 ; 1974-1982; [Bezug eingestellt.]',
+      'f866z' => '',
+      'f852h' => 'AT Nij 1',
+      'i' => ' ',
+      'is_owner' => true,
+      'ptrn' => '        19671968|        19701971 |        19722019|        1974    |        1982     ',
+      'ocrr_ptrn' => '111111',
+      'aux_ptrn' => '',
+      'j_ptrn' => '00000',
+      'weight' => '0',
+      'ocrr_nr' => 0,
+      'is_aux' => false,
+      'pot_owner' => false,
+      'hbib' => 'UBB',
+      'f246a' => '',
+      'f300a' => '',
+      'f300b' => '',
+      'f300c' => '4\\\'',
+      'f500a' => 'Ab 1980 aufgeteilt in die Teile:¬- Algemeen¬- A-faculteiten¬- Faculteit der geneeskunde en tandheelkunde¬- Faculteit der wiskunde en natuurwetenschappen¬Verlag wechselnd',
+      'f505a' => '',
+      'f770t' => '',
+      'f772t' => '',
+      'f852a' => '',
+      'f852j' => '',
+      'f866c' => '',
+      'f866h' => '',
+      'exists_online' => false,
+      'is_current' => false,
+      'has_incomplete_vols' => false,
+      'size' => '0',
+      'force_owner' => false,
+      'force_aux' => false,
+      'f866aupdated' => '1967/68-1970/71 ; 1972/73 ; 1974-1982; [Bezug eingestellt.]',
+      'f866aupdatedby' => 0,
+      'delivered' => false,
+      'received' => false,
+      'f_tit' => 'Jaarverslag¬Jaarboek der Rooms Katholieke Universiteit te Nijmegen',
+      'f260c' => '',
+      'f710b' => '',
+      'f245a_e' => 'jaarverslag',
+      'f245b_e' => '',
+      'f245c_e' => 'katholieke universiteit nijmegen',
+      'f_tit_e' => 'jaarverslag¬jaarboek der rooms katholieke universiteit te nijmegen',
+      'f260a_e' => 'nijmegen¬utrecht',
+      'f260b_e' => 'dekker och van de vegt',
+      'f310a_e' => '',
+      'f362a_e' => '',
+      'f710a_e' => 'katholieke universiteit (nijmegen)',
+      'f780t_e' => 'jaarboek der rooms katholieke universiteit te nijmegen',
+      'f785t_e' => '',
+      'state' => 'blank',
+      'is_pref' => false,
+      'force_blue' => false,
+      'f245p' => '',
+      'f245n' => '',
+      'f852h_e' => '',
+      'years' => '0',
+      'f072a' => '',
+    ),
+     'original' => 
+    array (
+      'id' => 30236,
+      'holdingsset_id' => 9885,
+      'library_id' => 6,
+      'sys2' => 'BSUB000068371',
+      'g' => 1,
+      'f022a' => '',
+      'f245a' => 'Jaarverslag',
+      'f245b' => '',
+      'f245c' => 'Katholieke Universiteit Nijmegen',
+      'f260a' => 'Nijmegen¬Utrecht',
+      'score' => '69',
+      'flag' => '=',
+      'f260b' => 'Dekker och Van de Vegt',
+      'f310a' => '',
+      'f710a' => 'Katholieke universiteit (Nijmegen)',
+      'f780t' => 'Jaarboek der Rooms Katholieke Universiteit te Nijmegen',
+      'f785t' => '',
+      'f852b' => 'A100',
+      'hol_nrm' => '        19671968         19701971  ;        19722019                   ;        1974             1982      ;                                   ',
+      'probability' => '',
+      'f008x' => '1968',
+      'f008y' => '    ',
+      'f362a' => '',
+      'f866a' => '1967/68-1970/71 ; 1972/73 ; 1974-1982; [Bezug eingestellt.]',
+      'f866z' => '',
+      'f852h' => 'AT Nij 1',
+      'i' => ' ',
+      'is_owner' => true,
+      'ptrn' => '        19671968|        19701971 |        19722019|        1974    |        1982     ',
+      'ocrr_ptrn' => '111111',
+      'aux_ptrn' => '',
+      'j_ptrn' => '00000',
+      'weight' => '0',
+      'ocrr_nr' => 0,
+      'is_aux' => false,
+      'pot_owner' => false,
+      'hbib' => 'UBB',
+      'f246a' => '',
+      'f300a' => '',
+      'f300b' => '',
+      'f300c' => '4\\\'',
+      'f500a' => 'Ab 1980 aufgeteilt in die Teile:¬- Algemeen¬- A-faculteiten¬- Faculteit der geneeskunde en tandheelkunde¬- Faculteit der wiskunde en natuurwetenschappen¬Verlag wechselnd',
+      'f505a' => '',
+      'f770t' => '',
+      'f772t' => '',
+      'f852a' => '',
+      'f852j' => '',
+      'f866c' => '',
+      'f866h' => '',
+      'exists_online' => false,
+      'is_current' => false,
+      'has_incomplete_vols' => false,
+      'size' => '0',
+      'force_owner' => false,
+      'force_aux' => false,
+      'f866aupdated' => '1967/68-1970/71 ; 1972/73 ; 1974-1982; [Bezug eingestellt.]',
+      'f866aupdatedby' => 0,
+      'delivered' => false,
+      'received' => false,
+      'f_tit' => 'Jaarverslag¬Jaarboek der Rooms Katholieke Universiteit te Nijmegen',
+      'f260c' => '',
+      'f710b' => '',
+      'f245a_e' => 'jaarverslag',
+      'f245b_e' => '',
+      'f245c_e' => 'katholieke universiteit nijmegen',
+      'f_tit_e' => 'jaarverslag¬jaarboek der rooms katholieke universiteit te nijmegen',
+      'f260a_e' => 'nijmegen¬utrecht',
+      'f260b_e' => 'dekker och van de vegt',
+      'f310a_e' => '',
+      'f362a_e' => '',
+      'f710a_e' => 'katholieke universiteit (nijmegen)',
+      'f780t_e' => 'jaarboek der rooms katholieke universiteit te nijmegen',
+      'f785t_e' => '',
+      'state' => 'blank',
+      'is_pref' => false,
+      'force_blue' => false,
+      'f245p' => '',
+      'f245n' => '',
+      'f852h_e' => '',
+      'years' => '0',
+      'f072a' => '',
+    ),
+     'relations' => 
+    array (
+    ),
+     'hidden' => 
+    array (
+    ),
+     'visible' => 
+    array (
+    ),
+     'appends' => 
+    array (
+    ),
+     'fillable' => 
+    array (
+    ),
+     'dates' => 
+    array (
+    ),
+     'touches' => 
+    array (
+    ),
+     'with' => 
+    array (
+    ),
+     'exists' => true,
+     'softDelete' => false,
+  )),
+)) @ /lists/84
+exception 'PDOException' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "{"id":30236,"holdingsset_id":9885,"library_id":6,"sys2":"BSUB000068371","g":1,"f022a":"","f245a":"Jaarverslag","f245b":"","f245c":"Katholieke Universiteit Nijmegen","f260a":"Nijmegen\u00acUtrecht","score":"69","flag":"=","f260b":"Dekker och Van de Vegt","f310a":"","f710a":"Katholieke universiteit (Nijmegen)","f780t":"Jaarboek der Rooms Katholieke Universiteit te Nijmegen","f785t":"","f852b":"A100","hol_nrm":"        19671968         19701971  ;        19722019                   ;        1974             1982      ;                                   ","probability":"","f008x":"1968","f008y":"    ","f362a":"","f866a":"1967\/68-1970\/71 ; 1972\/73 ; 1974-1982; [Bezug eingestellt.]","f866z":"","f852h":"AT Nij 1","i":" ","is_owner":true,"ptrn":"        19671968|        19701971 |        19722019|        1974    |        1982     ","ocrr_ptrn":"111111","aux_ptrn":"","j_ptrn":"00000","weight":"0","ocrr_nr":0,"is_aux":false,"pot_owner":false,"hbib":"UBB","f246a":"","f300a":"","f300b":"","f300c":"4\\'","f500a":"Ab 1980 aufgeteilt in die Teile:\u00ac- Algemeen\u00ac- A-faculteiten\u00ac- Faculteit der geneeskunde en tandheelkunde\u00ac- Faculteit der wiskunde en natuurwetenschappen\u00acVerlag wechselnd","f505a":"","f770t":"","f772t":"","f852a":"","f852j":"","f866c":"","f866h":"","exists_online":false,"is_current":false,"has_incomplete_vols":false,"size":"0","force_owner":false,"force_aux":false,"f866aupdated":"1967\/68-1970\/71 ; 1972\/73 ; 1974-1982; [Bezug eingestellt.]","f866aupdatedby":0,"delivered":false,"received":false,"f_tit":"Jaarverslag\u00acJaarboek der Rooms Katholieke Universiteit te Nijmegen","f260c":"","f710b":"","f245a_e":"jaarverslag","f245b_e":"","f245c_e":"katholieke universiteit nijmegen","f_tit_e":"jaarverslag\u00acjaarboek der rooms katholieke universiteit te nijmegen","f260a_e":"nijmegen\u00acutrecht","f260b_e":"dekker och van de vegt","f310a_e":"","f362a_e":"","f710a_e":"katholieke universiteit (nijmegen)","f780t_e":"jaarboek der rooms katholieke universiteit te nijmegen","f785t_e":"","state":"blank","is_pref":false,"force_blue":false,"f245p":"","f245n":"","f852h_e":"","years":"0","f072a":""}"' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:353
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(353): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'delete from "co...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(356): Illuminate\Database\Connection->run('delete from "co...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(313): Illuminate\Database\Connection->affectingStatement('delete from "co...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1511): Illuminate\Database\Connection->delete('delete from "co...', Array)
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(338): Illuminate\Database\Query\Builder->delete()
+#6 C:\W\Web\Pb\code\laravel\app\models\StateObserver.php(16): Illuminate\Database\Eloquent\Builder->delete()
+#7 [internal function]: StateObserver->created(Object(State), 'eloquent.create...')
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(299): call_user_func_array(Array, Array)
+#9 [internal function]: Illuminate\Events\Dispatcher->Illuminate\Events\{closure}(Object(State), 'eloquent.create...')
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(179): call_user_func_array(Object(Closure), Array)
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1306): Illuminate\Events\Dispatcher->fire('eloquent.create...', Object(State))
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1245): Illuminate\Database\Eloquent\Model->fireModelEvent('created', false)
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(377): Illuminate\Database\Eloquent\Model->save()
+#15 C:\W\Web\Pb\code\laravel\app\models\HlistObserver.php(17): Illuminate\Database\Eloquent\Model::create(Array)
+#16 [internal function]: HlistObserver->saving(Object(Hlist), 'eloquent.saving...')
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(299): call_user_func_array(Array, Array)
+#18 [internal function]: Illuminate\Events\Dispatcher->Illuminate\Events\{closure}(Object(Hlist), 'eloquent.saving...')
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(179): call_user_func_array(Object(Closure), Array)
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(144): Illuminate\Events\Dispatcher->fire('eloquent.saving...', Object(Hlist), true)
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1306): Illuminate\Events\Dispatcher->until('eloquent.saving...', Object(Hlist))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1122): Illuminate\Database\Eloquent\Model->fireModelEvent('saving')
+#23 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1083): Illuminate\Database\Eloquent\Model->save()
+#24 C:\W\Web\Pb\code\laravel\app\controllers\HlistsController.php(241): Illuminate\Database\Eloquent\Model->update(Array)
+#25 [internal function]: HlistsController->update('84')
+#26 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#27 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('update', Array)
+#28 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'update', Array)
+#29 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'update', Array)
+#30 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('84')
+#31 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#32 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#33 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#34 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#35 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#36 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#37 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "{"id":30236,"holdingsset_id":9885,"library_id":6,"sys2":"BSUB000068371","g":1,"f022a":"","f245a":"Jaarverslag","f245b":"","f245c":"Katholieke Universiteit Nijmegen","f260a":"Nijmegen\u00acUtrecht","score":"69","flag":"=","f260b":"Dekker och Van de Vegt","f310a":"","f710a":"Katholieke universiteit (Nijmegen)","f780t":"Jaarboek der Rooms Katholieke Universiteit te Nijmegen","f785t":"","f852b":"A100","hol_nrm":"        19671968         19701971  ;        19722019                   ;        1974             1982      ;                                   ","probability":"","f008x":"1968","f008y":"    ","f362a":"","f866a":"1967\/68-1970\/71 ; 1972\/73 ; 1974-1982; [Bezug eingestellt.]","f866z":"","f852h":"AT Nij 1","i":" ","is_owner":true,"ptrn":"        19671968|        19701971 |        19722019|        1974    |        1982     ","ocrr_ptrn":"111111","aux_ptrn":"","j_ptrn":"00000","weight":"0","ocrr_nr":0,"is_aux":false,"pot_owner":false,"hbib":"UBB","f246a":"","f300a":"","f300b":"","f300c":"4\\'","f500a":"Ab 1980 aufgeteilt in die Teile:\u00ac- Algemeen\u00ac- A-faculteiten\u00ac- Faculteit der geneeskunde en tandheelkunde\u00ac- Faculteit der wiskunde en natuurwetenschappen\u00acVerlag wechselnd","f505a":"","f770t":"","f772t":"","f852a":"","f852j":"","f866c":"","f866h":"","exists_online":false,"is_current":false,"has_incomplete_vols":false,"size":"0","force_owner":false,"force_aux":false,"f866aupdated":"1967\/68-1970\/71 ; 1972\/73 ; 1974-1982; [Bezug eingestellt.]","f866aupdatedby":0,"delivered":false,"received":false,"f_tit":"Jaarverslag\u00acJaarboek der Rooms Katholieke Universiteit te Nijmegen","f260c":"","f710b":"","f245a_e":"jaarverslag","f245b_e":"","f245c_e":"katholieke universiteit nijmegen","f_tit_e":"jaarverslag\u00acjaarboek der rooms katholieke universiteit te nijmegen","f260a_e":"nijmegen\u00acutrecht","f260b_e":"dekker och van de vegt","f310a_e":"","f362a_e":"","f710a_e":"katholieke universiteit (nijmegen)","f780t_e":"jaarboek der rooms katholieke universiteit te nijmegen","f785t_e":"","state":"blank","is_pref":false,"force_blue":false,"f245p":"","f245n":"","f852h_e":"","years":"0","f072a":""}" (SQL: delete from "confirms" where "holdingsset_id" = ?) (Bindings: array (
+  0 => 
+  Holding::__set_state(array(
+     'guarded' => 
+    array (
+    ),
+     'timestamps' => false,
+     'connection' => NULL,
+     'table' => NULL,
+     'primaryKey' => 'id',
+     'perPage' => 15,
+     'incrementing' => true,
+     'attributes' => 
+    array (
+      'id' => 30236,
+      'holdingsset_id' => 9885,
+      'library_id' => 6,
+      'sys2' => 'BSUB000068371',
+      'g' => 1,
+      'f022a' => '',
+      'f245a' => 'Jaarverslag',
+      'f245b' => '',
+      'f245c' => 'Katholieke Universiteit Nijmegen',
+      'f260a' => 'Nijmegen¬Utrecht',
+      'score' => '69',
+      'flag' => '=',
+      'f260b' => 'Dekker och Van de Vegt',
+      'f310a' => '',
+      'f710a' => 'Katholieke universiteit (Nijmegen)',
+      'f780t' => 'Jaarboek der Rooms Katholieke Universiteit te Nijmegen',
+      'f785t' => '',
+      'f852b' => 'A100',
+      'hol_nrm' => '        19671968         19701971  ;        19722019                   ;        1974             1982      ;                                   ',
+      'probability' => '',
+      'f008x' => '1968',
+      'f008y' => '    ',
+      'f362a' => '',
+      'f866a' => '1967/68-1970/71 ; 1972/73 ; 1974-1982; [Bezug eingestellt.]',
+      'f866z' => '',
+      'f852h' => 'AT Nij 1',
+      'i' => ' ',
+      'is_owner' => true,
+      'ptrn' => '        19671968|        19701971 |        19722019|        1974    |        1982     ',
+      'ocrr_ptrn' => '111111',
+      'aux_ptrn' => '',
+      'j_ptrn' => '00000',
+      'weight' => '0',
+      'ocrr_nr' => 0,
+      'is_aux' => false,
+      'pot_owner' => false,
+      'hbib' => 'UBB',
+      'f246a' => '',
+      'f300a' => '',
+      'f300b' => '',
+      'f300c' => '4\\\'',
+      'f500a' => 'Ab 1980 aufgeteilt in die Teile:¬- Algemeen¬- A-faculteiten¬- Faculteit der geneeskunde en tandheelkunde¬- Faculteit der wiskunde en natuurwetenschappen¬Verlag wechselnd',
+      'f505a' => '',
+      'f770t' => '',
+      'f772t' => '',
+      'f852a' => '',
+      'f852j' => '',
+      'f866c' => '',
+      'f866h' => '',
+      'exists_online' => false,
+      'is_current' => false,
+      'has_incomplete_vols' => false,
+      'size' => '0',
+      'force_owner' => false,
+      'force_aux' => false,
+      'f866aupdated' => '1967/68-1970/71 ; 1972/73 ; 1974-1982; [Bezug eingestellt.]',
+      'f866aupdatedby' => 0,
+      'delivered' => false,
+      'received' => false,
+      'f_tit' => 'Jaarverslag¬Jaarboek der Rooms Katholieke Universiteit te Nijmegen',
+      'f260c' => '',
+      'f710b' => '',
+      'f245a_e' => 'jaarverslag',
+      'f245b_e' => '',
+      'f245c_e' => 'katholieke universiteit nijmegen',
+      'f_tit_e' => 'jaarverslag¬jaarboek der rooms katholieke universiteit te nijmegen',
+      'f260a_e' => 'nijmegen¬utrecht',
+      'f260b_e' => 'dekker och van de vegt',
+      'f310a_e' => '',
+      'f362a_e' => '',
+      'f710a_e' => 'katholieke universiteit (nijmegen)',
+      'f780t_e' => 'jaarboek der rooms katholieke universiteit te nijmegen',
+      'f785t_e' => '',
+      'state' => 'blank',
+      'is_pref' => false,
+      'force_blue' => false,
+      'f245p' => '',
+      'f245n' => '',
+      'f852h_e' => '',
+      'years' => '0',
+      'f072a' => '',
+    ),
+     'original' => 
+    array (
+      'id' => 30236,
+      'holdingsset_id' => 9885,
+      'library_id' => 6,
+      'sys2' => 'BSUB000068371',
+      'g' => 1,
+      'f022a' => '',
+      'f245a' => 'Jaarverslag',
+      'f245b' => '',
+      'f245c' => 'Katholieke Universiteit Nijmegen',
+      'f260a' => 'Nijmegen¬Utrecht',
+      'score' => '69',
+      'flag' => '=',
+      'f260b' => 'Dekker och Van de Vegt',
+      'f310a' => '',
+      'f710a' => 'Katholieke universiteit (Nijmegen)',
+      'f780t' => 'Jaarboek der Rooms Katholieke Universiteit te Nijmegen',
+      'f785t' => '',
+      'f852b' => 'A100',
+      'hol_nrm' => '        19671968         19701971  ;        19722019                   ;        1974             1982      ;                                   ',
+      'probability' => '',
+      'f008x' => '1968',
+      'f008y' => '    ',
+      'f362a' => '',
+      'f866a' => '1967/68-1970/71 ; 1972/73 ; 1974-1982; [Bezug eingestellt.]',
+      'f866z' => '',
+      'f852h' => 'AT Nij 1',
+      'i' => ' ',
+      'is_owner' => true,
+      'ptrn' => '        19671968|        19701971 |        19722019|        1974    |        1982     ',
+      'ocrr_ptrn' => '111111',
+      'aux_ptrn' => '',
+      'j_ptrn' => '00000',
+      'weight' => '0',
+      'ocrr_nr' => 0,
+      'is_aux' => false,
+      'pot_owner' => false,
+      'hbib' => 'UBB',
+      'f246a' => '',
+      'f300a' => '',
+      'f300b' => '',
+      'f300c' => '4\\\'',
+      'f500a' => 'Ab 1980 aufgeteilt in die Teile:¬- Algemeen¬- A-faculteiten¬- Faculteit der geneeskunde en tandheelkunde¬- Faculteit der wiskunde en natuurwetenschappen¬Verlag wechselnd',
+      'f505a' => '',
+      'f770t' => '',
+      'f772t' => '',
+      'f852a' => '',
+      'f852j' => '',
+      'f866c' => '',
+      'f866h' => '',
+      'exists_online' => false,
+      'is_current' => false,
+      'has_incomplete_vols' => false,
+      'size' => '0',
+      'force_owner' => false,
+      'force_aux' => false,
+      'f866aupdated' => '1967/68-1970/71 ; 1972/73 ; 1974-1982; [Bezug eingestellt.]',
+      'f866aupdatedby' => 0,
+      'delivered' => false,
+      'received' => false,
+      'f_tit' => 'Jaarverslag¬Jaarboek der Rooms Katholieke Universiteit te Nijmegen',
+      'f260c' => '',
+      'f710b' => '',
+      'f245a_e' => 'jaarverslag',
+      'f245b_e' => '',
+      'f245c_e' => 'katholieke universiteit nijmegen',
+      'f_tit_e' => 'jaarverslag¬jaarboek der rooms katholieke universiteit te nijmegen',
+      'f260a_e' => 'nijmegen¬utrecht',
+      'f260b_e' => 'dekker och van de vegt',
+      'f310a_e' => '',
+      'f362a_e' => '',
+      'f710a_e' => 'katholieke universiteit (nijmegen)',
+      'f780t_e' => 'jaarboek der rooms katholieke universiteit te nijmegen',
+      'f785t_e' => '',
+      'state' => 'blank',
+      'is_pref' => false,
+      'force_blue' => false,
+      'f245p' => '',
+      'f245n' => '',
+      'f852h_e' => '',
+      'years' => '0',
+      'f072a' => '',
+    ),
+     'relations' => 
+    array (
+    ),
+     'hidden' => 
+    array (
+    ),
+     'visible' => 
+    array (
+    ),
+     'appends' => 
+    array (
+    ),
+     'fillable' => 
+    array (
+    ),
+     'dates' => 
+    array (
+    ),
+     'touches' => 
+    array (
+    ),
+     'with' => 
+    array (
+    ),
+     'exists' => true,
+     'softDelete' => false,
+  )),
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'delete from "co...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(356): Illuminate\Database\Connection->run('delete from "co...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(313): Illuminate\Database\Connection->affectingStatement('delete from "co...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1511): Illuminate\Database\Connection->delete('delete from "co...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(338): Illuminate\Database\Query\Builder->delete()
+#5 C:\W\Web\Pb\code\laravel\app\models\StateObserver.php(16): Illuminate\Database\Eloquent\Builder->delete()
+#6 [internal function]: StateObserver->created(Object(State), 'eloquent.create...')
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(299): call_user_func_array(Array, Array)
+#8 [internal function]: Illuminate\Events\Dispatcher->Illuminate\Events\{closure}(Object(State), 'eloquent.create...')
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(179): call_user_func_array(Object(Closure), Array)
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1306): Illuminate\Events\Dispatcher->fire('eloquent.create...', Object(State))
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1245): Illuminate\Database\Eloquent\Model->fireModelEvent('created', false)
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(377): Illuminate\Database\Eloquent\Model->save()
+#14 C:\W\Web\Pb\code\laravel\app\models\HlistObserver.php(17): Illuminate\Database\Eloquent\Model::create(Array)
+#15 [internal function]: HlistObserver->saving(Object(Hlist), 'eloquent.saving...')
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(299): call_user_func_array(Array, Array)
+#17 [internal function]: Illuminate\Events\Dispatcher->Illuminate\Events\{closure}(Object(Hlist), 'eloquent.saving...')
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(179): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(144): Illuminate\Events\Dispatcher->fire('eloquent.saving...', Object(Hlist), true)
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1306): Illuminate\Events\Dispatcher->until('eloquent.saving...', Object(Hlist))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1122): Illuminate\Database\Eloquent\Model->fireModelEvent('saving')
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1083): Illuminate\Database\Eloquent\Model->save()
+#23 C:\W\Web\Pb\code\laravel\app\controllers\HlistsController.php(241): Illuminate\Database\Eloquent\Model->update(Array)
+#24 [internal function]: HlistsController->update('84')
+#25 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#26 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('update', Array)
+#27 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'update', Array)
+#28 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'update', Array)
+#29 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('84')
+#30 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#31 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#32 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#33 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#34 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#35 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#36 {main} [] []

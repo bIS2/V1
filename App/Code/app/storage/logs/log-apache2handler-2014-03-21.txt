@@ -1,0 +1,1928 @@
+[2014-03-21 01:10:11] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 12:17:45] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 12:17:45] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 12:24:42] log.ERROR: 500 - Call to undefined method Illuminate\Database\Query\Builder::states() @ /admin/users/32/delete
+exception 'BadMethodCallException' with message 'Call to undefined method Illuminate\Database\Query\Builder::states()' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:1658
+Stack trace:
+#0 [internal function]: Illuminate\Database\Query\Builder->__call('states', Array)
+#1 [internal function]: Illuminate\Database\Query\Builder->states()
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#3 [internal function]: Illuminate\Database\Eloquent\Builder->__call('states', Array)
+#4 [internal function]: LaravelBook\Ardent\Builder->states()
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2636): call_user_func_array(Array, Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravelbook\ardent\src\LaravelBook\Ardent\Ardent.php(345): Illuminate\Database\Eloquent\Model->__call('states', Array)
+#7 C:\W\Web\Pb\code\laravel\app\controllers\admin\AdminUsersController.php(281): LaravelBook\Ardent\Ardent->__call('states', Array)
+#8 C:\W\Web\Pb\code\laravel\app\controllers\admin\AdminUsersController.php(281): User->states()
+#9 [internal function]: AdminUsersController->postDelete(Object(User))
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postDelete', Array)
+#12 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postDelete', Array)
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postDelete', Array)
+#14 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(User))
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#20 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#21 {main} [] []
+[2014-03-21 12:24:45] log.ERROR: 500 - Call to undefined method Illuminate\Database\Query\Builder::states() @ /admin/users/32/delete
+exception 'BadMethodCallException' with message 'Call to undefined method Illuminate\Database\Query\Builder::states()' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:1658
+Stack trace:
+#0 [internal function]: Illuminate\Database\Query\Builder->__call('states', Array)
+#1 [internal function]: Illuminate\Database\Query\Builder->states()
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#3 [internal function]: Illuminate\Database\Eloquent\Builder->__call('states', Array)
+#4 [internal function]: LaravelBook\Ardent\Builder->states()
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2636): call_user_func_array(Array, Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravelbook\ardent\src\LaravelBook\Ardent\Ardent.php(345): Illuminate\Database\Eloquent\Model->__call('states', Array)
+#7 C:\W\Web\Pb\code\laravel\app\controllers\admin\AdminUsersController.php(281): LaravelBook\Ardent\Ardent->__call('states', Array)
+#8 C:\W\Web\Pb\code\laravel\app\controllers\admin\AdminUsersController.php(281): User->states()
+#9 [internal function]: AdminUsersController->postDelete(Object(User))
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postDelete', Array)
+#12 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postDelete', Array)
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postDelete', Array)
+#14 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(User))
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#20 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#21 {main} [] []
+[2014-03-21 12:24:46] log.ERROR: 500 - Call to undefined method Illuminate\Database\Query\Builder::states() @ /admin/users/32/delete
+exception 'BadMethodCallException' with message 'Call to undefined method Illuminate\Database\Query\Builder::states()' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:1658
+Stack trace:
+#0 [internal function]: Illuminate\Database\Query\Builder->__call('states', Array)
+#1 [internal function]: Illuminate\Database\Query\Builder->states()
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#3 [internal function]: Illuminate\Database\Eloquent\Builder->__call('states', Array)
+#4 [internal function]: LaravelBook\Ardent\Builder->states()
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2636): call_user_func_array(Array, Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravelbook\ardent\src\LaravelBook\Ardent\Ardent.php(345): Illuminate\Database\Eloquent\Model->__call('states', Array)
+#7 C:\W\Web\Pb\code\laravel\app\controllers\admin\AdminUsersController.php(281): LaravelBook\Ardent\Ardent->__call('states', Array)
+#8 C:\W\Web\Pb\code\laravel\app\controllers\admin\AdminUsersController.php(281): User->states()
+#9 [internal function]: AdminUsersController->postDelete(Object(User))
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postDelete', Array)
+#12 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postDelete', Array)
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postDelete', Array)
+#14 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(User))
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#20 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#21 {main} [] []
+[2014-03-21 12:24:46] log.ERROR: 500 - Call to undefined method Illuminate\Database\Query\Builder::states() @ /admin/users/32/delete
+exception 'BadMethodCallException' with message 'Call to undefined method Illuminate\Database\Query\Builder::states()' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:1658
+Stack trace:
+#0 [internal function]: Illuminate\Database\Query\Builder->__call('states', Array)
+#1 [internal function]: Illuminate\Database\Query\Builder->states()
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#3 [internal function]: Illuminate\Database\Eloquent\Builder->__call('states', Array)
+#4 [internal function]: LaravelBook\Ardent\Builder->states()
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2636): call_user_func_array(Array, Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravelbook\ardent\src\LaravelBook\Ardent\Ardent.php(345): Illuminate\Database\Eloquent\Model->__call('states', Array)
+#7 C:\W\Web\Pb\code\laravel\app\controllers\admin\AdminUsersController.php(281): LaravelBook\Ardent\Ardent->__call('states', Array)
+#8 C:\W\Web\Pb\code\laravel\app\controllers\admin\AdminUsersController.php(281): User->states()
+#9 [internal function]: AdminUsersController->postDelete(Object(User))
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postDelete', Array)
+#12 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postDelete', Array)
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postDelete', Array)
+#14 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(User))
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#20 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#21 {main} [] []
+[2014-03-21 12:24:46] log.ERROR: 500 - Call to undefined method Illuminate\Database\Query\Builder::states() @ /admin/users/32/delete
+exception 'BadMethodCallException' with message 'Call to undefined method Illuminate\Database\Query\Builder::states()' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:1658
+Stack trace:
+#0 [internal function]: Illuminate\Database\Query\Builder->__call('states', Array)
+#1 [internal function]: Illuminate\Database\Query\Builder->states()
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#3 [internal function]: Illuminate\Database\Eloquent\Builder->__call('states', Array)
+#4 [internal function]: LaravelBook\Ardent\Builder->states()
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2636): call_user_func_array(Array, Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravelbook\ardent\src\LaravelBook\Ardent\Ardent.php(345): Illuminate\Database\Eloquent\Model->__call('states', Array)
+#7 C:\W\Web\Pb\code\laravel\app\controllers\admin\AdminUsersController.php(281): LaravelBook\Ardent\Ardent->__call('states', Array)
+#8 C:\W\Web\Pb\code\laravel\app\controllers\admin\AdminUsersController.php(281): User->states()
+#9 [internal function]: AdminUsersController->postDelete(Object(User))
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postDelete', Array)
+#12 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postDelete', Array)
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postDelete', Array)
+#14 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(User))
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#20 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#21 {main} [] []
+[2014-03-21 12:24:47] log.ERROR: 500 - Call to undefined method Illuminate\Database\Query\Builder::states() @ /admin/users/32/delete
+exception 'BadMethodCallException' with message 'Call to undefined method Illuminate\Database\Query\Builder::states()' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:1658
+Stack trace:
+#0 [internal function]: Illuminate\Database\Query\Builder->__call('states', Array)
+#1 [internal function]: Illuminate\Database\Query\Builder->states()
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#3 [internal function]: Illuminate\Database\Eloquent\Builder->__call('states', Array)
+#4 [internal function]: LaravelBook\Ardent\Builder->states()
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2636): call_user_func_array(Array, Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravelbook\ardent\src\LaravelBook\Ardent\Ardent.php(345): Illuminate\Database\Eloquent\Model->__call('states', Array)
+#7 C:\W\Web\Pb\code\laravel\app\controllers\admin\AdminUsersController.php(281): LaravelBook\Ardent\Ardent->__call('states', Array)
+#8 C:\W\Web\Pb\code\laravel\app\controllers\admin\AdminUsersController.php(281): User->states()
+#9 [internal function]: AdminUsersController->postDelete(Object(User))
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postDelete', Array)
+#12 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postDelete', Array)
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postDelete', Array)
+#14 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(User))
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#20 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#21 {main} [] []
+[2014-03-21 13:07:16] log.ERROR: 500 - Some mandatory parameters are missing ("lists") to generate a URL for route "lists.update". @ /holdings
+exception 'Symfony\Component\Routing\Exception\MissingMandatoryParametersException' with message 'Some mandatory parameters are missing ("lists") to generate a URL for route "lists.update".' in C:\W\Web\Pb\code\laravel\vendor\symfony\routing\Symfony\Component\Routing\Generator\UrlGenerator.php:155
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\symfony\routing\Symfony\Component\Routing\Generator\UrlGenerator.php(140): Symfony\Component\Routing\Generator\UrlGenerator->doGenerate(Array, Array, Array, Array, Array, 'lists.update', true, Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\UrlGenerator.php(192): Symfony\Component\Routing\Generator\UrlGenerator->generate('lists.update', Array, true)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Support\helpers.php(696): Illuminate\Routing\UrlGenerator->route('lists.update', NULL, true)
+#3 C:\W\Web\Pb\code\laravel\app\storage\views\457479e21523c358a050797b5fd2b6d3(132): route('lists.update', NULL)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\W\Web\Pb\cod...')
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\W\Web\Pb\cod...', Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\W\Web\Pb\cod...', Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#8 C:\W\Web\Pb\code\laravel\app\storage\views\83e2f544b41528d6cc84ca903502af29(10): Illuminate\View\View->render()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\W\Web\Pb\cod...')
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\W\Web\Pb\cod...', Array)
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\W\Web\Pb\cod...', Array)
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#14 C:\W\Web\Pb\code\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Robbo\Presenter\View\View))
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Robbo\Presenter\View\View))
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Robbo\Presenter\View\View), Object(Illuminate\Http\Request))
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Robbo\Presenter\View\View))
+#18 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#20 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#23 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#25 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#26 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#27 {main} [] []
+[2014-03-21 14:29:36] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 14:42:09] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 14:42:18] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 14:42:20] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 14:42:41] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 14:42:47] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 14:44:01] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 14:44:13] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 14:45:46] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 14:46:01] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 14:46:14] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 14:46:27] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 14:46:37] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 14:47:02] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 14:47:04] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 14:47:31] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 14:47:34] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 14:51:58] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 14:52:08] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 14:52:10] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 14:52:26] log.ERROR: 500 - SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ... "state" <> $4 and "library_id" = $5 and "hlists"."id" in ()
+                                                                      ^ (SQL: select count(*) as aggregate from "holdings" inner join "hlist_holding" on "hlist_holding"."holding_id" = "holdings"."id" inner join "hlists" on "hlist_holding"."hlist_id" = "hlists"."id" where "holdings"."id" in (select "holding_id" from "states" where "state" = ?) and "state" <> ? and "state" <> ? and "state" <> ? and "library_id" = ? and "hlists"."id" in ()) (Bindings: array (
+  0 => 'confirmed',
+  1 => 'blank',
+  2 => 'revised_annotated',
+  3 => 'incorrected',
+  4 => 8,
+)) @ /holdings
+exception 'PDOException' with message 'SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ... "state" <> $4 and "library_id" = $5 and "hlists"."id" in ()
+                                                                      ^' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:274
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'select count(*)...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select count(*)...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1369): Illuminate\Database\Query\Builder->get(Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1311): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1281): Illuminate\Database\Query\Builder->count()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(257): Illuminate\Database\Query\Builder->getPaginationCount()
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(228): Illuminate\Database\Eloquent\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 25, Array)
+#11 C:\W\Web\Pb\code\laravel\app\controllers\HoldingsController.php(106): Illuminate\Database\Eloquent\Builder->paginate(25)
+#12 [internal function]: HoldingsController->Index()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ... "state" <> $4 and "library_id" = $5 and "hlists"."id" in ()
+                                                                      ^ (SQL: select count(*) as aggregate from "holdings" inner join "hlist_holding" on "hlist_holding"."holding_id" = "holdings"."id" inner join "hlists" on "hlist_holding"."hlist_id" = "hlists"."id" where "holdings"."id" in (select "holding_id" from "states" where "state" = ?) and "state" <> ? and "state" <> ? and "state" <> ? and "library_id" = ? and "hlists"."id" in ()) (Bindings: array (
+  0 => 'confirmed',
+  1 => 'blank',
+  2 => 'revised_annotated',
+  3 => 'incorrected',
+  4 => 8,
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select count(*)...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select count(*)...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1369): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1311): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1281): Illuminate\Database\Query\Builder->count()
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(257): Illuminate\Database\Query\Builder->getPaginationCount()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(228): Illuminate\Database\Eloquent\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 25, Array)
+#10 C:\W\Web\Pb\code\laravel\app\controllers\HoldingsController.php(106): Illuminate\Database\Eloquent\Builder->paginate(25)
+#11 [internal function]: HoldingsController->Index()
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2014-03-21 14:53:45] log.ERROR: 404 - Exception @ /logout
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 14:58:04] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 14:58:28] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 14:58:42] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 14:58:43] log.ERROR: 500 - SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ... "state" <> $4 and "library_id" = $5 and "hlists"."id" in ()
+                                                                      ^ (SQL: select count(*) as aggregate from "holdings" inner join "hlist_holding" on "hlist_holding"."holding_id" = "holdings"."id" inner join "hlists" on "hlist_holding"."hlist_id" = "hlists"."id" where "holdings"."id" in (select "holding_id" from "states" where "state" = ?) and "state" <> ? and "state" <> ? and "state" <> ? and "library_id" = ? and "hlists"."id" in ()) (Bindings: array (
+  0 => 'confirmed',
+  1 => 'blank',
+  2 => 'revised_annotated',
+  3 => 'incorrected',
+  4 => 8,
+)) @ /holdings
+exception 'PDOException' with message 'SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ... "state" <> $4 and "library_id" = $5 and "hlists"."id" in ()
+                                                                      ^' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:274
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'select count(*)...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select count(*)...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1369): Illuminate\Database\Query\Builder->get(Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1311): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1281): Illuminate\Database\Query\Builder->count()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(257): Illuminate\Database\Query\Builder->getPaginationCount()
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(228): Illuminate\Database\Eloquent\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 25, Array)
+#11 C:\W\Web\Pb\code\laravel\app\controllers\HoldingsController.php(106): Illuminate\Database\Eloquent\Builder->paginate(25)
+#12 [internal function]: HoldingsController->Index()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ... "state" <> $4 and "library_id" = $5 and "hlists"."id" in ()
+                                                                      ^ (SQL: select count(*) as aggregate from "holdings" inner join "hlist_holding" on "hlist_holding"."holding_id" = "holdings"."id" inner join "hlists" on "hlist_holding"."hlist_id" = "hlists"."id" where "holdings"."id" in (select "holding_id" from "states" where "state" = ?) and "state" <> ? and "state" <> ? and "state" <> ? and "library_id" = ? and "hlists"."id" in ()) (Bindings: array (
+  0 => 'confirmed',
+  1 => 'blank',
+  2 => 'revised_annotated',
+  3 => 'incorrected',
+  4 => 8,
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select count(*)...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select count(*)...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1369): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1311): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1281): Illuminate\Database\Query\Builder->count()
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(257): Illuminate\Database\Query\Builder->getPaginationCount()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(228): Illuminate\Database\Eloquent\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 25, Array)
+#10 C:\W\Web\Pb\code\laravel\app\controllers\HoldingsController.php(106): Illuminate\Database\Eloquent\Builder->paginate(25)
+#11 [internal function]: HoldingsController->Index()
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2014-03-21 14:58:45] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 14:58:55] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 14:59:09] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 14:59:12] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 14:59:38] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 14:59:55] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 15:00:03] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 15:00:08] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 15:00:09] log.ERROR: 500 - SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ... "state" <> $4 and "library_id" = $5 and "hlists"."id" in ()
+                                                                      ^ (SQL: select count(*) as aggregate from "holdings" inner join "hlist_holding" on "hlist_holding"."holding_id" = "holdings"."id" inner join "hlists" on "hlist_holding"."hlist_id" = "hlists"."id" where "holdings"."id" in (select "holding_id" from "states" where "state" = ?) and "state" <> ? and "state" <> ? and "state" <> ? and "library_id" = ? and "hlists"."id" in ()) (Bindings: array (
+  0 => 'confirmed',
+  1 => 'blank',
+  2 => 'revised_annotated',
+  3 => 'incorrected',
+  4 => 6,
+)) @ /holdings
+exception 'PDOException' with message 'SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ... "state" <> $4 and "library_id" = $5 and "hlists"."id" in ()
+                                                                      ^' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:274
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'select count(*)...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select count(*)...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1369): Illuminate\Database\Query\Builder->get(Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1311): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1281): Illuminate\Database\Query\Builder->count()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(257): Illuminate\Database\Query\Builder->getPaginationCount()
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(228): Illuminate\Database\Eloquent\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 25, Array)
+#11 C:\W\Web\Pb\code\laravel\app\controllers\HoldingsController.php(106): Illuminate\Database\Eloquent\Builder->paginate(25)
+#12 [internal function]: HoldingsController->Index()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ... "state" <> $4 and "library_id" = $5 and "hlists"."id" in ()
+                                                                      ^ (SQL: select count(*) as aggregate from "holdings" inner join "hlist_holding" on "hlist_holding"."holding_id" = "holdings"."id" inner join "hlists" on "hlist_holding"."hlist_id" = "hlists"."id" where "holdings"."id" in (select "holding_id" from "states" where "state" = ?) and "state" <> ? and "state" <> ? and "state" <> ? and "library_id" = ? and "hlists"."id" in ()) (Bindings: array (
+  0 => 'confirmed',
+  1 => 'blank',
+  2 => 'revised_annotated',
+  3 => 'incorrected',
+  4 => 6,
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select count(*)...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select count(*)...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1369): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1311): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1281): Illuminate\Database\Query\Builder->count()
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(257): Illuminate\Database\Query\Builder->getPaginationCount()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(228): Illuminate\Database\Eloquent\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 25, Array)
+#10 C:\W\Web\Pb\code\laravel\app\controllers\HoldingsController.php(106): Illuminate\Database\Eloquent\Builder->paginate(25)
+#11 [internal function]: HoldingsController->Index()
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2014-03-21 15:00:12] log.ERROR: 500 - SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ... "state" <> $4 and "library_id" = $5 and "hlists"."id" in ()
+                                                                      ^ (SQL: select count(*) as aggregate from "holdings" inner join "hlist_holding" on "hlist_holding"."holding_id" = "holdings"."id" inner join "hlists" on "hlist_holding"."hlist_id" = "hlists"."id" where "holdings"."id" in (select "holding_id" from "states" where "state" = ?) and "state" <> ? and "state" <> ? and "state" <> ? and "library_id" = ? and "hlists"."id" in ()) (Bindings: array (
+  0 => 'confirmed',
+  1 => 'blank',
+  2 => 'revised_annotated',
+  3 => 'incorrected',
+  4 => 6,
+)) @ /holdings
+exception 'PDOException' with message 'SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ... "state" <> $4 and "library_id" = $5 and "hlists"."id" in ()
+                                                                      ^' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:274
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'select count(*)...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select count(*)...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1369): Illuminate\Database\Query\Builder->get(Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1311): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1281): Illuminate\Database\Query\Builder->count()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(257): Illuminate\Database\Query\Builder->getPaginationCount()
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(228): Illuminate\Database\Eloquent\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 25, Array)
+#11 C:\W\Web\Pb\code\laravel\app\controllers\HoldingsController.php(106): Illuminate\Database\Eloquent\Builder->paginate(25)
+#12 [internal function]: HoldingsController->Index()
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ... "state" <> $4 and "library_id" = $5 and "hlists"."id" in ()
+                                                                      ^ (SQL: select count(*) as aggregate from "holdings" inner join "hlist_holding" on "hlist_holding"."holding_id" = "holdings"."id" inner join "hlists" on "hlist_holding"."hlist_id" = "hlists"."id" where "holdings"."id" in (select "holding_id" from "states" where "state" = ?) and "state" <> ? and "state" <> ? and "state" <> ? and "library_id" = ? and "hlists"."id" in ()) (Bindings: array (
+  0 => 'confirmed',
+  1 => 'blank',
+  2 => 'revised_annotated',
+  3 => 'incorrected',
+  4 => 6,
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select count(*)...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select count(*)...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1369): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1311): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1281): Illuminate\Database\Query\Builder->count()
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(257): Illuminate\Database\Query\Builder->getPaginationCount()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(228): Illuminate\Database\Eloquent\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 25, Array)
+#10 C:\W\Web\Pb\code\laravel\app\controllers\HoldingsController.php(106): Illuminate\Database\Eloquent\Builder->paginate(25)
+#11 [internal function]: HoldingsController->Index()
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2014-03-21 15:00:55] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 15:01:06] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 15:01:15] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 15:01:17] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 15:01:32] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 15:01:39] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 15:01:43] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 15:01:49] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 15:01:52] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 15:02:54] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 15:03:04] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 15:03:07] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 16:01:39] log.ERROR: 500 - syntax error, unexpected ';' @ /sets
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ';'' in C:\W\Web\Pb\code\laravel\app\storage\views\f8fa2bdefedec9cfa44997d896ea340f:18
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-03-21 16:03:18] log.ERROR: 404 - Exception @ /assets/img/clear.png
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 16:10:35] log.ERROR: 500 - SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "{"id":6909,"holdingsset_id":2066,"library_id":6,"sys2":"BSUB000987982","g":3,"f022a":"","f245a":"Tourismus in der Schweiz","f245b":"Angebot und Nachfrage im Zeitvergleich\u00acl\\'\u00e9volution de l\\'offre et de la demande","f245c":"Bundesamt f\u00fcr Statistik\u00acOffice f\u00e9d\u00e9ral de la statistique","f260a":"Neuch\u00e2tel","score":"53","flag":"*","f260b":"Bundesamt f\u00fcr Statistik","f310a":"J\u00e4hrlich","f710a":"Schweiz","f780t":"Fremdenverkehr in der Schweiz","f785t":"","f852b":"A100","hol_nrm":"1974    1975     1991    1992    j ","probability":"","f008x":"1974","f008y":"2002","f362a":"1974-1993 ; 1997-2002, damit Erscheinen eingestellt","f866a":"1974(1975)-1991(1992) icplt.","f866z":"","f852h":"-","i":" ","is_owner":false,"ptrn":"        1974    |1974    1975    |        1983     |        1984    |        1991     |        1992    |1991    1992     |        1993     |1992    1993    |1993    1994     |        1997    |1997    1998    |        2000     |        2002     |2002    2004     ","ocrr_ptrn":"011111100000000","aux_ptrn":"0111100000000000","j_ptrn":"011111000000000","weight":"3.5","ocrr_nr":6,"is_aux":false,"pot_owner":false,"hbib":"UBB","f246a":"","f300a":"","f300b":"","f300c":"","f500a":"1994-1996 nicht erschienen","f505a":"","f770t":"","f772t":"","f852a":"","f852j":"","f866c":"","f866h":"","exists_online":false,"is_current":false,"has_incomplete_vols":false,"size":"0","force_owner":false,"force_aux":false,"f866aupdated":"1974(1975)-1991(1992) icplt.","f866aupdatedby":0,"delivered":false,"received":false,"f_tit":"Tourismus in der Schweiz\u00acAngebot und Nachfrage im Zeitvergleich\u00acl\\'\u00e9volution de l\\'offre et de la demande\u00ac<<Le>> tourisme en Suisse\u00acFremdenverkehr in der Schweiz","f260c":"","f710b":"Bundesamt f\u00fcr Statistik","f245a_e":"tourismus in der schweiz","f245b_e":"angebot und nachfrage im zeitvergleich\u00acl\\'evolution de l\\'offre et de la demande","f245c_e":"bundesamt fuer statistik\u00acoffice federal de la statistique","f_tit_e":"tourismus in der schweiz\u00acangebot und nachfrage im zeitvergleich\u00acl\\'evolution de l\\'offre et de la demande\u00ac<<le>> tourisme en suisse\u00acfremdenverkehr in der schweiz","f260a_e":"neuchatel","f260b_e":"bundesamt fuer statistik","f310a_e":"1xJ","f362a_e":"1974-1993 ; 1997-2002","f710a_e":"schweiz","f780t_e":"fremdenverkehr in der schweiz","f785t_e":"","state":"blank","is_pref":false,"force_blue":true,"f245p":null,"f245n":null,"f852h_e":null,"years":null,"f072a":null}" (SQL: delete from "confirms" where "holdingsset_id" = ?) (Bindings: array (
+  0 => 
+  Holding::__set_state(array(
+     'guarded' => 
+    array (
+    ),
+     'timestamps' => false,
+     'connection' => NULL,
+     'table' => NULL,
+     'primaryKey' => 'id',
+     'perPage' => 15,
+     'incrementing' => true,
+     'attributes' => 
+    array (
+      'id' => 6909,
+      'holdingsset_id' => 2066,
+      'library_id' => 6,
+      'sys2' => 'BSUB000987982',
+      'g' => 3,
+      'f022a' => '',
+      'f245a' => 'Tourismus in der Schweiz',
+      'f245b' => 'Angebot und Nachfrage im Zeitvergleich¬l\\\'évolution de l\\\'offre et de la demande',
+      'f245c' => 'Bundesamt für Statistik¬Office fédéral de la statistique',
+      'f260a' => 'Neuchâtel',
+      'score' => '53',
+      'flag' => '*',
+      'f260b' => 'Bundesamt für Statistik',
+      'f310a' => 'Jährlich',
+      'f710a' => 'Schweiz',
+      'f780t' => 'Fremdenverkehr in der Schweiz',
+      'f785t' => '',
+      'f852b' => 'A100',
+      'hol_nrm' => '1974    1975     1991    1992    j ',
+      'probability' => '',
+      'f008x' => '1974',
+      'f008y' => '2002',
+      'f362a' => '1974-1993 ; 1997-2002, damit Erscheinen eingestellt',
+      'f866a' => '1974(1975)-1991(1992) icplt.',
+      'f866z' => '',
+      'f852h' => '-',
+      'i' => ' ',
+      'is_owner' => false,
+      'ptrn' => '        1974    |1974    1975    |        1983     |        1984    |        1991     |        1992    |1991    1992     |        1993     |1992    1993    |1993    1994     |        1997    |1997    1998    |        2000     |        2002     |2002    2004     ',
+      'ocrr_ptrn' => '011111100000000',
+      'aux_ptrn' => '0111100000000000',
+      'j_ptrn' => '011111000000000',
+      'weight' => '3.5',
+      'ocrr_nr' => 6,
+      'is_aux' => false,
+      'pot_owner' => false,
+      'hbib' => 'UBB',
+      'f246a' => '',
+      'f300a' => '',
+      'f300b' => '',
+      'f300c' => '',
+      'f500a' => '1994-1996 nicht erschienen',
+      'f505a' => '',
+      'f770t' => '',
+      'f772t' => '',
+      'f852a' => '',
+      'f852j' => '',
+      'f866c' => '',
+      'f866h' => '',
+      'exists_online' => false,
+      'is_current' => false,
+      'has_incomplete_vols' => false,
+      'size' => '0',
+      'force_owner' => false,
+      'force_aux' => false,
+      'f866aupdated' => '1974(1975)-1991(1992) icplt.',
+      'f866aupdatedby' => 0,
+      'delivered' => false,
+      'received' => false,
+      'f_tit' => 'Tourismus in der Schweiz¬Angebot und Nachfrage im Zeitvergleich¬l\\\'évolution de l\\\'offre et de la demande¬<<Le>> tourisme en Suisse¬Fremdenverkehr in der Schweiz',
+      'f260c' => '',
+      'f710b' => 'Bundesamt für Statistik',
+      'f245a_e' => 'tourismus in der schweiz',
+      'f245b_e' => 'angebot und nachfrage im zeitvergleich¬l\\\'evolution de l\\\'offre et de la demande',
+      'f245c_e' => 'bundesamt fuer statistik¬office federal de la statistique',
+      'f_tit_e' => 'tourismus in der schweiz¬angebot und nachfrage im zeitvergleich¬l\\\'evolution de l\\\'offre et de la demande¬<<le>> tourisme en suisse¬fremdenverkehr in der schweiz',
+      'f260a_e' => 'neuchatel',
+      'f260b_e' => 'bundesamt fuer statistik',
+      'f310a_e' => '1xJ',
+      'f362a_e' => '1974-1993 ; 1997-2002',
+      'f710a_e' => 'schweiz',
+      'f780t_e' => 'fremdenverkehr in der schweiz',
+      'f785t_e' => '',
+      'state' => 'blank',
+      'is_pref' => false,
+      'force_blue' => true,
+      'f245p' => NULL,
+      'f245n' => NULL,
+      'f852h_e' => NULL,
+      'years' => NULL,
+      'f072a' => NULL,
+    ),
+     'original' => 
+    array (
+      'id' => 6909,
+      'holdingsset_id' => 2066,
+      'library_id' => 6,
+      'sys2' => 'BSUB000987982',
+      'g' => 3,
+      'f022a' => '',
+      'f245a' => 'Tourismus in der Schweiz',
+      'f245b' => 'Angebot und Nachfrage im Zeitvergleich¬l\\\'évolution de l\\\'offre et de la demande',
+      'f245c' => 'Bundesamt für Statistik¬Office fédéral de la statistique',
+      'f260a' => 'Neuchâtel',
+      'score' => '53',
+      'flag' => '*',
+      'f260b' => 'Bundesamt für Statistik',
+      'f310a' => 'Jährlich',
+      'f710a' => 'Schweiz',
+      'f780t' => 'Fremdenverkehr in der Schweiz',
+      'f785t' => '',
+      'f852b' => 'A100',
+      'hol_nrm' => '1974    1975     1991    1992    j ',
+      'probability' => '',
+      'f008x' => '1974',
+      'f008y' => '2002',
+      'f362a' => '1974-1993 ; 1997-2002, damit Erscheinen eingestellt',
+      'f866a' => '1974(1975)-1991(1992) icplt.',
+      'f866z' => '',
+      'f852h' => '-',
+      'i' => ' ',
+      'is_owner' => false,
+      'ptrn' => '        1974    |1974    1975    |        1983     |        1984    |        1991     |        1992    |1991    1992     |        1993     |1992    1993    |1993    1994     |        1997    |1997    1998    |        2000     |        2002     |2002    2004     ',
+      'ocrr_ptrn' => '011111100000000',
+      'aux_ptrn' => '0111100000000000',
+      'j_ptrn' => '011111000000000',
+      'weight' => '3.5',
+      'ocrr_nr' => 6,
+      'is_aux' => false,
+      'pot_owner' => false,
+      'hbib' => 'UBB',
+      'f246a' => '',
+      'f300a' => '',
+      'f300b' => '',
+      'f300c' => '',
+      'f500a' => '1994-1996 nicht erschienen',
+      'f505a' => '',
+      'f770t' => '',
+      'f772t' => '',
+      'f852a' => '',
+      'f852j' => '',
+      'f866c' => '',
+      'f866h' => '',
+      'exists_online' => false,
+      'is_current' => false,
+      'has_incomplete_vols' => false,
+      'size' => '0',
+      'force_owner' => false,
+      'force_aux' => false,
+      'f866aupdated' => '1974(1975)-1991(1992) icplt.',
+      'f866aupdatedby' => 0,
+      'delivered' => false,
+      'received' => false,
+      'f_tit' => 'Tourismus in der Schweiz¬Angebot und Nachfrage im Zeitvergleich¬l\\\'évolution de l\\\'offre et de la demande¬<<Le>> tourisme en Suisse¬Fremdenverkehr in der Schweiz',
+      'f260c' => '',
+      'f710b' => 'Bundesamt für Statistik',
+      'f245a_e' => 'tourismus in der schweiz',
+      'f245b_e' => 'angebot und nachfrage im zeitvergleich¬l\\\'evolution de l\\\'offre et de la demande',
+      'f245c_e' => 'bundesamt fuer statistik¬office federal de la statistique',
+      'f_tit_e' => 'tourismus in der schweiz¬angebot und nachfrage im zeitvergleich¬l\\\'evolution de l\\\'offre et de la demande¬<<le>> tourisme en suisse¬fremdenverkehr in der schweiz',
+      'f260a_e' => 'neuchatel',
+      'f260b_e' => 'bundesamt fuer statistik',
+      'f310a_e' => '1xJ',
+      'f362a_e' => '1974-1993 ; 1997-2002',
+      'f710a_e' => 'schweiz',
+      'f780t_e' => 'fremdenverkehr in der schweiz',
+      'f785t_e' => '',
+      'state' => 'blank',
+      'is_pref' => false,
+      'force_blue' => true,
+      'f245p' => NULL,
+      'f245n' => NULL,
+      'f852h_e' => NULL,
+      'years' => NULL,
+      'f072a' => NULL,
+    ),
+     'relations' => 
+    array (
+    ),
+     'hidden' => 
+    array (
+    ),
+     'visible' => 
+    array (
+    ),
+     'appends' => 
+    array (
+    ),
+     'fillable' => 
+    array (
+    ),
+     'dates' => 
+    array (
+    ),
+     'touches' => 
+    array (
+    ),
+     'with' => 
+    array (
+    ),
+     'exists' => true,
+     'softDelete' => false,
+  )),
+)) @ /lists/72
+exception 'PDOException' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "{"id":6909,"holdingsset_id":2066,"library_id":6,"sys2":"BSUB000987982","g":3,"f022a":"","f245a":"Tourismus in der Schweiz","f245b":"Angebot und Nachfrage im Zeitvergleich\u00acl\\'\u00e9volution de l\\'offre et de la demande","f245c":"Bundesamt f\u00fcr Statistik\u00acOffice f\u00e9d\u00e9ral de la statistique","f260a":"Neuch\u00e2tel","score":"53","flag":"*","f260b":"Bundesamt f\u00fcr Statistik","f310a":"J\u00e4hrlich","f710a":"Schweiz","f780t":"Fremdenverkehr in der Schweiz","f785t":"","f852b":"A100","hol_nrm":"1974    1975     1991    1992    j ","probability":"","f008x":"1974","f008y":"2002","f362a":"1974-1993 ; 1997-2002, damit Erscheinen eingestellt","f866a":"1974(1975)-1991(1992) icplt.","f866z":"","f852h":"-","i":" ","is_owner":false,"ptrn":"        1974    |1974    1975    |        1983     |        1984    |        1991     |        1992    |1991    1992     |        1993     |1992    1993    |1993    1994     |        1997    |1997    1998    |        2000     |        2002     |2002    2004     ","ocrr_ptrn":"011111100000000","aux_ptrn":"0111100000000000","j_ptrn":"011111000000000","weight":"3.5","ocrr_nr":6,"is_aux":false,"pot_owner":false,"hbib":"UBB","f246a":"","f300a":"","f300b":"","f300c":"","f500a":"1994-1996 nicht erschienen","f505a":"","f770t":"","f772t":"","f852a":"","f852j":"","f866c":"","f866h":"","exists_online":false,"is_current":false,"has_incomplete_vols":false,"size":"0","force_owner":false,"force_aux":false,"f866aupdated":"1974(1975)-1991(1992) icplt.","f866aupdatedby":0,"delivered":false,"received":false,"f_tit":"Tourismus in der Schweiz\u00acAngebot und Nachfrage im Zeitvergleich\u00acl\\'\u00e9volution de l\\'offre et de la demande\u00ac<<Le>> tourisme en Suisse\u00acFremdenverkehr in der Schweiz","f260c":"","f710b":"Bundesamt f\u00fcr Statistik","f245a_e":"tourismus in der schweiz","f245b_e":"angebot und nachfrage im zeitvergleich\u00acl\\'evolution de l\\'offre et de la demande","f245c_e":"bundesamt fuer statistik\u00acoffice federal de la statistique","f_tit_e":"tourismus in der schweiz\u00acangebot und nachfrage im zeitvergleich\u00acl\\'evolution de l\\'offre et de la demande\u00ac<<le>> tourisme en suisse\u00acfremdenverkehr in der schweiz","f260a_e":"neuchatel","f260b_e":"bundesamt fuer statistik","f310a_e":"1xJ","f362a_e":"1974-1993 ; 1997-2002","f710a_e":"schweiz","f780t_e":"fremdenverkehr in der schweiz","f785t_e":"","state":"blank","is_pref":false,"force_blue":true,"f245p":null,"f245n":null,"f852h_e":null,"years":null,"f072a":null}"' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:353
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(353): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'delete from "co...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(356): Illuminate\Database\Connection->run('delete from "co...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(313): Illuminate\Database\Connection->affectingStatement('delete from "co...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1511): Illuminate\Database\Connection->delete('delete from "co...', Array)
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(338): Illuminate\Database\Query\Builder->delete()
+#6 C:\W\Web\Pb\code\laravel\app\models\StateObserver.php(16): Illuminate\Database\Eloquent\Builder->delete()
+#7 [internal function]: StateObserver->created(Object(State), 'eloquent.create...')
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(299): call_user_func_array(Array, Array)
+#9 [internal function]: Illuminate\Events\Dispatcher->Illuminate\Events\{closure}(Object(State), 'eloquent.create...')
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(179): call_user_func_array(Object(Closure), Array)
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1306): Illuminate\Events\Dispatcher->fire('eloquent.create...', Object(State))
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1245): Illuminate\Database\Eloquent\Model->fireModelEvent('created', false)
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(377): Illuminate\Database\Eloquent\Model->save()
+#15 C:\W\Web\Pb\code\laravel\app\models\HlistObserver.php(17): Illuminate\Database\Eloquent\Model::create(Array)
+#16 [internal function]: HlistObserver->saving(Object(Hlist), 'eloquent.saving...')
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(299): call_user_func_array(Array, Array)
+#18 [internal function]: Illuminate\Events\Dispatcher->Illuminate\Events\{closure}(Object(Hlist), 'eloquent.saving...')
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(179): call_user_func_array(Object(Closure), Array)
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(144): Illuminate\Events\Dispatcher->fire('eloquent.saving...', Object(Hlist), true)
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1306): Illuminate\Events\Dispatcher->until('eloquent.saving...', Object(Hlist))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1122): Illuminate\Database\Eloquent\Model->fireModelEvent('saving')
+#23 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1083): Illuminate\Database\Eloquent\Model->save()
+#24 C:\W\Web\Pb\code\laravel\app\controllers\HlistsController.php(240): Illuminate\Database\Eloquent\Model->update(Array)
+#25 [internal function]: HlistsController->update('72')
+#26 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#27 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('update', Array)
+#28 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'update', Array)
+#29 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'update', Array)
+#30 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('72')
+#31 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#32 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#33 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#34 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#35 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#36 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#37 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "{"id":6909,"holdingsset_id":2066,"library_id":6,"sys2":"BSUB000987982","g":3,"f022a":"","f245a":"Tourismus in der Schweiz","f245b":"Angebot und Nachfrage im Zeitvergleich\u00acl\\'\u00e9volution de l\\'offre et de la demande","f245c":"Bundesamt f\u00fcr Statistik\u00acOffice f\u00e9d\u00e9ral de la statistique","f260a":"Neuch\u00e2tel","score":"53","flag":"*","f260b":"Bundesamt f\u00fcr Statistik","f310a":"J\u00e4hrlich","f710a":"Schweiz","f780t":"Fremdenverkehr in der Schweiz","f785t":"","f852b":"A100","hol_nrm":"1974    1975     1991    1992    j ","probability":"","f008x":"1974","f008y":"2002","f362a":"1974-1993 ; 1997-2002, damit Erscheinen eingestellt","f866a":"1974(1975)-1991(1992) icplt.","f866z":"","f852h":"-","i":" ","is_owner":false,"ptrn":"        1974    |1974    1975    |        1983     |        1984    |        1991     |        1992    |1991    1992     |        1993     |1992    1993    |1993    1994     |        1997    |1997    1998    |        2000     |        2002     |2002    2004     ","ocrr_ptrn":"011111100000000","aux_ptrn":"0111100000000000","j_ptrn":"011111000000000","weight":"3.5","ocrr_nr":6,"is_aux":false,"pot_owner":false,"hbib":"UBB","f246a":"","f300a":"","f300b":"","f300c":"","f500a":"1994-1996 nicht erschienen","f505a":"","f770t":"","f772t":"","f852a":"","f852j":"","f866c":"","f866h":"","exists_online":false,"is_current":false,"has_incomplete_vols":false,"size":"0","force_owner":false,"force_aux":false,"f866aupdated":"1974(1975)-1991(1992) icplt.","f866aupdatedby":0,"delivered":false,"received":false,"f_tit":"Tourismus in der Schweiz\u00acAngebot und Nachfrage im Zeitvergleich\u00acl\\'\u00e9volution de l\\'offre et de la demande\u00ac<<Le>> tourisme en Suisse\u00acFremdenverkehr in der Schweiz","f260c":"","f710b":"Bundesamt f\u00fcr Statistik","f245a_e":"tourismus in der schweiz","f245b_e":"angebot und nachfrage im zeitvergleich\u00acl\\'evolution de l\\'offre et de la demande","f245c_e":"bundesamt fuer statistik\u00acoffice federal de la statistique","f_tit_e":"tourismus in der schweiz\u00acangebot und nachfrage im zeitvergleich\u00acl\\'evolution de l\\'offre et de la demande\u00ac<<le>> tourisme en suisse\u00acfremdenverkehr in der schweiz","f260a_e":"neuchatel","f260b_e":"bundesamt fuer statistik","f310a_e":"1xJ","f362a_e":"1974-1993 ; 1997-2002","f710a_e":"schweiz","f780t_e":"fremdenverkehr in der schweiz","f785t_e":"","state":"blank","is_pref":false,"force_blue":true,"f245p":null,"f245n":null,"f852h_e":null,"years":null,"f072a":null}" (SQL: delete from "confirms" where "holdingsset_id" = ?) (Bindings: array (
+  0 => 
+  Holding::__set_state(array(
+     'guarded' => 
+    array (
+    ),
+     'timestamps' => false,
+     'connection' => NULL,
+     'table' => NULL,
+     'primaryKey' => 'id',
+     'perPage' => 15,
+     'incrementing' => true,
+     'attributes' => 
+    array (
+      'id' => 6909,
+      'holdingsset_id' => 2066,
+      'library_id' => 6,
+      'sys2' => 'BSUB000987982',
+      'g' => 3,
+      'f022a' => '',
+      'f245a' => 'Tourismus in der Schweiz',
+      'f245b' => 'Angebot und Nachfrage im Zeitvergleich¬l\\\'évolution de l\\\'offre et de la demande',
+      'f245c' => 'Bundesamt für Statistik¬Office fédéral de la statistique',
+      'f260a' => 'Neuchâtel',
+      'score' => '53',
+      'flag' => '*',
+      'f260b' => 'Bundesamt für Statistik',
+      'f310a' => 'Jährlich',
+      'f710a' => 'Schweiz',
+      'f780t' => 'Fremdenverkehr in der Schweiz',
+      'f785t' => '',
+      'f852b' => 'A100',
+      'hol_nrm' => '1974    1975     1991    1992    j ',
+      'probability' => '',
+      'f008x' => '1974',
+      'f008y' => '2002',
+      'f362a' => '1974-1993 ; 1997-2002, damit Erscheinen eingestellt',
+      'f866a' => '1974(1975)-1991(1992) icplt.',
+      'f866z' => '',
+      'f852h' => '-',
+      'i' => ' ',
+      'is_owner' => false,
+      'ptrn' => '        1974    |1974    1975    |        1983     |        1984    |        1991     |        1992    |1991    1992     |        1993     |1992    1993    |1993    1994     |        1997    |1997    1998    |        2000     |        2002     |2002    2004     ',
+      'ocrr_ptrn' => '011111100000000',
+      'aux_ptrn' => '0111100000000000',
+      'j_ptrn' => '011111000000000',
+      'weight' => '3.5',
+      'ocrr_nr' => 6,
+      'is_aux' => false,
+      'pot_owner' => false,
+      'hbib' => 'UBB',
+      'f246a' => '',
+      'f300a' => '',
+      'f300b' => '',
+      'f300c' => '',
+      'f500a' => '1994-1996 nicht erschienen',
+      'f505a' => '',
+      'f770t' => '',
+      'f772t' => '',
+      'f852a' => '',
+      'f852j' => '',
+      'f866c' => '',
+      'f866h' => '',
+      'exists_online' => false,
+      'is_current' => false,
+      'has_incomplete_vols' => false,
+      'size' => '0',
+      'force_owner' => false,
+      'force_aux' => false,
+      'f866aupdated' => '1974(1975)-1991(1992) icplt.',
+      'f866aupdatedby' => 0,
+      'delivered' => false,
+      'received' => false,
+      'f_tit' => 'Tourismus in der Schweiz¬Angebot und Nachfrage im Zeitvergleich¬l\\\'évolution de l\\\'offre et de la demande¬<<Le>> tourisme en Suisse¬Fremdenverkehr in der Schweiz',
+      'f260c' => '',
+      'f710b' => 'Bundesamt für Statistik',
+      'f245a_e' => 'tourismus in der schweiz',
+      'f245b_e' => 'angebot und nachfrage im zeitvergleich¬l\\\'evolution de l\\\'offre et de la demande',
+      'f245c_e' => 'bundesamt fuer statistik¬office federal de la statistique',
+      'f_tit_e' => 'tourismus in der schweiz¬angebot und nachfrage im zeitvergleich¬l\\\'evolution de l\\\'offre et de la demande¬<<le>> tourisme en suisse¬fremdenverkehr in der schweiz',
+      'f260a_e' => 'neuchatel',
+      'f260b_e' => 'bundesamt fuer statistik',
+      'f310a_e' => '1xJ',
+      'f362a_e' => '1974-1993 ; 1997-2002',
+      'f710a_e' => 'schweiz',
+      'f780t_e' => 'fremdenverkehr in der schweiz',
+      'f785t_e' => '',
+      'state' => 'blank',
+      'is_pref' => false,
+      'force_blue' => true,
+      'f245p' => NULL,
+      'f245n' => NULL,
+      'f852h_e' => NULL,
+      'years' => NULL,
+      'f072a' => NULL,
+    ),
+     'original' => 
+    array (
+      'id' => 6909,
+      'holdingsset_id' => 2066,
+      'library_id' => 6,
+      'sys2' => 'BSUB000987982',
+      'g' => 3,
+      'f022a' => '',
+      'f245a' => 'Tourismus in der Schweiz',
+      'f245b' => 'Angebot und Nachfrage im Zeitvergleich¬l\\\'évolution de l\\\'offre et de la demande',
+      'f245c' => 'Bundesamt für Statistik¬Office fédéral de la statistique',
+      'f260a' => 'Neuchâtel',
+      'score' => '53',
+      'flag' => '*',
+      'f260b' => 'Bundesamt für Statistik',
+      'f310a' => 'Jährlich',
+      'f710a' => 'Schweiz',
+      'f780t' => 'Fremdenverkehr in der Schweiz',
+      'f785t' => '',
+      'f852b' => 'A100',
+      'hol_nrm' => '1974    1975     1991    1992    j ',
+      'probability' => '',
+      'f008x' => '1974',
+      'f008y' => '2002',
+      'f362a' => '1974-1993 ; 1997-2002, damit Erscheinen eingestellt',
+      'f866a' => '1974(1975)-1991(1992) icplt.',
+      'f866z' => '',
+      'f852h' => '-',
+      'i' => ' ',
+      'is_owner' => false,
+      'ptrn' => '        1974    |1974    1975    |        1983     |        1984    |        1991     |        1992    |1991    1992     |        1993     |1992    1993    |1993    1994     |        1997    |1997    1998    |        2000     |        2002     |2002    2004     ',
+      'ocrr_ptrn' => '011111100000000',
+      'aux_ptrn' => '0111100000000000',
+      'j_ptrn' => '011111000000000',
+      'weight' => '3.5',
+      'ocrr_nr' => 6,
+      'is_aux' => false,
+      'pot_owner' => false,
+      'hbib' => 'UBB',
+      'f246a' => '',
+      'f300a' => '',
+      'f300b' => '',
+      'f300c' => '',
+      'f500a' => '1994-1996 nicht erschienen',
+      'f505a' => '',
+      'f770t' => '',
+      'f772t' => '',
+      'f852a' => '',
+      'f852j' => '',
+      'f866c' => '',
+      'f866h' => '',
+      'exists_online' => false,
+      'is_current' => false,
+      'has_incomplete_vols' => false,
+      'size' => '0',
+      'force_owner' => false,
+      'force_aux' => false,
+      'f866aupdated' => '1974(1975)-1991(1992) icplt.',
+      'f866aupdatedby' => 0,
+      'delivered' => false,
+      'received' => false,
+      'f_tit' => 'Tourismus in der Schweiz¬Angebot und Nachfrage im Zeitvergleich¬l\\\'évolution de l\\\'offre et de la demande¬<<Le>> tourisme en Suisse¬Fremdenverkehr in der Schweiz',
+      'f260c' => '',
+      'f710b' => 'Bundesamt für Statistik',
+      'f245a_e' => 'tourismus in der schweiz',
+      'f245b_e' => 'angebot und nachfrage im zeitvergleich¬l\\\'evolution de l\\\'offre et de la demande',
+      'f245c_e' => 'bundesamt fuer statistik¬office federal de la statistique',
+      'f_tit_e' => 'tourismus in der schweiz¬angebot und nachfrage im zeitvergleich¬l\\\'evolution de l\\\'offre et de la demande¬<<le>> tourisme en suisse¬fremdenverkehr in der schweiz',
+      'f260a_e' => 'neuchatel',
+      'f260b_e' => 'bundesamt fuer statistik',
+      'f310a_e' => '1xJ',
+      'f362a_e' => '1974-1993 ; 1997-2002',
+      'f710a_e' => 'schweiz',
+      'f780t_e' => 'fremdenverkehr in der schweiz',
+      'f785t_e' => '',
+      'state' => 'blank',
+      'is_pref' => false,
+      'force_blue' => true,
+      'f245p' => NULL,
+      'f245n' => NULL,
+      'f852h_e' => NULL,
+      'years' => NULL,
+      'f072a' => NULL,
+    ),
+     'relations' => 
+    array (
+    ),
+     'hidden' => 
+    array (
+    ),
+     'visible' => 
+    array (
+    ),
+     'appends' => 
+    array (
+    ),
+     'fillable' => 
+    array (
+    ),
+     'dates' => 
+    array (
+    ),
+     'touches' => 
+    array (
+    ),
+     'with' => 
+    array (
+    ),
+     'exists' => true,
+     'softDelete' => false,
+  )),
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'delete from "co...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(356): Illuminate\Database\Connection->run('delete from "co...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(313): Illuminate\Database\Connection->affectingStatement('delete from "co...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1511): Illuminate\Database\Connection->delete('delete from "co...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(338): Illuminate\Database\Query\Builder->delete()
+#5 C:\W\Web\Pb\code\laravel\app\models\StateObserver.php(16): Illuminate\Database\Eloquent\Builder->delete()
+#6 [internal function]: StateObserver->created(Object(State), 'eloquent.create...')
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(299): call_user_func_array(Array, Array)
+#8 [internal function]: Illuminate\Events\Dispatcher->Illuminate\Events\{closure}(Object(State), 'eloquent.create...')
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(179): call_user_func_array(Object(Closure), Array)
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1306): Illuminate\Events\Dispatcher->fire('eloquent.create...', Object(State))
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1245): Illuminate\Database\Eloquent\Model->fireModelEvent('created', false)
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(377): Illuminate\Database\Eloquent\Model->save()
+#14 C:\W\Web\Pb\code\laravel\app\models\HlistObserver.php(17): Illuminate\Database\Eloquent\Model::create(Array)
+#15 [internal function]: HlistObserver->saving(Object(Hlist), 'eloquent.saving...')
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(299): call_user_func_array(Array, Array)
+#17 [internal function]: Illuminate\Events\Dispatcher->Illuminate\Events\{closure}(Object(Hlist), 'eloquent.saving...')
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(179): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(144): Illuminate\Events\Dispatcher->fire('eloquent.saving...', Object(Hlist), true)
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1306): Illuminate\Events\Dispatcher->until('eloquent.saving...', Object(Hlist))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1122): Illuminate\Database\Eloquent\Model->fireModelEvent('saving')
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1083): Illuminate\Database\Eloquent\Model->save()
+#23 C:\W\Web\Pb\code\laravel\app\controllers\HlistsController.php(240): Illuminate\Database\Eloquent\Model->update(Array)
+#24 [internal function]: HlistsController->update('72')
+#25 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#26 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('update', Array)
+#27 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'update', Array)
+#28 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'update', Array)
+#29 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('72')
+#30 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#31 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#32 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#33 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#34 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#35 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#36 {main} [] []
+[2014-03-21 16:12:11] log.ERROR: 500 - SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "{"id":6909,"holdingsset_id":2066,"library_id":6,"sys2":"BSUB000987982","g":3,"f022a":"","f245a":"Tourismus in der Schweiz","f245b":"Angebot und Nachfrage im Zeitvergleich\u00acl\\'\u00e9volution de l\\'offre et de la demande","f245c":"Bundesamt f\u00fcr Statistik\u00acOffice f\u00e9d\u00e9ral de la statistique","f260a":"Neuch\u00e2tel","score":"53","flag":"*","f260b":"Bundesamt f\u00fcr Statistik","f310a":"J\u00e4hrlich","f710a":"Schweiz","f780t":"Fremdenverkehr in der Schweiz","f785t":"","f852b":"A100","hol_nrm":"1974    1975     1991    1992    j ","probability":"","f008x":"1974","f008y":"2002","f362a":"1974-1993 ; 1997-2002, damit Erscheinen eingestellt","f866a":"1974(1975)-1991(1992) icplt.","f866z":"","f852h":"-","i":" ","is_owner":false,"ptrn":"        1974    |1974    1975    |        1983     |        1984    |        1991     |        1992    |1991    1992     |        1993     |1992    1993    |1993    1994     |        1997    |1997    1998    |        2000     |        2002     |2002    2004     ","ocrr_ptrn":"011111100000000","aux_ptrn":"0111100000000000","j_ptrn":"011111000000000","weight":"3.5","ocrr_nr":6,"is_aux":false,"pot_owner":false,"hbib":"UBB","f246a":"","f300a":"","f300b":"","f300c":"","f500a":"1994-1996 nicht erschienen","f505a":"","f770t":"","f772t":"","f852a":"","f852j":"","f866c":"","f866h":"","exists_online":false,"is_current":false,"has_incomplete_vols":false,"size":"0","force_owner":false,"force_aux":false,"f866aupdated":"1974(1975)-1991(1992) icplt.","f866aupdatedby":0,"delivered":false,"received":false,"f_tit":"Tourismus in der Schweiz\u00acAngebot und Nachfrage im Zeitvergleich\u00acl\\'\u00e9volution de l\\'offre et de la demande\u00ac<<Le>> tourisme en Suisse\u00acFremdenverkehr in der Schweiz","f260c":"","f710b":"Bundesamt f\u00fcr Statistik","f245a_e":"tourismus in der schweiz","f245b_e":"angebot und nachfrage im zeitvergleich\u00acl\\'evolution de l\\'offre et de la demande","f245c_e":"bundesamt fuer statistik\u00acoffice federal de la statistique","f_tit_e":"tourismus in der schweiz\u00acangebot und nachfrage im zeitvergleich\u00acl\\'evolution de l\\'offre et de la demande\u00ac<<le>> tourisme en suisse\u00acfremdenverkehr in der schweiz","f260a_e":"neuchatel","f260b_e":"bundesamt fuer statistik","f310a_e":"1xJ","f362a_e":"1974-1993 ; 1997-2002","f710a_e":"schweiz","f780t_e":"fremdenverkehr in der schweiz","f785t_e":"","state":"blank","is_pref":false,"force_blue":true,"f245p":null,"f245n":null,"f852h_e":null,"years":null,"f072a":null}" (SQL: delete from "confirms" where "holdingsset_id" = ?) (Bindings: array (
+  0 => 
+  Holding::__set_state(array(
+     'guarded' => 
+    array (
+    ),
+     'timestamps' => false,
+     'connection' => NULL,
+     'table' => NULL,
+     'primaryKey' => 'id',
+     'perPage' => 15,
+     'incrementing' => true,
+     'attributes' => 
+    array (
+      'id' => 6909,
+      'holdingsset_id' => 2066,
+      'library_id' => 6,
+      'sys2' => 'BSUB000987982',
+      'g' => 3,
+      'f022a' => '',
+      'f245a' => 'Tourismus in der Schweiz',
+      'f245b' => 'Angebot und Nachfrage im Zeitvergleich¬l\\\'évolution de l\\\'offre et de la demande',
+      'f245c' => 'Bundesamt für Statistik¬Office fédéral de la statistique',
+      'f260a' => 'Neuchâtel',
+      'score' => '53',
+      'flag' => '*',
+      'f260b' => 'Bundesamt für Statistik',
+      'f310a' => 'Jährlich',
+      'f710a' => 'Schweiz',
+      'f780t' => 'Fremdenverkehr in der Schweiz',
+      'f785t' => '',
+      'f852b' => 'A100',
+      'hol_nrm' => '1974    1975     1991    1992    j ',
+      'probability' => '',
+      'f008x' => '1974',
+      'f008y' => '2002',
+      'f362a' => '1974-1993 ; 1997-2002, damit Erscheinen eingestellt',
+      'f866a' => '1974(1975)-1991(1992) icplt.',
+      'f866z' => '',
+      'f852h' => '-',
+      'i' => ' ',
+      'is_owner' => false,
+      'ptrn' => '        1974    |1974    1975    |        1983     |        1984    |        1991     |        1992    |1991    1992     |        1993     |1992    1993    |1993    1994     |        1997    |1997    1998    |        2000     |        2002     |2002    2004     ',
+      'ocrr_ptrn' => '011111100000000',
+      'aux_ptrn' => '0111100000000000',
+      'j_ptrn' => '011111000000000',
+      'weight' => '3.5',
+      'ocrr_nr' => 6,
+      'is_aux' => false,
+      'pot_owner' => false,
+      'hbib' => 'UBB',
+      'f246a' => '',
+      'f300a' => '',
+      'f300b' => '',
+      'f300c' => '',
+      'f500a' => '1994-1996 nicht erschienen',
+      'f505a' => '',
+      'f770t' => '',
+      'f772t' => '',
+      'f852a' => '',
+      'f852j' => '',
+      'f866c' => '',
+      'f866h' => '',
+      'exists_online' => false,
+      'is_current' => false,
+      'has_incomplete_vols' => false,
+      'size' => '0',
+      'force_owner' => false,
+      'force_aux' => false,
+      'f866aupdated' => '1974(1975)-1991(1992) icplt.',
+      'f866aupdatedby' => 0,
+      'delivered' => false,
+      'received' => false,
+      'f_tit' => 'Tourismus in der Schweiz¬Angebot und Nachfrage im Zeitvergleich¬l\\\'évolution de l\\\'offre et de la demande¬<<Le>> tourisme en Suisse¬Fremdenverkehr in der Schweiz',
+      'f260c' => '',
+      'f710b' => 'Bundesamt für Statistik',
+      'f245a_e' => 'tourismus in der schweiz',
+      'f245b_e' => 'angebot und nachfrage im zeitvergleich¬l\\\'evolution de l\\\'offre et de la demande',
+      'f245c_e' => 'bundesamt fuer statistik¬office federal de la statistique',
+      'f_tit_e' => 'tourismus in der schweiz¬angebot und nachfrage im zeitvergleich¬l\\\'evolution de l\\\'offre et de la demande¬<<le>> tourisme en suisse¬fremdenverkehr in der schweiz',
+      'f260a_e' => 'neuchatel',
+      'f260b_e' => 'bundesamt fuer statistik',
+      'f310a_e' => '1xJ',
+      'f362a_e' => '1974-1993 ; 1997-2002',
+      'f710a_e' => 'schweiz',
+      'f780t_e' => 'fremdenverkehr in der schweiz',
+      'f785t_e' => '',
+      'state' => 'blank',
+      'is_pref' => false,
+      'force_blue' => true,
+      'f245p' => NULL,
+      'f245n' => NULL,
+      'f852h_e' => NULL,
+      'years' => NULL,
+      'f072a' => NULL,
+    ),
+     'original' => 
+    array (
+      'id' => 6909,
+      'holdingsset_id' => 2066,
+      'library_id' => 6,
+      'sys2' => 'BSUB000987982',
+      'g' => 3,
+      'f022a' => '',
+      'f245a' => 'Tourismus in der Schweiz',
+      'f245b' => 'Angebot und Nachfrage im Zeitvergleich¬l\\\'évolution de l\\\'offre et de la demande',
+      'f245c' => 'Bundesamt für Statistik¬Office fédéral de la statistique',
+      'f260a' => 'Neuchâtel',
+      'score' => '53',
+      'flag' => '*',
+      'f260b' => 'Bundesamt für Statistik',
+      'f310a' => 'Jährlich',
+      'f710a' => 'Schweiz',
+      'f780t' => 'Fremdenverkehr in der Schweiz',
+      'f785t' => '',
+      'f852b' => 'A100',
+      'hol_nrm' => '1974    1975     1991    1992    j ',
+      'probability' => '',
+      'f008x' => '1974',
+      'f008y' => '2002',
+      'f362a' => '1974-1993 ; 1997-2002, damit Erscheinen eingestellt',
+      'f866a' => '1974(1975)-1991(1992) icplt.',
+      'f866z' => '',
+      'f852h' => '-',
+      'i' => ' ',
+      'is_owner' => false,
+      'ptrn' => '        1974    |1974    1975    |        1983     |        1984    |        1991     |        1992    |1991    1992     |        1993     |1992    1993    |1993    1994     |        1997    |1997    1998    |        2000     |        2002     |2002    2004     ',
+      'ocrr_ptrn' => '011111100000000',
+      'aux_ptrn' => '0111100000000000',
+      'j_ptrn' => '011111000000000',
+      'weight' => '3.5',
+      'ocrr_nr' => 6,
+      'is_aux' => false,
+      'pot_owner' => false,
+      'hbib' => 'UBB',
+      'f246a' => '',
+      'f300a' => '',
+      'f300b' => '',
+      'f300c' => '',
+      'f500a' => '1994-1996 nicht erschienen',
+      'f505a' => '',
+      'f770t' => '',
+      'f772t' => '',
+      'f852a' => '',
+      'f852j' => '',
+      'f866c' => '',
+      'f866h' => '',
+      'exists_online' => false,
+      'is_current' => false,
+      'has_incomplete_vols' => false,
+      'size' => '0',
+      'force_owner' => false,
+      'force_aux' => false,
+      'f866aupdated' => '1974(1975)-1991(1992) icplt.',
+      'f866aupdatedby' => 0,
+      'delivered' => false,
+      'received' => false,
+      'f_tit' => 'Tourismus in der Schweiz¬Angebot und Nachfrage im Zeitvergleich¬l\\\'évolution de l\\\'offre et de la demande¬<<Le>> tourisme en Suisse¬Fremdenverkehr in der Schweiz',
+      'f260c' => '',
+      'f710b' => 'Bundesamt für Statistik',
+      'f245a_e' => 'tourismus in der schweiz',
+      'f245b_e' => 'angebot und nachfrage im zeitvergleich¬l\\\'evolution de l\\\'offre et de la demande',
+      'f245c_e' => 'bundesamt fuer statistik¬office federal de la statistique',
+      'f_tit_e' => 'tourismus in der schweiz¬angebot und nachfrage im zeitvergleich¬l\\\'evolution de l\\\'offre et de la demande¬<<le>> tourisme en suisse¬fremdenverkehr in der schweiz',
+      'f260a_e' => 'neuchatel',
+      'f260b_e' => 'bundesamt fuer statistik',
+      'f310a_e' => '1xJ',
+      'f362a_e' => '1974-1993 ; 1997-2002',
+      'f710a_e' => 'schweiz',
+      'f780t_e' => 'fremdenverkehr in der schweiz',
+      'f785t_e' => '',
+      'state' => 'blank',
+      'is_pref' => false,
+      'force_blue' => true,
+      'f245p' => NULL,
+      'f245n' => NULL,
+      'f852h_e' => NULL,
+      'years' => NULL,
+      'f072a' => NULL,
+    ),
+     'relations' => 
+    array (
+    ),
+     'hidden' => 
+    array (
+    ),
+     'visible' => 
+    array (
+    ),
+     'appends' => 
+    array (
+    ),
+     'fillable' => 
+    array (
+    ),
+     'dates' => 
+    array (
+    ),
+     'touches' => 
+    array (
+    ),
+     'with' => 
+    array (
+    ),
+     'exists' => true,
+     'softDelete' => false,
+  )),
+)) @ /lists/72
+exception 'PDOException' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "{"id":6909,"holdingsset_id":2066,"library_id":6,"sys2":"BSUB000987982","g":3,"f022a":"","f245a":"Tourismus in der Schweiz","f245b":"Angebot und Nachfrage im Zeitvergleich\u00acl\\'\u00e9volution de l\\'offre et de la demande","f245c":"Bundesamt f\u00fcr Statistik\u00acOffice f\u00e9d\u00e9ral de la statistique","f260a":"Neuch\u00e2tel","score":"53","flag":"*","f260b":"Bundesamt f\u00fcr Statistik","f310a":"J\u00e4hrlich","f710a":"Schweiz","f780t":"Fremdenverkehr in der Schweiz","f785t":"","f852b":"A100","hol_nrm":"1974    1975     1991    1992    j ","probability":"","f008x":"1974","f008y":"2002","f362a":"1974-1993 ; 1997-2002, damit Erscheinen eingestellt","f866a":"1974(1975)-1991(1992) icplt.","f866z":"","f852h":"-","i":" ","is_owner":false,"ptrn":"        1974    |1974    1975    |        1983     |        1984    |        1991     |        1992    |1991    1992     |        1993     |1992    1993    |1993    1994     |        1997    |1997    1998    |        2000     |        2002     |2002    2004     ","ocrr_ptrn":"011111100000000","aux_ptrn":"0111100000000000","j_ptrn":"011111000000000","weight":"3.5","ocrr_nr":6,"is_aux":false,"pot_owner":false,"hbib":"UBB","f246a":"","f300a":"","f300b":"","f300c":"","f500a":"1994-1996 nicht erschienen","f505a":"","f770t":"","f772t":"","f852a":"","f852j":"","f866c":"","f866h":"","exists_online":false,"is_current":false,"has_incomplete_vols":false,"size":"0","force_owner":false,"force_aux":false,"f866aupdated":"1974(1975)-1991(1992) icplt.","f866aupdatedby":0,"delivered":false,"received":false,"f_tit":"Tourismus in der Schweiz\u00acAngebot und Nachfrage im Zeitvergleich\u00acl\\'\u00e9volution de l\\'offre et de la demande\u00ac<<Le>> tourisme en Suisse\u00acFremdenverkehr in der Schweiz","f260c":"","f710b":"Bundesamt f\u00fcr Statistik","f245a_e":"tourismus in der schweiz","f245b_e":"angebot und nachfrage im zeitvergleich\u00acl\\'evolution de l\\'offre et de la demande","f245c_e":"bundesamt fuer statistik\u00acoffice federal de la statistique","f_tit_e":"tourismus in der schweiz\u00acangebot und nachfrage im zeitvergleich\u00acl\\'evolution de l\\'offre et de la demande\u00ac<<le>> tourisme en suisse\u00acfremdenverkehr in der schweiz","f260a_e":"neuchatel","f260b_e":"bundesamt fuer statistik","f310a_e":"1xJ","f362a_e":"1974-1993 ; 1997-2002","f710a_e":"schweiz","f780t_e":"fremdenverkehr in der schweiz","f785t_e":"","state":"blank","is_pref":false,"force_blue":true,"f245p":null,"f245n":null,"f852h_e":null,"years":null,"f072a":null}"' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:353
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(353): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'delete from "co...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(356): Illuminate\Database\Connection->run('delete from "co...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(313): Illuminate\Database\Connection->affectingStatement('delete from "co...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1511): Illuminate\Database\Connection->delete('delete from "co...', Array)
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(338): Illuminate\Database\Query\Builder->delete()
+#6 C:\W\Web\Pb\code\laravel\app\models\StateObserver.php(16): Illuminate\Database\Eloquent\Builder->delete()
+#7 [internal function]: StateObserver->created(Object(State), 'eloquent.create...')
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(299): call_user_func_array(Array, Array)
+#9 [internal function]: Illuminate\Events\Dispatcher->Illuminate\Events\{closure}(Object(State), 'eloquent.create...')
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(179): call_user_func_array(Object(Closure), Array)
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1306): Illuminate\Events\Dispatcher->fire('eloquent.create...', Object(State))
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1245): Illuminate\Database\Eloquent\Model->fireModelEvent('created', false)
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(377): Illuminate\Database\Eloquent\Model->save()
+#15 C:\W\Web\Pb\code\laravel\app\models\HlistObserver.php(17): Illuminate\Database\Eloquent\Model::create(Array)
+#16 [internal function]: HlistObserver->saving(Object(Hlist), 'eloquent.saving...')
+#17 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(299): call_user_func_array(Array, Array)
+#18 [internal function]: Illuminate\Events\Dispatcher->Illuminate\Events\{closure}(Object(Hlist), 'eloquent.saving...')
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(179): call_user_func_array(Object(Closure), Array)
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(144): Illuminate\Events\Dispatcher->fire('eloquent.saving...', Object(Hlist), true)
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1306): Illuminate\Events\Dispatcher->until('eloquent.saving...', Object(Hlist))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1122): Illuminate\Database\Eloquent\Model->fireModelEvent('saving')
+#23 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1083): Illuminate\Database\Eloquent\Model->save()
+#24 C:\W\Web\Pb\code\laravel\app\controllers\HlistsController.php(240): Illuminate\Database\Eloquent\Model->update(Array)
+#25 [internal function]: HlistsController->update('72')
+#26 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#27 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('update', Array)
+#28 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'update', Array)
+#29 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'update', Array)
+#30 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('72')
+#31 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#32 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#33 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#34 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#35 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#36 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#37 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "{"id":6909,"holdingsset_id":2066,"library_id":6,"sys2":"BSUB000987982","g":3,"f022a":"","f245a":"Tourismus in der Schweiz","f245b":"Angebot und Nachfrage im Zeitvergleich\u00acl\\'\u00e9volution de l\\'offre et de la demande","f245c":"Bundesamt f\u00fcr Statistik\u00acOffice f\u00e9d\u00e9ral de la statistique","f260a":"Neuch\u00e2tel","score":"53","flag":"*","f260b":"Bundesamt f\u00fcr Statistik","f310a":"J\u00e4hrlich","f710a":"Schweiz","f780t":"Fremdenverkehr in der Schweiz","f785t":"","f852b":"A100","hol_nrm":"1974    1975     1991    1992    j ","probability":"","f008x":"1974","f008y":"2002","f362a":"1974-1993 ; 1997-2002, damit Erscheinen eingestellt","f866a":"1974(1975)-1991(1992) icplt.","f866z":"","f852h":"-","i":" ","is_owner":false,"ptrn":"        1974    |1974    1975    |        1983     |        1984    |        1991     |        1992    |1991    1992     |        1993     |1992    1993    |1993    1994     |        1997    |1997    1998    |        2000     |        2002     |2002    2004     ","ocrr_ptrn":"011111100000000","aux_ptrn":"0111100000000000","j_ptrn":"011111000000000","weight":"3.5","ocrr_nr":6,"is_aux":false,"pot_owner":false,"hbib":"UBB","f246a":"","f300a":"","f300b":"","f300c":"","f500a":"1994-1996 nicht erschienen","f505a":"","f770t":"","f772t":"","f852a":"","f852j":"","f866c":"","f866h":"","exists_online":false,"is_current":false,"has_incomplete_vols":false,"size":"0","force_owner":false,"force_aux":false,"f866aupdated":"1974(1975)-1991(1992) icplt.","f866aupdatedby":0,"delivered":false,"received":false,"f_tit":"Tourismus in der Schweiz\u00acAngebot und Nachfrage im Zeitvergleich\u00acl\\'\u00e9volution de l\\'offre et de la demande\u00ac<<Le>> tourisme en Suisse\u00acFremdenverkehr in der Schweiz","f260c":"","f710b":"Bundesamt f\u00fcr Statistik","f245a_e":"tourismus in der schweiz","f245b_e":"angebot und nachfrage im zeitvergleich\u00acl\\'evolution de l\\'offre et de la demande","f245c_e":"bundesamt fuer statistik\u00acoffice federal de la statistique","f_tit_e":"tourismus in der schweiz\u00acangebot und nachfrage im zeitvergleich\u00acl\\'evolution de l\\'offre et de la demande\u00ac<<le>> tourisme en suisse\u00acfremdenverkehr in der schweiz","f260a_e":"neuchatel","f260b_e":"bundesamt fuer statistik","f310a_e":"1xJ","f362a_e":"1974-1993 ; 1997-2002","f710a_e":"schweiz","f780t_e":"fremdenverkehr in der schweiz","f785t_e":"","state":"blank","is_pref":false,"force_blue":true,"f245p":null,"f245n":null,"f852h_e":null,"years":null,"f072a":null}" (SQL: delete from "confirms" where "holdingsset_id" = ?) (Bindings: array (
+  0 => 
+  Holding::__set_state(array(
+     'guarded' => 
+    array (
+    ),
+     'timestamps' => false,
+     'connection' => NULL,
+     'table' => NULL,
+     'primaryKey' => 'id',
+     'perPage' => 15,
+     'incrementing' => true,
+     'attributes' => 
+    array (
+      'id' => 6909,
+      'holdingsset_id' => 2066,
+      'library_id' => 6,
+      'sys2' => 'BSUB000987982',
+      'g' => 3,
+      'f022a' => '',
+      'f245a' => 'Tourismus in der Schweiz',
+      'f245b' => 'Angebot und Nachfrage im Zeitvergleich¬l\\\'évolution de l\\\'offre et de la demande',
+      'f245c' => 'Bundesamt für Statistik¬Office fédéral de la statistique',
+      'f260a' => 'Neuchâtel',
+      'score' => '53',
+      'flag' => '*',
+      'f260b' => 'Bundesamt für Statistik',
+      'f310a' => 'Jährlich',
+      'f710a' => 'Schweiz',
+      'f780t' => 'Fremdenverkehr in der Schweiz',
+      'f785t' => '',
+      'f852b' => 'A100',
+      'hol_nrm' => '1974    1975     1991    1992    j ',
+      'probability' => '',
+      'f008x' => '1974',
+      'f008y' => '2002',
+      'f362a' => '1974-1993 ; 1997-2002, damit Erscheinen eingestellt',
+      'f866a' => '1974(1975)-1991(1992) icplt.',
+      'f866z' => '',
+      'f852h' => '-',
+      'i' => ' ',
+      'is_owner' => false,
+      'ptrn' => '        1974    |1974    1975    |        1983     |        1984    |        1991     |        1992    |1991    1992     |        1993     |1992    1993    |1993    1994     |        1997    |1997    1998    |        2000     |        2002     |2002    2004     ',
+      'ocrr_ptrn' => '011111100000000',
+      'aux_ptrn' => '0111100000000000',
+      'j_ptrn' => '011111000000000',
+      'weight' => '3.5',
+      'ocrr_nr' => 6,
+      'is_aux' => false,
+      'pot_owner' => false,
+      'hbib' => 'UBB',
+      'f246a' => '',
+      'f300a' => '',
+      'f300b' => '',
+      'f300c' => '',
+      'f500a' => '1994-1996 nicht erschienen',
+      'f505a' => '',
+      'f770t' => '',
+      'f772t' => '',
+      'f852a' => '',
+      'f852j' => '',
+      'f866c' => '',
+      'f866h' => '',
+      'exists_online' => false,
+      'is_current' => false,
+      'has_incomplete_vols' => false,
+      'size' => '0',
+      'force_owner' => false,
+      'force_aux' => false,
+      'f866aupdated' => '1974(1975)-1991(1992) icplt.',
+      'f866aupdatedby' => 0,
+      'delivered' => false,
+      'received' => false,
+      'f_tit' => 'Tourismus in der Schweiz¬Angebot und Nachfrage im Zeitvergleich¬l\\\'évolution de l\\\'offre et de la demande¬<<Le>> tourisme en Suisse¬Fremdenverkehr in der Schweiz',
+      'f260c' => '',
+      'f710b' => 'Bundesamt für Statistik',
+      'f245a_e' => 'tourismus in der schweiz',
+      'f245b_e' => 'angebot und nachfrage im zeitvergleich¬l\\\'evolution de l\\\'offre et de la demande',
+      'f245c_e' => 'bundesamt fuer statistik¬office federal de la statistique',
+      'f_tit_e' => 'tourismus in der schweiz¬angebot und nachfrage im zeitvergleich¬l\\\'evolution de l\\\'offre et de la demande¬<<le>> tourisme en suisse¬fremdenverkehr in der schweiz',
+      'f260a_e' => 'neuchatel',
+      'f260b_e' => 'bundesamt fuer statistik',
+      'f310a_e' => '1xJ',
+      'f362a_e' => '1974-1993 ; 1997-2002',
+      'f710a_e' => 'schweiz',
+      'f780t_e' => 'fremdenverkehr in der schweiz',
+      'f785t_e' => '',
+      'state' => 'blank',
+      'is_pref' => false,
+      'force_blue' => true,
+      'f245p' => NULL,
+      'f245n' => NULL,
+      'f852h_e' => NULL,
+      'years' => NULL,
+      'f072a' => NULL,
+    ),
+     'original' => 
+    array (
+      'id' => 6909,
+      'holdingsset_id' => 2066,
+      'library_id' => 6,
+      'sys2' => 'BSUB000987982',
+      'g' => 3,
+      'f022a' => '',
+      'f245a' => 'Tourismus in der Schweiz',
+      'f245b' => 'Angebot und Nachfrage im Zeitvergleich¬l\\\'évolution de l\\\'offre et de la demande',
+      'f245c' => 'Bundesamt für Statistik¬Office fédéral de la statistique',
+      'f260a' => 'Neuchâtel',
+      'score' => '53',
+      'flag' => '*',
+      'f260b' => 'Bundesamt für Statistik',
+      'f310a' => 'Jährlich',
+      'f710a' => 'Schweiz',
+      'f780t' => 'Fremdenverkehr in der Schweiz',
+      'f785t' => '',
+      'f852b' => 'A100',
+      'hol_nrm' => '1974    1975     1991    1992    j ',
+      'probability' => '',
+      'f008x' => '1974',
+      'f008y' => '2002',
+      'f362a' => '1974-1993 ; 1997-2002, damit Erscheinen eingestellt',
+      'f866a' => '1974(1975)-1991(1992) icplt.',
+      'f866z' => '',
+      'f852h' => '-',
+      'i' => ' ',
+      'is_owner' => false,
+      'ptrn' => '        1974    |1974    1975    |        1983     |        1984    |        1991     |        1992    |1991    1992     |        1993     |1992    1993    |1993    1994     |        1997    |1997    1998    |        2000     |        2002     |2002    2004     ',
+      'ocrr_ptrn' => '011111100000000',
+      'aux_ptrn' => '0111100000000000',
+      'j_ptrn' => '011111000000000',
+      'weight' => '3.5',
+      'ocrr_nr' => 6,
+      'is_aux' => false,
+      'pot_owner' => false,
+      'hbib' => 'UBB',
+      'f246a' => '',
+      'f300a' => '',
+      'f300b' => '',
+      'f300c' => '',
+      'f500a' => '1994-1996 nicht erschienen',
+      'f505a' => '',
+      'f770t' => '',
+      'f772t' => '',
+      'f852a' => '',
+      'f852j' => '',
+      'f866c' => '',
+      'f866h' => '',
+      'exists_online' => false,
+      'is_current' => false,
+      'has_incomplete_vols' => false,
+      'size' => '0',
+      'force_owner' => false,
+      'force_aux' => false,
+      'f866aupdated' => '1974(1975)-1991(1992) icplt.',
+      'f866aupdatedby' => 0,
+      'delivered' => false,
+      'received' => false,
+      'f_tit' => 'Tourismus in der Schweiz¬Angebot und Nachfrage im Zeitvergleich¬l\\\'évolution de l\\\'offre et de la demande¬<<Le>> tourisme en Suisse¬Fremdenverkehr in der Schweiz',
+      'f260c' => '',
+      'f710b' => 'Bundesamt für Statistik',
+      'f245a_e' => 'tourismus in der schweiz',
+      'f245b_e' => 'angebot und nachfrage im zeitvergleich¬l\\\'evolution de l\\\'offre et de la demande',
+      'f245c_e' => 'bundesamt fuer statistik¬office federal de la statistique',
+      'f_tit_e' => 'tourismus in der schweiz¬angebot und nachfrage im zeitvergleich¬l\\\'evolution de l\\\'offre et de la demande¬<<le>> tourisme en suisse¬fremdenverkehr in der schweiz',
+      'f260a_e' => 'neuchatel',
+      'f260b_e' => 'bundesamt fuer statistik',
+      'f310a_e' => '1xJ',
+      'f362a_e' => '1974-1993 ; 1997-2002',
+      'f710a_e' => 'schweiz',
+      'f780t_e' => 'fremdenverkehr in der schweiz',
+      'f785t_e' => '',
+      'state' => 'blank',
+      'is_pref' => false,
+      'force_blue' => true,
+      'f245p' => NULL,
+      'f245n' => NULL,
+      'f852h_e' => NULL,
+      'years' => NULL,
+      'f072a' => NULL,
+    ),
+     'relations' => 
+    array (
+    ),
+     'hidden' => 
+    array (
+    ),
+     'visible' => 
+    array (
+    ),
+     'appends' => 
+    array (
+    ),
+     'fillable' => 
+    array (
+    ),
+     'dates' => 
+    array (
+    ),
+     'touches' => 
+    array (
+    ),
+     'with' => 
+    array (
+    ),
+     'exists' => true,
+     'softDelete' => false,
+  )),
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'delete from "co...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(356): Illuminate\Database\Connection->run('delete from "co...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(313): Illuminate\Database\Connection->affectingStatement('delete from "co...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1511): Illuminate\Database\Connection->delete('delete from "co...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(338): Illuminate\Database\Query\Builder->delete()
+#5 C:\W\Web\Pb\code\laravel\app\models\StateObserver.php(16): Illuminate\Database\Eloquent\Builder->delete()
+#6 [internal function]: StateObserver->created(Object(State), 'eloquent.create...')
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(299): call_user_func_array(Array, Array)
+#8 [internal function]: Illuminate\Events\Dispatcher->Illuminate\Events\{closure}(Object(State), 'eloquent.create...')
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(179): call_user_func_array(Object(Closure), Array)
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1306): Illuminate\Events\Dispatcher->fire('eloquent.create...', Object(State))
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1245): Illuminate\Database\Eloquent\Model->fireModelEvent('created', false)
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#13 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(377): Illuminate\Database\Eloquent\Model->save()
+#14 C:\W\Web\Pb\code\laravel\app\models\HlistObserver.php(17): Illuminate\Database\Eloquent\Model::create(Array)
+#15 [internal function]: HlistObserver->saving(Object(Hlist), 'eloquent.saving...')
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(299): call_user_func_array(Array, Array)
+#17 [internal function]: Illuminate\Events\Dispatcher->Illuminate\Events\{closure}(Object(Hlist), 'eloquent.saving...')
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(179): call_user_func_array(Object(Closure), Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Events\Dispatcher.php(144): Illuminate\Events\Dispatcher->fire('eloquent.saving...', Object(Hlist), true)
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1306): Illuminate\Events\Dispatcher->until('eloquent.saving...', Object(Hlist))
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1122): Illuminate\Database\Eloquent\Model->fireModelEvent('saving')
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1083): Illuminate\Database\Eloquent\Model->save()
+#23 C:\W\Web\Pb\code\laravel\app\controllers\HlistsController.php(240): Illuminate\Database\Eloquent\Model->update(Array)
+#24 [internal function]: HlistsController->update('72')
+#25 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#26 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('update', Array)
+#27 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'update', Array)
+#28 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'update', Array)
+#29 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('72')
+#30 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#31 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#32 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#33 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#34 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#35 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#36 {main} [] []
+[2014-03-21 16:20:00] log.ERROR: 500 - syntax error, unexpected '{' @ /states
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '{'' in C:\W\Web\Pb\code\laravel\app\controllers\StatesController.php:87
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-03-21 16:32:36] log.ERROR: 500 - Call to a member function count() on a non-object @ /lists
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function count() on a non-object' in C:\W\Web\Pb\code\laravel\app\storage\views\033d7d50d4ced34c899bd10b6dd0d35f:37
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-03-21 17:30:39] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-21 17:30:40] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []

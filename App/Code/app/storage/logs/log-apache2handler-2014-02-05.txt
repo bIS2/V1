@@ -1,0 +1,285 @@
+[2014-02-05 00:03:04] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-02-05 00:03:04] log.ERROR: 404 - Exception @ /assets/ico/favicon.ico
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-02-05 00:03:09] log.ERROR: 500 - SQLSTATE[08006] [7] could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "127.0.0.1" and accepting
+	TCP/IP connections on port 5433? @ /user/login
+exception 'PDOException' with message 'SQLSTATE[08006] [7] could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "127.0.0.1" and accepting
+	TCP/IP connections on port 5433?' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:47
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(47): PDO->__construct('pgsql:host=127....', 'postgres', 'postgres+bis', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\PostgresConnector.php(35): Illuminate\Database\Connectors\Connector->createConnection('pgsql:host=127....', Array, Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(41): Illuminate\Database\Connectors\PostgresConnector->connect(Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(128): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'pgsql')
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(64): Illuminate\Database\DatabaseManager->makeConnection('pgsql')
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2455): Illuminate\Database\DatabaseManager->connection(NULL)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2421): Illuminate\Database\Eloquent\Model::resolveConnection(NULL)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1510): Illuminate\Database\Eloquent\Model->getConnection()
+#8 C:\W\Web\Pb\code\laravel\vendor\laravelbook\ardent\src\LaravelBook\Ardent\Ardent.php(830): Illuminate\Database\Eloquent\Model->newBaseQueryBuilder()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2634): LaravelBook\Ardent\Ardent->newQuery()
+#10 C:\W\Web\Pb\code\laravel\vendor\laravelbook\ardent\src\LaravelBook\Ardent\Ardent.php(345): Illuminate\Database\Eloquent\Model->__call('where', Array)
+#11 C:\W\Web\Pb\code\laravel\vendor\zizaco\confide\src\Zizaco\Confide\ConfideEloquentRepository.php(112): LaravelBook\Ardent\Ardent->__call('where', Array)
+#12 C:\W\Web\Pb\code\laravel\vendor\zizaco\confide\src\Zizaco\Confide\ConfideEloquentRepository.php(112): User->where('email', 'rlibrarian')
+#13 C:\W\Web\Pb\code\laravel\vendor\zizaco\confide\src\Zizaco\Confide\Confide.php(101): Zizaco\Confide\ConfideEloquentRepository->getUserByIdentity(Array, Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(209): Zizaco\Confide\Confide->logAttempt(Array, true)
+#15 C:\W\Web\Pb\code\laravel\app\controllers\user\UserController.php(181): Illuminate\Support\Facades\Facade::__callStatic('logAttempt', Array)
+#16 C:\W\Web\Pb\code\laravel\app\controllers\user\UserController.php(181): Zizaco\Confide\ConfideFacade::logAttempt(Array, true)
+#17 [internal function]: UserController->postLogin()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postLogin', Array)
+#20 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postLogin', Array)
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postLogin', Array)
+#22 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#23 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#24 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#25 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#26 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#27 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#28 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#29 {main} [] []
+[2014-02-05 00:03:18] log.ERROR: 500 - SQLSTATE[08006] [7] could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "127.0.0.1" and accepting
+	TCP/IP connections on port 5433? @ /user/login
+exception 'PDOException' with message 'SQLSTATE[08006] [7] could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "127.0.0.1" and accepting
+	TCP/IP connections on port 5433?' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:47
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(47): PDO->__construct('pgsql:host=127....', 'postgres', 'postgres+bis', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\PostgresConnector.php(35): Illuminate\Database\Connectors\Connector->createConnection('pgsql:host=127....', Array, Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(41): Illuminate\Database\Connectors\PostgresConnector->connect(Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(128): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'pgsql')
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(64): Illuminate\Database\DatabaseManager->makeConnection('pgsql')
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2455): Illuminate\Database\DatabaseManager->connection(NULL)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2421): Illuminate\Database\Eloquent\Model::resolveConnection(NULL)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1510): Illuminate\Database\Eloquent\Model->getConnection()
+#8 C:\W\Web\Pb\code\laravel\vendor\laravelbook\ardent\src\LaravelBook\Ardent\Ardent.php(830): Illuminate\Database\Eloquent\Model->newBaseQueryBuilder()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2634): LaravelBook\Ardent\Ardent->newQuery()
+#10 C:\W\Web\Pb\code\laravel\vendor\laravelbook\ardent\src\LaravelBook\Ardent\Ardent.php(345): Illuminate\Database\Eloquent\Model->__call('where', Array)
+#11 C:\W\Web\Pb\code\laravel\vendor\zizaco\confide\src\Zizaco\Confide\ConfideEloquentRepository.php(112): LaravelBook\Ardent\Ardent->__call('where', Array)
+#12 C:\W\Web\Pb\code\laravel\vendor\zizaco\confide\src\Zizaco\Confide\ConfideEloquentRepository.php(112): User->where('email', 'rlibrarian')
+#13 C:\W\Web\Pb\code\laravel\vendor\zizaco\confide\src\Zizaco\Confide\Confide.php(101): Zizaco\Confide\ConfideEloquentRepository->getUserByIdentity(Array, Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(209): Zizaco\Confide\Confide->logAttempt(Array, true)
+#15 C:\W\Web\Pb\code\laravel\app\controllers\user\UserController.php(181): Illuminate\Support\Facades\Facade::__callStatic('logAttempt', Array)
+#16 C:\W\Web\Pb\code\laravel\app\controllers\user\UserController.php(181): Zizaco\Confide\ConfideFacade::logAttempt(Array, true)
+#17 [internal function]: UserController->postLogin()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postLogin', Array)
+#20 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postLogin', Array)
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postLogin', Array)
+#22 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#23 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#24 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#25 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#26 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#27 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#28 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#29 {main} [] []
+[2014-02-05 00:03:33] log.ERROR: 500 - SQLSTATE[08006] [7] could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "127.0.0.1" and accepting
+	TCP/IP connections on port 5433? @ /user/login
+exception 'PDOException' with message 'SQLSTATE[08006] [7] could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "127.0.0.1" and accepting
+	TCP/IP connections on port 5433?' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:47
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(47): PDO->__construct('pgsql:host=127....', 'postgres', 'postgres+bis', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\PostgresConnector.php(35): Illuminate\Database\Connectors\Connector->createConnection('pgsql:host=127....', Array, Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(41): Illuminate\Database\Connectors\PostgresConnector->connect(Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(128): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'pgsql')
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(64): Illuminate\Database\DatabaseManager->makeConnection('pgsql')
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2455): Illuminate\Database\DatabaseManager->connection(NULL)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2421): Illuminate\Database\Eloquent\Model::resolveConnection(NULL)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1510): Illuminate\Database\Eloquent\Model->getConnection()
+#8 C:\W\Web\Pb\code\laravel\vendor\laravelbook\ardent\src\LaravelBook\Ardent\Ardent.php(830): Illuminate\Database\Eloquent\Model->newBaseQueryBuilder()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2634): LaravelBook\Ardent\Ardent->newQuery()
+#10 C:\W\Web\Pb\code\laravel\vendor\laravelbook\ardent\src\LaravelBook\Ardent\Ardent.php(345): Illuminate\Database\Eloquent\Model->__call('where', Array)
+#11 C:\W\Web\Pb\code\laravel\vendor\zizaco\confide\src\Zizaco\Confide\ConfideEloquentRepository.php(112): LaravelBook\Ardent\Ardent->__call('where', Array)
+#12 C:\W\Web\Pb\code\laravel\vendor\zizaco\confide\src\Zizaco\Confide\ConfideEloquentRepository.php(112): User->where('email', 'rlibrarian')
+#13 C:\W\Web\Pb\code\laravel\vendor\zizaco\confide\src\Zizaco\Confide\Confide.php(101): Zizaco\Confide\ConfideEloquentRepository->getUserByIdentity(Array, Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(209): Zizaco\Confide\Confide->logAttempt(Array, true)
+#15 C:\W\Web\Pb\code\laravel\app\controllers\user\UserController.php(181): Illuminate\Support\Facades\Facade::__callStatic('logAttempt', Array)
+#16 C:\W\Web\Pb\code\laravel\app\controllers\user\UserController.php(181): Zizaco\Confide\ConfideFacade::logAttempt(Array, true)
+#17 [internal function]: UserController->postLogin()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postLogin', Array)
+#20 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postLogin', Array)
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postLogin', Array)
+#22 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#23 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#24 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#25 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#26 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#27 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#28 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#29 {main} [] []
+[2014-02-05 00:04:58] log.ERROR: 500 - SQLSTATE[08006] [7] could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "127.0.0.1" and accepting
+	TCP/IP connections on port 5433? @ /user/login
+exception 'PDOException' with message 'SQLSTATE[08006] [7] could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "127.0.0.1" and accepting
+	TCP/IP connections on port 5433?' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:47
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(47): PDO->__construct('pgsql:host=127....', 'postgres', 'postgres+bis', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\PostgresConnector.php(35): Illuminate\Database\Connectors\Connector->createConnection('pgsql:host=127....', Array, Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(41): Illuminate\Database\Connectors\PostgresConnector->connect(Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(128): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'pgsql')
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(64): Illuminate\Database\DatabaseManager->makeConnection('pgsql')
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2455): Illuminate\Database\DatabaseManager->connection(NULL)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2421): Illuminate\Database\Eloquent\Model::resolveConnection(NULL)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1510): Illuminate\Database\Eloquent\Model->getConnection()
+#8 C:\W\Web\Pb\code\laravel\vendor\laravelbook\ardent\src\LaravelBook\Ardent\Ardent.php(830): Illuminate\Database\Eloquent\Model->newBaseQueryBuilder()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2634): LaravelBook\Ardent\Ardent->newQuery()
+#10 C:\W\Web\Pb\code\laravel\vendor\laravelbook\ardent\src\LaravelBook\Ardent\Ardent.php(345): Illuminate\Database\Eloquent\Model->__call('where', Array)
+#11 C:\W\Web\Pb\code\laravel\vendor\zizaco\confide\src\Zizaco\Confide\ConfideEloquentRepository.php(112): LaravelBook\Ardent\Ardent->__call('where', Array)
+#12 C:\W\Web\Pb\code\laravel\vendor\zizaco\confide\src\Zizaco\Confide\ConfideEloquentRepository.php(112): User->where('email', 'rlibrarian')
+#13 C:\W\Web\Pb\code\laravel\vendor\zizaco\confide\src\Zizaco\Confide\Confide.php(101): Zizaco\Confide\ConfideEloquentRepository->getUserByIdentity(Array, Array)
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(209): Zizaco\Confide\Confide->logAttempt(Array, true)
+#15 C:\W\Web\Pb\code\laravel\app\controllers\user\UserController.php(181): Illuminate\Support\Facades\Facade::__callStatic('logAttempt', Array)
+#16 C:\W\Web\Pb\code\laravel\app\controllers\user\UserController.php(181): Zizaco\Confide\ConfideFacade::logAttempt(Array, true)
+#17 [internal function]: UserController->postLogin()
+#18 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#19 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postLogin', Array)
+#20 C:\W\Web\Pb\code\laravel\vendor\efficiently\authority-controller\src\Efficiently\AuthorityController\ControllerAdditions.php(86): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postLogin', Array)
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): BaseController->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postLogin', Array)
+#22 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#23 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#24 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#25 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#26 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#27 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#28 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#29 {main} [] []
+[2014-02-05 00:06:53] log.ERROR: 500 - syntax error, unexpected '?>', expecting ':' @ /
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '?>', expecting ':'' in C:\W\Web\Pb\code\laravel\app\models\Holding.php:371
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-05 00:07:40] log.ERROR: 500 - syntax error, unexpected 'echo' (T_ECHO), expecting ':' @ /
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'echo' (T_ECHO), expecting ':'' in C:\W\Web\Pb\code\laravel\app\models\Holding.php:371
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-05 00:26:58] log.ERROR: 404 - Exception @ /assets/img/clear.png
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-02-05 00:29:13] log.ERROR: 404 - Exception @ /assets/img/clear.png
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-02-05 00:39:04] log.ERROR: 404 - Exception @ /assets/img/clear.png
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-02-05 00:49:00] log.ERROR: 500 - Class 'Revised' not found @ /confirms
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Revised' not found' in C:\W\Web\Pb\code\laravel\app\controllers\ConfirmsController.php:61
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-05 00:49:18] log.ERROR: 500 - Class 'Revised' not found @ /confirms
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Revised' not found' in C:\W\Web\Pb\code\laravel\app\controllers\ConfirmsController.php:61
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-05 00:49:37] log.ERROR: 500 - Class 'Revised' not found @ /confirms
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Revised' not found' in C:\W\Web\Pb\code\laravel\app\controllers\ConfirmsController.php:61
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-05 01:08:51] log.ERROR: 404 - Exception @ /assets/img/clear.png
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-02-05 01:18:34] log.ERROR: 500 - SQLSTATE[08006] [7] could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "127.0.0.1" and accepting
+	TCP/IP connections on port 5433? @ /sets
+exception 'PDOException' with message 'SQLSTATE[08006] [7] could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "127.0.0.1" and accepting
+	TCP/IP connections on port 5433?' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:47
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(47): PDO->__construct('pgsql:host=127....', 'postgres', 'postgres+bis', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\PostgresConnector.php(35): Illuminate\Database\Connectors\Connector->createConnection('pgsql:host=127....', Array, Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(41): Illuminate\Database\Connectors\PostgresConnector->connect(Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(128): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'pgsql')
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(64): Illuminate\Database\DatabaseManager->makeConnection('pgsql')
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2455): Illuminate\Database\DatabaseManager->connection(NULL)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2421): Illuminate\Database\Eloquent\Model::resolveConnection(NULL)
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1510): Illuminate\Database\Eloquent\Model->getConnection()
+#8 C:\W\Web\Pb\code\laravel\vendor\laravelbook\ardent\src\LaravelBook\Ardent\Ardent.php(830): Illuminate\Database\Eloquent\Model->newBaseQueryBuilder()
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(42): LaravelBook\Ardent\Ardent->newQuery()
+#10 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(121): Illuminate\Auth\EloquentUserProvider->retrieveById(31)
+#11 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(82): Illuminate\Auth\Guard->user()
+#12 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(92): Illuminate\Auth\Guard->check()
+#13 [internal function]: Illuminate\Auth\Guard->guest()
+#14 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Support\Manager.php(129): call_user_func_array(Array, Array)
+#15 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(203): Illuminate\Support\Manager->__call('guest', Array)
+#16 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(203): Illuminate\Auth\AuthManager->guest()
+#17 C:\W\Web\Pb\code\laravel\app\filters.php(38): Illuminate\Support\Facades\Facade::__callStatic('guest', Array)
+#18 C:\W\Web\Pb\code\laravel\app\filters.php(38): Illuminate\Support\Facades\Auth::guest()
+#19 [internal function]: {closure}(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#20 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(159): call_user_func_array(Object(Closure), Array)
+#21 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(100): Illuminate\Routing\Route->callFilter('auth', Object(Illuminate\Http\Request))
+#22 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(43): Illuminate\Routing\Route->callBeforeFilters(Object(Illuminate\Http\Request))
+#23 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#25 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#26 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#27 {main} [] []
+[2014-02-05 01:57:53] log.ERROR: 404 - Exception @ /eod_script_ibb.js
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-02-05 03:17:22] log.ERROR: 404 - Exception @ /BIS.csv
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\W\Web\Pb\code\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-02-05 03:29:37] log.ERROR: 500 - syntax error, unexpected ''sent'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' @ /
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ''sent'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'' in C:\W\Web\Pb\code\laravel\app\controllers\Pages.php:29
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []

@@ -1,0 +1,244 @@
+[2013-10-25 00:15:13] log.ERROR: 500 - SQLSTATE[08006] [7] FATAL:  la autentificación password falló para el usuario «bismusic» @ /
+exception 'PDOException' with message 'SQLSTATE[08006] [7] FATAL:  la autentificación password falló para el usuario «bismusic»' in D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:47
+Stack trace:
+#0 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(47): PDO->__construct('pgsql:host=127....', 'bismusic', '!34*54%*/-', Array)
+#1 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Connectors\PostgresConnector.php(35): Illuminate\Database\Connectors\Connector->createConnection('pgsql:host=127....', Array, Array)
+#2 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(41): Illuminate\Database\Connectors\PostgresConnector->connect(Array)
+#3 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(128): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'pgsql')
+#4 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(64): Illuminate\Database\DatabaseManager->makeConnection('pgsql')
+#5 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(169): Illuminate\Database\DatabaseManager->connection(NULL)
+#6 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(137): Illuminate\Database\Migrations\DatabaseMigrationRepository->getConnection()
+#7 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(370): Illuminate\Database\Migrations\DatabaseMigrationRepository->repositoryExists()
+#8 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(95): Illuminate\Database\Migrations\Migrator->repositoryExists()
+#9 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(58): Illuminate\Database\Console\Migrations\MigrateCommand->prepareDatabase()
+#10 D:\project\bis\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#11 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 D:\project\bis\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 D:\project\bis\artisan(59): Symfony\Component\Console\Application->run()
+#17 {main} [] []
+[2013-10-25 00:15:42] log.ERROR: 500 - Database does not exist. @ /
+exception 'InvalidArgumentException' with message 'Database does not exist.' in D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Connectors\SQLiteConnector.php:30
+Stack trace:
+#0 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(41): Illuminate\Database\Connectors\SQLiteConnector->connect(Array)
+#1 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(128): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'sqlite')
+#2 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(64): Illuminate\Database\DatabaseManager->makeConnection('sqlite')
+#3 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(169): Illuminate\Database\DatabaseManager->connection(NULL)
+#4 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(137): Illuminate\Database\Migrations\DatabaseMigrationRepository->getConnection()
+#5 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(370): Illuminate\Database\Migrations\DatabaseMigrationRepository->repositoryExists()
+#6 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(95): Illuminate\Database\Migrations\Migrator->repositoryExists()
+#7 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(58): Illuminate\Database\Console\Migrations\MigrateCommand->prepareDatabase()
+#8 D:\project\bis\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#9 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 D:\project\bis\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 D:\project\bis\artisan(59): Symfony\Component\Console\Application->run()
+#15 {main} [] []
+[2013-10-25 01:02:48] log.ERROR: 500 - Database does not exist. @ /
+exception 'InvalidArgumentException' with message 'Database does not exist.' in D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Connectors\SQLiteConnector.php:30
+Stack trace:
+#0 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(41): Illuminate\Database\Connectors\SQLiteConnector->connect(Array)
+#1 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(128): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'sqlite')
+#2 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(64): Illuminate\Database\DatabaseManager->makeConnection('sqlite')
+#3 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(169): Illuminate\Database\DatabaseManager->connection(NULL)
+#4 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(137): Illuminate\Database\Migrations\DatabaseMigrationRepository->getConnection()
+#5 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(370): Illuminate\Database\Migrations\DatabaseMigrationRepository->repositoryExists()
+#6 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(95): Illuminate\Database\Migrations\Migrator->repositoryExists()
+#7 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(58): Illuminate\Database\Console\Migrations\MigrateCommand->prepareDatabase()
+#8 D:\project\bis\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#9 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 D:\project\bis\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 D:\project\bis\artisan(59): Symfony\Component\Console\Application->run()
+#15 {main} [] []
+[2013-10-25 01:04:13] log.ERROR: 500 - Database does not exist. @ /
+exception 'InvalidArgumentException' with message 'Database does not exist.' in D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Connectors\SQLiteConnector.php:30
+Stack trace:
+#0 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(41): Illuminate\Database\Connectors\SQLiteConnector->connect(Array)
+#1 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(128): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'sqlite')
+#2 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(64): Illuminate\Database\DatabaseManager->makeConnection('sqlite')
+#3 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(169): Illuminate\Database\DatabaseManager->connection(NULL)
+#4 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(137): Illuminate\Database\Migrations\DatabaseMigrationRepository->getConnection()
+#5 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(370): Illuminate\Database\Migrations\DatabaseMigrationRepository->repositoryExists()
+#6 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(95): Illuminate\Database\Migrations\Migrator->repositoryExists()
+#7 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(58): Illuminate\Database\Console\Migrations\MigrateCommand->prepareDatabase()
+#8 D:\project\bis\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#9 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 D:\project\bis\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 D:\project\bis\artisan(59): Symfony\Component\Console\Application->run()
+#15 {main} [] []
+[2013-10-25 01:07:51] log.ERROR: 500 - SQLSTATE[08006] [7] FATAL:  la autentificación password falló para el usuario «bismusic» @ /
+exception 'PDOException' with message 'SQLSTATE[08006] [7] FATAL:  la autentificación password falló para el usuario «bismusic»' in D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:47
+Stack trace:
+#0 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(47): PDO->__construct('pgsql:host=127....', 'bismusic', '!34*54%*/-', Array)
+#1 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Connectors\PostgresConnector.php(35): Illuminate\Database\Connectors\Connector->createConnection('pgsql:host=127....', Array, Array)
+#2 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(41): Illuminate\Database\Connectors\PostgresConnector->connect(Array)
+#3 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(128): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'pgsql')
+#4 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(64): Illuminate\Database\DatabaseManager->makeConnection('pgsql')
+#5 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(169): Illuminate\Database\DatabaseManager->connection(NULL)
+#6 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(137): Illuminate\Database\Migrations\DatabaseMigrationRepository->getConnection()
+#7 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(370): Illuminate\Database\Migrations\DatabaseMigrationRepository->repositoryExists()
+#8 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(95): Illuminate\Database\Migrations\Migrator->repositoryExists()
+#9 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(58): Illuminate\Database\Console\Migrations\MigrateCommand->prepareDatabase()
+#10 D:\project\bis\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#11 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 D:\project\bis\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 D:\project\bis\artisan(59): Symfony\Component\Console\Application->run()
+#17 {main} [] []
+[2013-10-25 01:15:52] log.ERROR: 500 - Database does not exist. @ /
+exception 'InvalidArgumentException' with message 'Database does not exist.' in D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Connectors\SQLiteConnector.php:30
+Stack trace:
+#0 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(41): Illuminate\Database\Connectors\SQLiteConnector->connect(Array)
+#1 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(128): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'sqlite')
+#2 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(64): Illuminate\Database\DatabaseManager->makeConnection('sqlite')
+#3 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(169): Illuminate\Database\DatabaseManager->connection(NULL)
+#4 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(137): Illuminate\Database\Migrations\DatabaseMigrationRepository->getConnection()
+#5 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(370): Illuminate\Database\Migrations\DatabaseMigrationRepository->repositoryExists()
+#6 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(95): Illuminate\Database\Migrations\Migrator->repositoryExists()
+#7 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(58): Illuminate\Database\Console\Migrations\MigrateCommand->prepareDatabase()
+#8 D:\project\bis\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#9 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 D:\project\bis\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 D:\project\bis\artisan(59): Symfony\Component\Console\Application->run()
+#15 {main} [] []
+[2013-10-25 01:19:35] log.ERROR: 500 - SQLSTATE[08006] [7] FATAL:  la autentificación password falló para el usuario «bismusic» @ /
+exception 'PDOException' with message 'SQLSTATE[08006] [7] FATAL:  la autentificación password falló para el usuario «bismusic»' in D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:47
+Stack trace:
+#0 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(47): PDO->__construct('pgsql:host=127....', 'bismusic', '!34*54%*/-', Array)
+#1 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Connectors\PostgresConnector.php(35): Illuminate\Database\Connectors\Connector->createConnection('pgsql:host=127....', Array, Array)
+#2 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(41): Illuminate\Database\Connectors\PostgresConnector->connect(Array)
+#3 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(128): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'pgsql')
+#4 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(64): Illuminate\Database\DatabaseManager->makeConnection('pgsql')
+#5 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(242): Illuminate\Database\DatabaseManager->connection()
+#6 D:\project\bis\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->__call('table', Array)
+#7 D:\project\bis\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->table('permission_role')
+#8 D:\project\bis\app\database\seeds\UsersTableSeeder.php(7): Illuminate\Support\Facades\Facade::__callStatic('table', Array)
+#9 D:\project\bis\app\database\seeds\UsersTableSeeder.php(7): Illuminate\Support\Facades\DB::table('permission_role')
+#10 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Seeder.php(38): UsersTableSeeder->run()
+#11 D:\project\bis\app\database\seeds\DatabaseSeeder.php(10): Illuminate\Database\Seeder->call('UsersTableSeede...')
+#12 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(53): DatabaseSeeder->run()
+#13 D:\project\bis\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\SeedCommand->fire()
+#14 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 D:\project\bis\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 D:\project\bis\artisan(59): Symfony\Component\Console\Application->run()
+#20 {main} [] []
+[2013-10-25 02:37:54] log.ERROR: 500 - Command "generate:destroy" is not defined.
+
+Did you mean one of these?
+    generate:test
+    generate:resource @ /
+exception 'InvalidArgumentException' with message 'Command "generate:destroy" is not defined.
+
+Did you mean one of these?
+    generate:test
+    generate:resource' in D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php:617
+Stack trace:
+#0 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('generate:destro...')
+#1 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 D:\project\bis\artisan(59): Symfony\Component\Console\Application->run()
+#3 {main} [] []
+[2013-10-25 02:38:09] log.ERROR: 500 - Command "destroy" is not defined. @ /
+exception 'InvalidArgumentException' with message 'Command "destroy" is not defined.' in D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php:617
+Stack trace:
+#0 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('destroy')
+#1 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 D:\project\bis\artisan(59): Symfony\Component\Console\Application->run()
+#3 {main} [] []
+[2013-10-25 20:57:08] log.ERROR: 500 - SQLSTATE[08006] [7] FATAL:  la autentificación password falló para el usuario «bismusic» @ /
+exception 'PDOException' with message 'SQLSTATE[08006] [7] FATAL:  la autentificación password falló para el usuario «bismusic»' in D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:47
+Stack trace:
+#0 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(47): PDO->__construct('pgsql:host=127....', 'bismusic', '!34*54%*/-', Array)
+#1 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Connectors\PostgresConnector.php(35): Illuminate\Database\Connectors\Connector->createConnection('pgsql:host=127....', Array, Array)
+#2 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(41): Illuminate\Database\Connectors\PostgresConnector->connect(Array)
+#3 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(128): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'pgsql')
+#4 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(64): Illuminate\Database\DatabaseManager->makeConnection('pgsql')
+#5 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(169): Illuminate\Database\DatabaseManager->connection(NULL)
+#6 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(137): Illuminate\Database\Migrations\DatabaseMigrationRepository->getConnection()
+#7 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(370): Illuminate\Database\Migrations\DatabaseMigrationRepository->repositoryExists()
+#8 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(95): Illuminate\Database\Migrations\Migrator->repositoryExists()
+#9 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(58): Illuminate\Database\Console\Migrations\MigrateCommand->prepareDatabase()
+#10 D:\project\bis\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#11 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 D:\project\bis\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 D:\project\bis\artisan(59): Symfony\Component\Console\Application->run()
+#17 {main} [] []
+[2013-10-25 20:57:19] log.ERROR: 500 - Too many arguments. @ /
+exception 'RuntimeException' with message 'Too many arguments.' in D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php:181
+Stack trace:
+#0 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php(90): Symfony\Component\Console\Input\ArgvInput->parseArgument('env=local')
+#1 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Input\Input.php(60): Symfony\Component\Console\Input\ArgvInput->parse()
+#2 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(226): Symfony\Component\Console\Input\Input->bind(Object(Symfony\Component\Console\Input\InputDefinition))
+#3 D:\project\bis\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 D:\project\bis\artisan(59): Symfony\Component\Console\Application->run()
+#8 {main} [] []
+[2013-10-25 21:22:27] log.ERROR: 500 - The "--field" option does not exist. @ /
+exception 'RuntimeException' with message 'The "--field" option does not exist.' in D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php:213
+Stack trace:
+#0 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php(152): Symfony\Component\Console\Input\ArgvInput->addLongOption('field', 'hoss_id:integer...')
+#1 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php(86): Symfony\Component\Console\Input\ArgvInput->parseLongOption('--field=hoss_id...')
+#2 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Input\Input.php(60): Symfony\Component\Console\Input\ArgvInput->parse()
+#3 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(226): Symfony\Component\Console\Input\Input->bind(Object(Symfony\Component\Console\Input\InputDefinition))
+#4 D:\project\bis\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Way\Generators\Commands\ScaffoldGeneratorCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 D:\project\bis\artisan(59): Symfony\Component\Console\Application->run()
+#9 {main} [] []
+[2013-10-25 21:45:37] log.ERROR: 500 - The "--fields" option does not exist. @ /
+exception 'RuntimeException' with message 'The "--fields" option does not exist.' in D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php:213
+Stack trace:
+#0 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php(152): Symfony\Component\Console\Input\ArgvInput->addLongOption('fields', 'group_id:intege...')
+#1 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php(86): Symfony\Component\Console\Input\ArgvInput->parseLongOption('--fields=group_...')
+#2 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Input\Input.php(60): Symfony\Component\Console\Input\ArgvInput->parse()
+#3 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(226): Symfony\Component\Console\Input\Input->bind(Object(Symfony\Component\Console\Input\InputDefinition))
+#4 D:\project\bis\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Way\Generators\Commands\ModelGeneratorCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 D:\project\bis\artisan(59): Symfony\Component\Console\Application->run()
+#9 {main} [] []
+[2013-10-25 21:56:02] log.ERROR: 500 - SQLSTATE[08006] [7] FATAL:  la autentificación password falló para el usuario «bismusic» @ /
+exception 'PDOException' with message 'SQLSTATE[08006] [7] FATAL:  la autentificación password falló para el usuario «bismusic»' in D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:47
+Stack trace:
+#0 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(47): PDO->__construct('pgsql:host=127....', 'bismusic', '!34*54%*/-', Array)
+#1 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Connectors\PostgresConnector.php(35): Illuminate\Database\Connectors\Connector->createConnection('pgsql:host=127....', Array, Array)
+#2 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(41): Illuminate\Database\Connectors\PostgresConnector->connect(Array)
+#3 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(128): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'pgsql')
+#4 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(64): Illuminate\Database\DatabaseManager->makeConnection('pgsql')
+#5 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(169): Illuminate\Database\DatabaseManager->connection(NULL)
+#6 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(137): Illuminate\Database\Migrations\DatabaseMigrationRepository->getConnection()
+#7 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(370): Illuminate\Database\Migrations\DatabaseMigrationRepository->repositoryExists()
+#8 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(95): Illuminate\Database\Migrations\Migrator->repositoryExists()
+#9 D:\project\bis\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(58): Illuminate\Database\Console\Migrations\MigrateCommand->prepareDatabase()
+#10 D:\project\bis\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#11 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 D:\project\bis\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 D:\project\bis\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 D:\project\bis\artisan(59): Symfony\Component\Console\Application->run()
+#17 {main} [] []

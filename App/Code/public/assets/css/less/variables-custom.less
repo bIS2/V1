@@ -1,0 +1,94 @@
+// Custom colors
+
+@swiss-red:     	    #cc0000;
+@swiss-green:			#009c00;
+@swiss-yellow:			#ffce10;
+@swiss-blue:			#0077cc;
+@swiss-orange:			#ff990f;
+
+
+// Brand colors
+// -------------------------
+
+@brand-primary:         #0077cc;
+@brand-success:         #5cb85c;
+@brand-warning:         #ff990f;
+@brand-danger:          #cc0000;
+@brand-info:            #5bc0de;
+@state-warning-text:		#ff990f;	
+@state-danger-text:			#cc0000;
+
+// Scaffolding
+// -------------------------
+@body-bg:               #fff;
+@text-color:            @gray-dark;
+
+// Links
+// -------------------------
+
+@link-color:            @brand-primary;
+@link-hover-color:      darken(@link-color, 15%);
+
+// Typography
+// -------------------------
+@font-size-xlarge:		ceil(@font-size-base * 1.57); // ~22px
+
+/* Fix Bootstrap image paths */
+// -------------------------
+// Iconography
+// -------------------------
+
+@icon-font-path:			"../../fonts/";
+
+// Navbar
+// -------------------------
+
+// Basics of a navbar
+@navbar-height:                    35px;
+@navbar-margin-bottom:             @line-height-computed;
+@navbar-default-color:             #fff;
+@navbar-default-bg:                @swiss-red;
+@navbar-default-border:            darken(@navbar-default-bg, 6.5%);
+@navbar-border-radius:             @border-radius-base;
+@navbar-padding-horizontal:        floor(@grid-gutter-width / 2);
+@navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
+
+// Navbar links
+@navbar-default-link-color:                #fff;
+@navbar-default-link-hover-color:          lighten(@swiss-yellow, 25%);
+@navbar-default-link-hover-bg:             transparent;
+@navbar-default-link-active-color:         @navbar-default-link-hover-color;
+@navbar-default-link-active-bg:            darken(@navbar-default-bg, 5%);
+@navbar-default-link-disabled-color:       #ccc;
+@navbar-default-link-disabled-bg:          transparent;
+
+// Navbar brand label
+@navbar-default-brand-color:               @navbar-default-link-color;
+@navbar-default-brand-hover-color:         @navbar-default-link-color;
+@navbar-default-brand-hover-bg:            transparent;
+
+// Navbar toggle
+@navbar-default-toggle-hover-bg:           #ddd;
+@navbar-default-toggle-icon-bar-bg:        #ccc;
+@navbar-default-toggle-border-color:       #ddd;
+
+// Jumbotron
+// -------------------------
+@jumbotron-padding:              30px;
+@jumbotron-color:                #fff;
+@jumbotron-bg:                   @swiss-red;
+
+// Popovers
+// -------------------------
+@popover-bg:                          #fffff5;
+@popover-border-color:                rgba(0,0,0,.2);
+@popover-fallback-border-color:       #ccc;
+
+@popover-title-bg:                    darken(@popover-bg, 3%);
+
+@popover-arrow-width:                 10px;
+@popover-arrow-color:                 @popover-bg;
+
+@popover-arrow-outer-width:           (@popover-arrow-width + 1);
+@popover-arrow-outer-color:           transparent;
+@popover-arrow-outer-fallback-color:  transparent;

@@ -1,0 +1,8 @@
+[2013-11-10 21:26:20] log.ERROR: 500 - There are no commands defined in the "cd" namespace. @ /
+exception 'InvalidArgumentException' with message 'There are no commands defined in the "cd" namespace.' in C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php:523
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(561): Symfony\Component\Console\Application->findNamespace('cd')
+#1 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('cd:seed')
+#2 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\W\Web\Pb\code\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#4 {main} [] []

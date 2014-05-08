@@ -1,0 +1,5 @@
+[2014-01-04 21:36:47] log.ERROR: 500 - Class 'AddTracesFieldsToTraces' not found @ /
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'AddTracesFieldsToTraces' not found' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php:301
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []

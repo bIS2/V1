@@ -1,0 +1,42 @@
+[2013-12-10 16:13:18] log.ERROR: 500 - syntax error, unexpected ']' @ /
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ']'' in C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php:308
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-10 16:13:32] log.ERROR: 500 - syntax error, unexpected ']' @ /
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ']'' in C:\W\Web\Pb\code\laravel\app\controllers\HoldingssetsController.php:308
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-10 16:14:09] log.ERROR: 500 - Command "migration" is not defined.
+
+Did you mean one of these?
+    migrate
+    entrust:migration
+    confide:migration
+    generate:migration @ /
+exception 'InvalidArgumentException' with message 'Command "migration" is not defined.
+
+Did you mean one of these?
+    migrate
+    entrust:migration
+    confide:migration
+    generate:migration' in C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php:617
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('migration')
+#1 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\W\Web\Pb\code\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#3 {main} [] []
+[2013-12-10 16:14:25] log.ERROR: 500 - Command "db:migrate" is not defined.
+
+Did you mean this?
+    migrate @ /
+exception 'InvalidArgumentException' with message 'Command "db:migrate" is not defined.
+
+Did you mean this?
+    migrate' in C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php:617
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('db:migrate')
+#1 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\W\Web\Pb\code\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#3 {main} [] []

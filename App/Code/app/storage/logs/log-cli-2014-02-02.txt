@@ -1,0 +1,84 @@
+[2014-02-02 18:55:52] log.ERROR: 500 - SQLSTATE[42703]: Undefined column: 7 ERROR:  column "groups_numbers" of relation "holdings" does not exist
+LINE 1: update "holdings" set "state" = $1, "groups_numbers" = $2
+                                            ^ (SQL: update "holdings" set "state" = ?, "groups_numbers" = ?) (Bindings: array (
+  0 => 'blank',
+  1 => 0,
+)) @ /
+exception 'PDOException' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  column "groups_numbers" of relation "holdings" does not exist
+LINE 1: update "holdings" set "state" = $1, "groups_numbers" = $2
+                                            ^' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:353
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(353): PDOStatement->execute(Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'update "holding...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(356): Illuminate\Database\Connection->run('update "holding...', Array, Object(Closure))
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(301): Illuminate\Database\Connection->affectingStatement('update "holding...', Array)
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1459): Illuminate\Database\Connection->update('update "holding...', Array)
+#5 C:\W\Web\Pb\code\laravel\app\database\seeds\CleanStatesSeeder.php(24): Illuminate\Database\Query\Builder->update(Array)
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(53): CleanStatesSeeder->run()
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\SeedCommand->fire()
+#8 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\W\Web\Pb\code\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#14 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  column "groups_numbers" of relation "holdings" does not exist
+LINE 1: update "holdings" set "state" = $1, "groups_numbers" = $2
+                                            ^ (SQL: update "holdings" set "state" = ?, "groups_numbers" = ?) (Bindings: array (
+  0 => 'blank',
+  1 => 0,
+))' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'update "holding...', Array)
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(356): Illuminate\Database\Connection->run('update "holding...', Array, Object(Closure))
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(301): Illuminate\Database\Connection->affectingStatement('update "holding...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1459): Illuminate\Database\Connection->update('update "holding...', Array)
+#4 C:\W\Web\Pb\code\laravel\app\database\seeds\CleanStatesSeeder.php(24): Illuminate\Database\Query\Builder->update(Array)
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(53): CleanStatesSeeder->run()
+#6 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\SeedCommand->fire()
+#7 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\W\Web\Pb\code\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#13 {main} [] []
+[2014-02-02 18:56:30] log.ERROR: 500 - Class CleanStatesSeeder\ does not exist @ /
+exception 'ReflectionException' with message 'Class CleanStatesSeeder\ does not exist' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php:308
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(308): ReflectionClass->__construct('CleanStatesSeed...')
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(250): Illuminate\Container\Container->build('CleanStatesSeed...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(478): Illuminate\Container\Container->make('CleanStatesSeed...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(63): Illuminate\Foundation\Application->make('CleanStatesSeed...')
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(53): Illuminate\Database\Console\SeedCommand->getSeeder()
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\SeedCommand->fire()
+#6 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\W\Web\Pb\code\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#12 {main} [] []
+[2014-02-02 18:56:48] log.ERROR: 500 - Class CleanStatesSeeder\ does not exist @ /
+exception 'ReflectionException' with message 'Class CleanStatesSeeder\ does not exist' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php:308
+Stack trace:
+#0 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(308): ReflectionClass->__construct('CleanStatesSeed...')
+#1 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(250): Illuminate\Container\Container->build('CleanStatesSeed...', Array)
+#2 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(478): Illuminate\Container\Container->make('CleanStatesSeed...', Array)
+#3 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(63): Illuminate\Foundation\Application->make('CleanStatesSeed...')
+#4 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(53): Illuminate\Database\Console\SeedCommand->getSeeder()
+#5 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\SeedCommand->fire()
+#6 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\W\Web\Pb\code\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\W\Web\Pb\code\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#12 {main} [] []
+[2014-02-02 22:48:57] log.ERROR: 500 - Class 'AddLockedIdToHoldingssets' not found @ /
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'AddLockedIdToHoldingssets' not found' in C:\W\Web\Pb\code\laravel\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php:301
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
