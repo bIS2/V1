@@ -1,2 +1,0 @@
-[2013-11-21 23:29:27] basset.ERROR: Asset "bootstrap-responsive.min.css" could not be found in "C:\W\Web\Pb\code\laravel\public/assets/css" [] []
-[2013-11-21 23:29:27] basset.ERROR: Asset "bootstrap-responsive.min.css" could not be found in "C:\W\Web\Pb\code\laravel\public/assets/css" [] []

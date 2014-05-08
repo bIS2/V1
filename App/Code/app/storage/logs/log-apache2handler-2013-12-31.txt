@@ -1,5 +1,0 @@
-[2013-12-31 00:14:26] log.ERROR: 500 - syntax error, unexpected 'endif' (T_ENDIF) @ /sets
-exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'endif' (T_ENDIF)' in C:\W\Web\Pb\code\laravel\app\storage\views\85b7e2ec8786914635da6beab8437d2a:63
-Stack trace:
-#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
-#1 {main} [] []
