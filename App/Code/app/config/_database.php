@@ -66,9 +66,9 @@ return array(
 		'pgsql' => array(
 			'driver'   => 'pgsql',
 			'host'     => '127.0.0.1',
-			'database' => 'BIS',
-			'username' => 'postgres',
-			'password' => 'postgres+bis',
+			'database' => 'BD',
+			'username' => 'DBADMIN',
+			'password' => 'BDPW',
 			'charset'  => 'utf8',
 			'prefix'   => '',
             'schema'   => 'public',
